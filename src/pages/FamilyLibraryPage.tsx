@@ -37,7 +37,7 @@ export function FamilyLibraryPage({ families, getRoot, getWords, savedFamilies, 
     <div className="page page--library">
       <header className="page-header page-header--library">
         <div>
-          <p className="eyebrow">A visual vocabulary browser · HSK 1 scope</p>
+          <p className="eyebrow">A visual vocabulary browser · HSK 1 + verified HSK 2 scope</p>
           <h1>See the words<br /><em>connect.</em></h1>
           <p className="page-header__lede">Browse beginner Mandarin through small, memorable word families.</p>
         </div>

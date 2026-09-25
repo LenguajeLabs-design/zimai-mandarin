@@ -1,6 +1,6 @@
 # 字脉 / Zìmài
 
-Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with twenty-five HSK 1 prototype maps plus seven dedicated HSK 2 maps: 边, 时, 生, 手, 问, 游, and 公. It also includes the first HSK 2–3 Practice lesson: a daily-life conversation, listening-recall shell, sentence builder, and grammar note built around 在.
+Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with twenty-five HSK 1 prototype maps plus thirteen dedicated HSK 2 maps: 边, 时, 生, 手, 问, 游, 公, 上, 人, 可, 快, 起, and 车. It also includes the first HSK 2–3 Practice lesson: a daily-life conversation, listening-recall shell, sentence builder, and grammar note built around 在.
 
 The product direction is to grow from a calm HSK 1 foundation toward HSK 6 through connected word families, natural audio, example sentences, and spaced review. New vocabulary remains explicitly marked as `Related` until its source and HSK level are verified.
 
@@ -37,7 +37,7 @@ User state is stored separately from immutable content in versioned local storag
 
 The first HSK 2–3 practice slice lives in [`src/content/practice.json`](src/content/practice.json) and is intentionally small. It provides the interaction model for daily-life conversations, listening recall, sentence building, and basic grammar before more scenes and reviewed native recordings are added.
 
-The first HSK 2 content set includes sixteen words in seven dedicated families. Labels are only applied to words in those source-backed families. The official HSK 2 syllabus is recorded in the content source metadata; exact exclusive-word membership is cross-checked against the reproducible HSK 2.0 mirror documented there. The official workbook reference remains available for a later licensing and reconciliation pass.
+The first HSK 2 content set now includes twenty-eight words in thirteen dedicated families. Labels are only applied to words in those source-backed families. The official HSK 2 syllabus is recorded in the content source metadata; exact exclusive-word membership is cross-checked against the reproducible HSK 2.0 mirror documented there. The official workbook reference remains available for a later licensing and reconciliation pass.
 
 ## Change tracking and backups
 

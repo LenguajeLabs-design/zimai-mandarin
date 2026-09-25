@@ -57,8 +57,8 @@ describe('content utilities', () => {
   it('keeps dedicated HSK 2 families source-backed', () => {
     const hsk2Families = data.families.filter((family) => family.sourceIds.includes('hsk-2-official-syllabus'))
     const hsk2Words = hsk2Families.flatMap((family) => familyWords(family, data.words))
-    expect(hsk2Families).toHaveLength(7)
-    expect(hsk2Words).toHaveLength(16)
+    expect(hsk2Families).toHaveLength(13)
+    expect(hsk2Words).toHaveLength(28)
     expect(hsk2Words.every((word) => word.hskLevel === 'HSK 2' && !word.isExtension)).toBe(true)
   })
 

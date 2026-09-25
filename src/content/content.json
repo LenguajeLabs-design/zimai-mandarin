@@ -59,7 +59,11 @@
     { "id": "char-shou", "hanzi": "手", "pinyin": "shǒu", "toneNumber": 3, "toneMark": "shǒu", "gloss": "hand", "audioKey": "root-shou" },
     { "id": "char-wen", "hanzi": "问", "pinyin": "wèn", "toneNumber": 4, "toneMark": "wèn", "gloss": "ask; question", "audioKey": "root-wen" },
     { "id": "char-you-travel", "hanzi": "游", "pinyin": "yóu", "toneNumber": 2, "toneMark": "yóu", "gloss": "travel; swim", "audioKey": "root-you-travel" },
-    { "id": "char-gong", "hanzi": "公", "pinyin": "gōng", "toneNumber": 1, "toneMark": "gōng", "gloss": "public; common", "audioKey": "root-gong" }
+    { "id": "char-gong", "hanzi": "公", "pinyin": "gōng", "toneNumber": 1, "toneMark": "gōng", "gloss": "public; common", "audioKey": "root-gong" },
+    { "id": "char-ke", "hanzi": "可", "pinyin": "kě", "toneNumber": 3, "toneMark": "kě", "gloss": "can; may", "audioKey": "root-ke" },
+    { "id": "char-kuai", "hanzi": "快", "pinyin": "kuài", "toneNumber": 4, "toneMark": "kuài", "gloss": "fast; quick", "audioKey": "root-kuai" },
+    { "id": "char-qi", "hanzi": "起", "pinyin": "qǐ", "toneNumber": 3, "toneMark": "qǐ", "gloss": "rise; get up", "audioKey": "root-qi" },
+    { "id": "char-che", "hanzi": "车", "pinyin": "chē", "toneNumber": 1, "toneMark": "chē", "gloss": "vehicle; car", "audioKey": "root-che" }
   ],
   "families": [
     {
@@ -90,7 +94,7 @@
       "title": "人 family",
       "shortDescription": "People words that make everyday descriptions more specific.",
       "meaningNote": "人 names a person or people, and the character becomes a clear anchor in many descriptions of people.",
-      "members": ["word-nanren", "word-nvren", "word-laoren", "word-geren", "word-waiguoren"],
+      "members": ["word-laoren", "word-geren", "word-waiguoren"],
       "sortOrder": 3,
       "featured": true,
       "sourceIds": ["hsk-1-selected-placeholder"]
@@ -178,7 +182,7 @@
       "title": "上 family",
       "shortDescription": "Words for going up, showing up, and the first half of the day.",
       "meaningNote": "上 can point upward, toward a place, or toward an activity such as work, school, or class.",
-      "members": ["word-shangban", "word-shangxue", "word-shangke", "word-shangwu", "word-shangmian"],
+      "members": ["word-shangxue", "word-shangke", "word-shangwu", "word-shangmian"],
       "sortOrder": 11,
       "featured": true,
       "sourceIds": ["hsk-1-selected-placeholder"]
@@ -415,8 +419,80 @@
       "title": "公 family",
       "shortDescription": "Public-life words for buses, companies, and everyday quantities.",
       "meaningNote": "公 appears in practical public and shared-life vocabulary, from transport to work and shopping.",
-      "members": ["word-gonggongqiche", "word-gongjin", "word-gongsi"],
+      "members": ["word-gongjin", "word-gongsi"],
       "sortOrder": 32,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 2 family; every member is verified in the HSK 2.0 exclusive Level 2 list.",
+      "sourceIds": ["hsk-2-official-syllabus", "hsk-2-exclusive-mirror"]
+    },
+    {
+      "id": "family-shang-hsk2",
+      "rootCharacterId": "char-shang",
+      "title": "上 family",
+      "shortDescription": "Daily schedule words for work and the morning or evening.",
+      "meaningNote": "上 turns a simple direction into a daily routine: going to work, then talking about when the day begins or ends.",
+      "members": ["word-shangban", "word-zaoshang", "word-wanshang"],
+      "sortOrder": 33,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 2 family; every member is verified in the HSK 2.0 exclusive Level 2 list.",
+      "sourceIds": ["hsk-2-official-syllabus", "hsk-2-exclusive-mirror"]
+    },
+    {
+      "id": "family-ren-hsk2",
+      "rootCharacterId": "char-ren",
+      "title": "人 family",
+      "shortDescription": "Everyday people words for describing who someone is.",
+      "meaningNote": "人 keeps the focus on people while the first character adds a simple social distinction.",
+      "members": ["word-nanren", "word-nvren"],
+      "sortOrder": 34,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 2 family; every member is verified in the HSK 2.0 exclusive Level 2 list.",
+      "sourceIds": ["hsk-2-official-syllabus", "hsk-2-exclusive-mirror"]
+    },
+    {
+      "id": "family-ke-hsk2",
+      "rootCharacterId": "char-ke",
+      "title": "可 family",
+      "shortDescription": "Practical words for possibility, permission, and what someone can do.",
+      "meaningNote": "可 opens a useful question: is something possible, or is someone allowed and able to do it?",
+      "members": ["word-keneng", "word-keyi"],
+      "sortOrder": 35,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 2 family; every member is verified in the HSK 2.0 exclusive Level 2 list.",
+      "sourceIds": ["hsk-2-official-syllabus", "hsk-2-exclusive-mirror"]
+    },
+    {
+      "id": "family-kuai-hsk2",
+      "rootCharacterId": "char-kuai",
+      "title": "快 family",
+      "shortDescription": "Words that move quickly and express a happy feeling.",
+      "meaningNote": "快 starts with speed and becomes a warm everyday expression in 快乐, happy.",
+      "members": ["word-kuai", "word-kuaile"],
+      "sortOrder": 36,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 2 family; every member is verified in the HSK 2.0 exclusive Level 2 list.",
+      "sourceIds": ["hsk-2-official-syllabus", "hsk-2-exclusive-mirror"]
+    },
+    {
+      "id": "family-qi-hsk2",
+      "rootCharacterId": "char-qi",
+      "title": "起 family",
+      "shortDescription": "Useful routine words for getting up and doing things together.",
+      "meaningNote": "起 anchors a small movement from stillness into action, from getting up to joining someone together.",
+      "members": ["word-qichuang", "word-yiqi"],
+      "sortOrder": 37,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 2 family; every member is verified in the HSK 2.0 exclusive Level 2 list.",
+      "sourceIds": ["hsk-2-official-syllabus", "hsk-2-exclusive-mirror"]
+    },
+    {
+      "id": "family-che-hsk2",
+      "rootCharacterId": "char-che",
+      "title": "车 family",
+      "shortDescription": "Transport words for public buses and personal bicycles.",
+      "meaningNote": "车 is a concrete transport anchor, moving from a shared city bus to a bicycle someone owns.",
+      "members": ["word-gonggongqiche", "word-zixingche"],
+      "sortOrder": 38,
       "featured": false,
       "contentNotes": "Dedicated HSK 2 family; every member is verified in the HSK 2.0 exclusive Level 2 list.",
       "sourceIds": ["hsk-2-official-syllabus", "hsk-2-exclusive-mirror"]
@@ -435,8 +511,8 @@
     { "id": "word-dianying", "hanzi": "电影", "pinyin": "diànyǐng", "toneNumbers": [4, 3], "gloss": "movie; film", "hskLevel": "HSK 1", "isExtension": false, "familyId": "family-dian", "rootCharacterIds": ["char-dian"], "audioKey": "word-dianying", "examples": [{ "hanzi": "我们一起看电影。", "pinyin": "Wǒmen yìqǐ kàn diànyǐng.", "gloss": "We watch a movie together." }] },
     { "id": "word-diantij", "hanzi": "电梯", "pinyin": "diàntī", "toneNumbers": [4, 1], "gloss": "elevator", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday extension; verify against the selected HSK source.", "familyId": "family-dian", "rootCharacterIds": ["char-dian"], "audioKey": "word-diantij", "examples": [{ "hanzi": "电梯在那边。", "pinyin": "Diàntī zài nàbiān.", "gloss": "The elevator is over there." }] },
 
-    { "id": "word-nanren", "hanzi": "男人", "pinyin": "nánrén", "toneNumbers": [2, 2], "gloss": "man", "hskLevel": "Related", "isExtension": true, "extensionReason": "Clear beginner word-family extension; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-nanren", "examples": [{ "hanzi": "那个男人是我的老师。", "pinyin": "Nàge nánrén shì wǒ de lǎoshī.", "gloss": "That man is my teacher." }] },
-    { "id": "word-nvren", "hanzi": "女人", "pinyin": "nǚrén", "toneNumbers": [3, 2], "gloss": "woman", "hskLevel": "Related", "isExtension": true, "extensionReason": "Clear beginner word-family extension; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-nvren", "examples": [{ "hanzi": "那个女人是医生。", "pinyin": "Nàge nǚrén shì yīshēng.", "gloss": "That woman is a doctor." }] },
+    { "id": "word-nanren", "hanzi": "男人", "pinyin": "nánrén", "toneNumbers": [2, 2], "gloss": "man", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-ren-hsk2", "rootCharacterIds": ["char-ren"], "audioKey": "word-nanren", "examples": [{ "hanzi": "那个男人是我的老师。", "pinyin": "Nàge nánrén shì wǒ de lǎoshī.", "gloss": "That man is my teacher." }] },
+    { "id": "word-nvren", "hanzi": "女人", "pinyin": "nǚrén", "toneNumbers": [3, 2], "gloss": "woman", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-ren-hsk2", "rootCharacterIds": ["char-ren"], "audioKey": "word-nvren", "examples": [{ "hanzi": "那个女人是医生。", "pinyin": "Nàge nǚrén shì yīshēng.", "gloss": "That woman is a doctor." }] },
     { "id": "word-laoren", "hanzi": "老人", "pinyin": "lǎorén", "toneNumbers": [3, 2], "gloss": "older person", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful descriptive extension; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-laoren", "examples": [{ "hanzi": "那位老人每天散步。", "pinyin": "Nà wèi lǎorén měitiān sànbù.", "gloss": "That older person takes a walk every day." }] },
     { "id": "word-geren", "hanzi": "个人", "pinyin": "gèrén", "toneNumbers": [4, 2], "gloss": "individual; personal", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful extension for the 人 family; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-geren", "examples": [{ "hanzi": "这是我的个人问题。", "pinyin": "Zhè shì wǒ de gèrén wèntí.", "gloss": "This is my personal problem." }] },
     { "id": "word-waiguoren", "hanzi": "外国人", "pinyin": "wàiguórén", "toneNumbers": [4, 2, 2], "gloss": "foreigner", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful phrase-level extension; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-waiguoren", "examples": [{ "hanzi": "她是外国人，现在住在中国。", "pinyin": "Tā shì wàiguórén, xiànzài zhù zài Zhōngguó.", "gloss": "She is a foreigner and now lives in China." }] },
@@ -483,7 +559,7 @@
     { "id": "word-chuqu", "hanzi": "出去", "pinyin": "chūqù", "toneNumbers": [1, 4], "gloss": "go out", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful direction phrase for the 去 family; verify against the selected HSK source.", "familyId": "family-qu", "rootCharacterIds": ["char-qu"], "audioKey": "word-chuqu", "examples": [{ "hanzi": "我们出去走走。", "pinyin": "Wǒmen chūqù zǒuzou.", "gloss": "Let's go out for a walk." }] },
     { "id": "word-huiqu", "hanzi": "回去", "pinyin": "huíqù", "toneNumbers": [2, 4], "gloss": "go back", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful return phrase for the 去 family; verify against the selected HSK source.", "familyId": "family-qu", "rootCharacterIds": ["char-qu"], "audioKey": "word-huiqu", "examples": [{ "hanzi": "我先回去。", "pinyin": "Wǒ xiān huíqù.", "gloss": "I'll go back first." }] },
 
-    { "id": "word-shangban", "hanzi": "上班", "pinyin": "shàngbān", "toneNumbers": [4, 1], "gloss": "go to work; be at work", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful daily-life extension for the 上 family; verify against the selected HSK source.", "familyId": "family-shang", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangban", "examples": [{ "hanzi": "我八点上班。", "pinyin": "Wǒ bā diǎn shàngbān.", "gloss": "I go to work at eight." }] },
+    { "id": "word-shangban", "hanzi": "上班", "pinyin": "shàngbān", "toneNumbers": [4, 1], "gloss": "go to work; be at work", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-shang-hsk2", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangban", "examples": [{ "hanzi": "我八点上班。", "pinyin": "Wǒ bā diǎn shàngbān.", "gloss": "I go to work at eight." }] },
     { "id": "word-shangxue", "hanzi": "上学", "pinyin": "shàngxué", "toneNumbers": [4, 2], "gloss": "go to school; attend school", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful education phrase for the 上 family; verify against the selected HSK source.", "familyId": "family-shang", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangxue", "examples": [{ "hanzi": "孩子们上学了。", "pinyin": "Háizimen shàngxué le.", "gloss": "The children went to school." }] },
     { "id": "word-shangke", "hanzi": "上课", "pinyin": "shàngkè", "toneNumbers": [4, 4], "gloss": "attend class; have class", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful study phrase for the 上 family; verify against the selected HSK source.", "familyId": "family-shang", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangke", "examples": [{ "hanzi": "老师开始上课。", "pinyin": "Lǎoshī kāishǐ shàngkè.", "gloss": "The teacher starts class." }] },
     { "id": "word-shangwu", "hanzi": "上午", "pinyin": "shàngwǔ", "toneNumbers": [4, 3], "gloss": "morning; before noon", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful time expression for the 上 family; verify against the selected HSK source.", "familyId": "family-shang", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangwu", "examples": [{ "hanzi": "我上午有课。", "pinyin": "Wǒ shàngwǔ yǒu kè.", "gloss": "I have class in the morning." }] },
@@ -586,7 +662,16 @@
     { "id": "word-wenti", "hanzi": "问题", "pinyin": "wèntí", "toneNumbers": [4, 2], "gloss": "question; problem", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-wen-hsk2", "rootCharacterIds": ["char-wen"], "audioKey": "word-wenti", "examples": [{ "hanzi": "这个问题不难。", "pinyin": "Zhège wèntí bù nán.", "gloss": "This question is not difficult." }] },
     { "id": "word-lvyou", "hanzi": "旅游", "pinyin": "lǚyóu", "toneNumbers": [3, 2], "gloss": "travel; tour", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-you-hsk2", "rootCharacterIds": ["char-you-travel"], "audioKey": "word-lvyou", "examples": [{ "hanzi": "我们周末去旅游。", "pinyin": "Wǒmen zhōumò qù lǚyóu.", "gloss": "We travel on weekends." }] },
     { "id": "word-youyong", "hanzi": "游泳", "pinyin": "yóuyǒng", "toneNumbers": [2, 3], "gloss": "swim; swimming", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-you-hsk2", "rootCharacterIds": ["char-you-travel"], "audioKey": "word-youyong", "examples": [{ "hanzi": "夏天我喜欢游泳。", "pinyin": "Xiàtiān wǒ xǐhuān yóuyǒng.", "gloss": "I like swimming in summer." }] },
-    { "id": "word-gonggongqiche", "hanzi": "公共汽车", "pinyin": "gōnggòng qìchē", "toneNumbers": [1, 4, 4, 1], "gloss": "bus; public bus", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-gong-hsk2", "rootCharacterIds": ["char-gong"], "audioKey": "word-gonggongqiche", "examples": [{ "hanzi": "我每天坐公共汽车上班。", "pinyin": "Wǒ měitiān zuò gōnggòng qìchē shàngbān.", "gloss": "I take the bus to work every day." }] },
+    { "id": "word-gonggongqiche", "hanzi": "公共汽车", "pinyin": "gōnggòng qìchē", "toneNumbers": [1, 4, 4, 1], "gloss": "bus; public bus", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-che-hsk2", "rootCharacterIds": ["char-che"], "audioKey": "word-gonggongqiche", "examples": [{ "hanzi": "我每天坐公共汽车上班。", "pinyin": "Wǒ měitiān zuò gōnggòng qìchē shàngbān.", "gloss": "I take the bus to work every day." }] },
+    { "id": "word-zaoshang", "hanzi": "早上", "pinyin": "zǎoshang", "toneNumbers": [3, 5], "gloss": "morning; in the morning", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-shang-hsk2", "rootCharacterIds": ["char-shang"], "audioKey": "word-zaoshang", "examples": [{ "hanzi": "我早上七点起床。", "pinyin": "Wǒ zǎoshang qī diǎn qǐchuáng.", "gloss": "I get up at seven in the morning." }] },
+    { "id": "word-wanshang", "hanzi": "晚上", "pinyin": "wǎnshang", "toneNumbers": [3, 5], "gloss": "evening; at night", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-shang-hsk2", "rootCharacterIds": ["char-shang"], "audioKey": "word-wanshang", "examples": [{ "hanzi": "晚上我们一起吃饭。", "pinyin": "Wǎnshang wǒmen yìqǐ chīfàn.", "gloss": "We eat together in the evening." }] },
+    { "id": "word-keneng", "hanzi": "可能", "pinyin": "kěnéng", "toneNumbers": [3, 2], "gloss": "possible; maybe", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-ke-hsk2", "rootCharacterIds": ["char-ke"], "audioKey": "word-keneng", "examples": [{ "hanzi": "这件事可能很难。", "pinyin": "Zhè jiàn shì kěnéng hěn nán.", "gloss": "This may be difficult." }] },
+    { "id": "word-keyi", "hanzi": "可以", "pinyin": "kěyǐ", "toneNumbers": [3, 3], "gloss": "can; may; be possible", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-ke-hsk2", "rootCharacterIds": ["char-ke"], "audioKey": "word-keyi", "examples": [{ "hanzi": "你可以坐这里。", "pinyin": "Nǐ kěyǐ zuò zhèlǐ.", "gloss": "You can sit here." }] },
+    { "id": "word-kuai", "hanzi": "快", "pinyin": "kuài", "toneNumbers": [4], "gloss": "fast; soon", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-kuai-hsk2", "rootCharacterIds": ["char-kuai"], "audioKey": "word-kuai", "examples": [{ "hanzi": "这辆车很快。", "pinyin": "Zhè liàng chē hěn kuài.", "gloss": "This car is fast." }] },
+    { "id": "word-kuaile", "hanzi": "快乐", "pinyin": "kuàilè", "toneNumbers": [4, 4], "gloss": "happy; happiness", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-kuai-hsk2", "rootCharacterIds": ["char-kuai"], "audioKey": "word-kuaile", "examples": [{ "hanzi": "祝你生日快乐。", "pinyin": "Zhù nǐ shēngrì kuàilè.", "gloss": "Happy birthday." }] },
+    { "id": "word-qichuang", "hanzi": "起床", "pinyin": "qǐchuáng", "toneNumbers": [3, 2], "gloss": "get up; get out of bed", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-qi-hsk2", "rootCharacterIds": ["char-qi"], "audioKey": "word-qichuang", "examples": [{ "hanzi": "我每天六点起床。", "pinyin": "Wǒ měitiān liù diǎn qǐchuáng.", "gloss": "I get up at six every day." }] },
+    { "id": "word-yiqi", "hanzi": "一起", "pinyin": "yìqǐ", "toneNumbers": [4, 3], "gloss": "together", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-qi-hsk2", "rootCharacterIds": ["char-qi"], "audioKey": "word-yiqi", "examples": [{ "hanzi": "我们一起学习吧。", "pinyin": "Wǒmen yìqǐ xuéxí ba.", "gloss": "Let us study together." }] },
+    { "id": "word-zixingche", "hanzi": "自行车", "pinyin": "zìxíngchē", "toneNumbers": [4, 2, 1], "gloss": "bicycle", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-che-hsk2", "rootCharacterIds": ["char-che"], "audioKey": "word-zixingche", "examples": [{ "hanzi": "我有一辆自行车。", "pinyin": "Wǒ yǒu yí liàng zìxíngchē.", "gloss": "I have a bicycle." }] },
     { "id": "word-gongjin", "hanzi": "公斤", "pinyin": "gōngjīn", "toneNumbers": [1, 1], "gloss": "kilogram", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-gong-hsk2", "rootCharacterIds": ["char-gong"], "audioKey": "word-gongjin", "examples": [{ "hanzi": "这个苹果有两公斤。", "pinyin": "Zhège píngguǒ yǒu liǎng gōngjīn.", "gloss": "These apples weigh two kilograms." }] },
     { "id": "word-gongsi", "hanzi": "公司", "pinyin": "gōngsī", "toneNumbers": [1, 1], "gloss": "company", "hskLevel": "HSK 2", "isExtension": false, "familyId": "family-gong-hsk2", "rootCharacterIds": ["char-gong"], "audioKey": "word-gongsi", "examples": [{ "hanzi": "我哥哥在公司工作。", "pinyin": "Wǒ gēge zài gōngsī gōngzuò.", "gloss": "My older brother works at a company." }] }
   ]
