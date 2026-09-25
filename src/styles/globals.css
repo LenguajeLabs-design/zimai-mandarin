@@ -63,14 +63,14 @@ button:focus-visible, input:focus-visible { outline: 3px solid rgba(83, 111, 232
 .family-map__root { align-items: center; display: flex; flex-direction: column; justify-content: center; position: relative; text-align: center; }
 .family-map__root::after { background: var(--line-strong); content: ''; height: 1px; position: absolute; right: -24px; top: 50%; width: 24px; }
 .family-map__eyebrow { color: var(--text-tertiary); font-size: 0.57rem; font-weight: 700; letter-spacing: 0.12em; margin-bottom: 8px; text-transform: uppercase; }
-.family-map__character { color: var(--accent); font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif; font-size: 4.3rem; font-weight: 500; line-height: 0.95; }
+.family-map__character { background: transparent; border: 0; color: var(--accent); cursor: pointer; font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif; font-size: 4.3rem; font-weight: 500; line-height: 0.95; padding: 0; transition: color 160ms ease, transform 160ms ease; }
+.family-map__character:hover { color: var(--accent-deep); transform: scale(1.03); }
+.family-map__character:focus-visible { border-radius: 8px; outline: 3px solid var(--accent-soft); outline-offset: 5px; }
 .family-map__pinyin { color: var(--text-secondary); font-size: 0.79rem; margin-top: 8px; }
 .family-map__gloss { color: var(--text-tertiary); font-size: 0.69rem; line-height: 1.3; margin-top: 3px; max-width: 88px; }
 .family-map__root .audio-button { margin-top: 9px; }
 .family-map__branches { display: grid; gap: 9px; }
-.family-map__branch { align-items: center; display: grid; grid-template-columns: 23px minmax(0, 1fr); min-width: 0; }
-.branch-line { border-top: 1px solid var(--line-strong); display: block; position: relative; }
-.branch-line::before { background: var(--line-strong); border-radius: 50%; content: ''; height: 5px; left: 0; position: absolute; top: -3px; width: 5px; }
+.family-map__branch { min-width: 0; }
 .word-node { align-items: center; border: 1px solid transparent; border-radius: 11px; display: flex; gap: 8px; justify-content: space-between; min-width: 0; padding: 6px 6px 6px 9px; transition: background 160ms ease, border-color 160ms ease; }
 .word-node:hover { background: var(--bg); border-color: var(--line); }
 .word-node__main { align-items: center; background: transparent; border: 0; display: flex; flex: 1 1 auto; gap: 10px; min-width: 0; overflow: hidden; padding: 2px 0; text-align: left; }
@@ -188,6 +188,20 @@ button:focus-visible, input:focus-visible { outline: 3px solid rgba(83, 111, 232
 .quick-view__status { align-items: start; border-bottom: 1px solid var(--line); display: flex; gap: 12px; margin: 24px 0 20px; padding-bottom: 20px; }
 .quick-view__status p { color: var(--text-secondary); font-size: 0.74rem; line-height: 1.45; margin: -2px 0 0; }
 .quick-view__actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.stroke-order-layer { align-items: center; background: rgba(22, 34, 48, 0.32); display: flex; inset: 0; justify-content: center; padding: 20px; position: fixed; z-index: 11; }
+.stroke-order-sheet { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); max-width: 440px; padding: 24px; width: 100%; }
+.stroke-order-sheet__topline { align-items: center; display: flex; justify-content: space-between; }
+.stroke-order-sheet__heading { align-items: center; display: flex; gap: 16px; margin-top: 22px; }
+.stroke-order-sheet__heading h2 { font-family: Georgia, serif; font-size: 2rem; font-weight: 400; margin: 0; }
+.stroke-order-sheet__heading p { color: var(--text-secondary); font-size: 0.8rem; margin: 6px 0 0; }
+.stroke-order-sheet__character { color: var(--accent); font-family: "Noto Sans SC", "PingFang SC", sans-serif; font-size: 3rem; line-height: 1; }
+.stroke-order-stage { align-items: center; background: var(--surface-muted); border-radius: var(--radius-md); display: flex; justify-content: center; margin-top: 22px; min-height: 250px; position: relative; }
+.stroke-order-canvas { height: 230px; width: 230px; }
+.stroke-order-canvas svg { display: block; height: 100%; width: 100%; }
+.stroke-order-stage__message { color: var(--text-secondary); font-size: 0.76rem; line-height: 1.45; max-width: 190px; position: absolute; text-align: center; }
+.stroke-order-sheet__instruction { color: var(--text-secondary); font-size: 0.8rem; line-height: 1.45; margin: 16px 0 14px; text-align: center; }
+.stroke-order-sheet__actions { display: flex; gap: 10px; }
+.stroke-order-sheet__actions .button { flex: 1; }
 .family-link { align-items: center; background: var(--surface-muted); border: 0; border-radius: var(--radius-md); display: flex; gap: 12px; margin-top: 28px; padding: 13px; text-align: left; width: 100%; }
 .family-link:hover { background: var(--accent-soft); }
 .family-link__character { color: var(--accent); font-family: "Noto Sans SC", sans-serif; font-size: 1.8rem; }

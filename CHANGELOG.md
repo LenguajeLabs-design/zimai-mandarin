@@ -16,6 +16,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added example-sentence metadata and audio asset slots to the content model.
 - Added example sentences for the current HSK 1 core words.
 - Added a reviewed-recording workflow in `public/audio/README.md`.
+- Added animated stroke-order sheets and optional tracing practice for every family root character.
 
 ### Changed
 
@@ -25,6 +26,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Replaced ambiguous audio half-circle marks with clear circular play and stop icons.
 - Wired audio playback to prefer `audio.natural` recordings and gracefully fall back to Mandarin speech synthesis.
 - Replaced the speech-synthesis fallback with recording-only playback; missing native assets now show a clear pending state.
+- Removed the branch connector line from family rows; it was visually noisy and read like an error at mobile widths.
 - Updated the README to describe the current twenty-five-family build and backup workflow.
 - Added an “In context” sentence layer to the word quick view.
 

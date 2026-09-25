@@ -4,6 +4,8 @@ Zìmài is an iPad-first visual browser for Mandarin word families. The current 
 
 The product direction is to grow from a calm HSK 1 foundation toward HSK 6 through connected word families, natural audio, example sentences, and spaced review. New vocabulary remains explicitly marked as `Related` until its source and HSK level are verified.
 
+Tap any root character to open animated stroke order and an optional tracing practice mode. Stroke data is supplied by the MIT-licensed Hanzi Writer package and its permissively licensed character dataset.
+
 ## Run it
 
 ```bash
