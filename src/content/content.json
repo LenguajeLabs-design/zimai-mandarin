@@ -1,0 +1,161 @@
+{
+  "sources": [
+    {
+      "id": "hsk-1-selected-placeholder",
+      "name": "Selected HSK 1 vocabulary source",
+      "version": "placeholder-2026",
+      "level": "HSK 1",
+      "license": "REPLACE_WITH_VERIFIED_LICENSE",
+      "notes": "Prototype content only. Reconcile every label against a licensed source before release."
+    }
+  ],
+  "characters": [
+    { "id": "char-xue", "hanzi": "学", "pinyin": "xué", "toneNumber": 2, "toneMark": "xué", "gloss": "study; learn", "audioKey": "root-xue" },
+    { "id": "char-dian", "hanzi": "电", "pinyin": "diàn", "toneNumber": 4, "toneMark": "diàn", "gloss": "electricity; electric", "audioKey": "root-dian" },
+    { "id": "char-ren", "hanzi": "人", "pinyin": "rén", "toneNumber": 2, "toneMark": "rén", "gloss": "person; people", "audioKey": "root-ren" },
+    { "id": "char-kan", "hanzi": "看", "pinyin": "kàn", "toneNumber": 4, "toneMark": "kàn", "gloss": "look; watch; see", "audioKey": "root-kan" },
+    { "id": "char-hao", "hanzi": "好", "pinyin": "hǎo", "toneNumber": 3, "toneMark": "hǎo", "gloss": "good; well", "audioKey": "root-hao" },
+    { "id": "char-jia", "hanzi": "家", "pinyin": "jiā", "toneNumber": 1, "toneMark": "jiā", "gloss": "home; family", "audioKey": "root-jia" },
+    { "id": "char-xiao", "hanzi": "小", "pinyin": "xiǎo", "toneNumber": 3, "toneMark": "xiǎo", "gloss": "small; little", "audioKey": "root-xiao" },
+    { "id": "char-shui", "hanzi": "水", "pinyin": "shuǐ", "toneNumber": 3, "toneMark": "shuǐ", "gloss": "water", "audioKey": "root-shui" }
+  ],
+  "families": [
+    {
+      "id": "family-xue",
+      "rootCharacterId": "char-xue",
+      "title": "学 family",
+      "shortDescription": "Words connected to studying and learning.",
+      "meaningNote": "学 often points toward learning, study, or a place connected with education.",
+      "members": ["word-xuesheng", "word-xuexiao", "word-xuexi", "word-daxue", "word-shuxue"],
+      "sortOrder": 1,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-dian",
+      "rootCharacterId": "char-dian",
+      "title": "电 family",
+      "shortDescription": "Everyday words related to electricity and modern life.",
+      "meaningNote": "电 is a useful visual anchor for familiar words about powered devices and communication.",
+      "members": ["word-dianhua", "word-diannao", "word-dianshi", "word-dianying", "word-diantij"],
+      "sortOrder": 2,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-ren",
+      "rootCharacterId": "char-ren",
+      "title": "人 family",
+      "shortDescription": "People words that make everyday descriptions more specific.",
+      "meaningNote": "人 names a person or people, and the character becomes a clear anchor in many descriptions of people.",
+      "members": ["word-nanren", "word-nvren", "word-laoren", "word-geren", "word-waiguoren"],
+      "sortOrder": 3,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-kan",
+      "rootCharacterId": "char-kan",
+      "title": "看 family",
+      "shortDescription": "A verb family for looking, watching, and seeing.",
+      "meaningNote": "看 starts with the act of looking; the surrounding character changes what kind of looking is meant.",
+      "members": ["word-kanshu", "word-kanjian", "word-kanbing", "word-kanfa", "word-haokan"],
+      "sortOrder": 4,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-hao",
+      "rootCharacterId": "char-hao",
+      "title": "好 family",
+      "shortDescription": "Words that grow from goodness, ease, and a warm welcome.",
+      "meaningNote": "好 carries the feeling of good or well, then shifts naturally into greetings, taste, appearance, and ability.",
+      "members": ["word-haoren", "word-haochi", "word-haoxue", "word-nihao", "word-haojiu"],
+      "sortOrder": 5,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-jia",
+      "rootCharacterId": "char-jia",
+      "title": "家 family",
+      "shortDescription": "Everyday words for home, family, and belonging.",
+      "meaningNote": "家 starts with a home, then opens into the people, places, and ideas connected to it.",
+      "members": ["word-jiaren", "word-jiating", "word-huijia", "word-jiali", "word-guojia"],
+      "sortOrder": 6,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-xiao",
+      "rootCharacterId": "char-xiao",
+      "title": "小 family",
+      "shortDescription": "Small words for children, care, and everyday details.",
+      "meaningNote": "小 means small or little, and often makes a familiar thing feel more specific or personal.",
+      "members": ["word-xiaohai", "word-xiaoxue", "word-xiaojie", "word-xiaoxin", "word-xiaoniao"],
+      "sortOrder": 7,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-shui",
+      "rootCharacterId": "char-shui",
+      "title": "水 family",
+      "shortDescription": "Useful words that flow from water into daily life.",
+      "meaningNote": "水 is a concrete anchor: it appears in food, objects, levels, and the small routines around drinking.",
+      "members": ["word-shuiguo", "word-shuibei", "word-shuiping", "word-shuipingzi", "word-kaishui"],
+      "sortOrder": 8,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    }
+  ],
+  "words": [
+    { "id": "word-xuesheng", "hanzi": "学生", "pinyin": "xuéshēng", "toneNumbers": [2, 1], "gloss": "student", "hskLevel": "HSK 1", "isExtension": false, "familyId": "family-xue", "rootCharacterIds": ["char-xue"], "audioKey": "word-xuesheng" },
+    { "id": "word-xuexiao", "hanzi": "学校", "pinyin": "xuéxiào", "toneNumbers": [2, 4], "gloss": "school", "hskLevel": "HSK 1", "isExtension": false, "familyId": "family-xue", "rootCharacterIds": ["char-xue"], "audioKey": "word-xuexiao" },
+    { "id": "word-xuexi", "hanzi": "学习", "pinyin": "xuéxí", "toneNumbers": [2, 2], "gloss": "to study; learn", "hskLevel": "HSK 1", "isExtension": false, "familyId": "family-xue", "rootCharacterIds": ["char-xue"], "audioKey": "word-xuexi" },
+    { "id": "word-daxue", "hanzi": "大学", "pinyin": "dàxué", "toneNumbers": [4, 2], "gloss": "university", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful extension for the 学 family; verify against the selected HSK source.", "familyId": "family-xue", "rootCharacterIds": ["char-xue"], "audioKey": "word-daxue" },
+    { "id": "word-shuxue", "hanzi": "数学", "pinyin": "shùxué", "toneNumbers": [4, 2], "gloss": "mathematics", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful extension for the 学 family; verify against the selected HSK source.", "familyId": "family-xue", "rootCharacterIds": ["char-xue"], "audioKey": "word-shuxue" },
+
+    { "id": "word-dianhua", "hanzi": "电话", "pinyin": "diànhuà", "toneNumbers": [4, 4], "gloss": "telephone; phone", "hskLevel": "HSK 1", "isExtension": false, "familyId": "family-dian", "rootCharacterIds": ["char-dian"], "audioKey": "word-dianhua" },
+    { "id": "word-diannao", "hanzi": "电脑", "pinyin": "diànnǎo", "toneNumbers": [4, 3], "gloss": "computer", "hskLevel": "Related", "isExtension": true, "extensionReason": "Common modern-life extension; verify against the selected HSK source.", "familyId": "family-dian", "rootCharacterIds": ["char-dian"], "audioKey": "word-diannao" },
+    { "id": "word-dianshi", "hanzi": "电视", "pinyin": "diànshì", "toneNumbers": [4, 4], "gloss": "television", "hskLevel": "HSK 1", "isExtension": false, "familyId": "family-dian", "rootCharacterIds": ["char-dian"], "audioKey": "word-dianshi" },
+    { "id": "word-dianying", "hanzi": "电影", "pinyin": "diànyǐng", "toneNumbers": [4, 3], "gloss": "movie; film", "hskLevel": "HSK 1", "isExtension": false, "familyId": "family-dian", "rootCharacterIds": ["char-dian"], "audioKey": "word-dianying" },
+    { "id": "word-diantij", "hanzi": "电梯", "pinyin": "diàntī", "toneNumbers": [4, 1], "gloss": "elevator", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday extension; verify against the selected HSK source.", "familyId": "family-dian", "rootCharacterIds": ["char-dian"], "audioKey": "word-diantij" },
+
+    { "id": "word-nanren", "hanzi": "男人", "pinyin": "nánrén", "toneNumbers": [2, 2], "gloss": "man", "hskLevel": "Related", "isExtension": true, "extensionReason": "Clear beginner word-family extension; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-nanren" },
+    { "id": "word-nvren", "hanzi": "女人", "pinyin": "nǚrén", "toneNumbers": [3, 2], "gloss": "woman", "hskLevel": "Related", "isExtension": true, "extensionReason": "Clear beginner word-family extension; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-nvren" },
+    { "id": "word-laoren", "hanzi": "老人", "pinyin": "lǎorén", "toneNumbers": [3, 2], "gloss": "older person", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful descriptive extension; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-laoren" },
+    { "id": "word-geren", "hanzi": "个人", "pinyin": "gèrén", "toneNumbers": [4, 2], "gloss": "individual; personal", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful extension for the 人 family; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-geren" },
+    { "id": "word-waiguoren", "hanzi": "外国人", "pinyin": "wàiguórén", "toneNumbers": [4, 2, 2], "gloss": "foreigner", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful phrase-level extension; verify against the selected HSK source.", "familyId": "family-ren", "rootCharacterIds": ["char-ren"], "audioKey": "word-waiguoren" },
+
+    { "id": "word-kanshu", "hanzi": "看书", "pinyin": "kànshū", "toneNumbers": [4, 1], "gloss": "to read; read a book", "hskLevel": "HSK 1", "isExtension": false, "familyId": "family-kan", "rootCharacterIds": ["char-kan"], "audioKey": "word-kanshu" },
+    { "id": "word-kanjian", "hanzi": "看见", "pinyin": "kànjiàn", "toneNumbers": [4, 4], "gloss": "to see", "hskLevel": "HSK 1", "isExtension": false, "familyId": "family-kan", "rootCharacterIds": ["char-kan"], "audioKey": "word-kanjian" },
+    { "id": "word-kanbing", "hanzi": "看病", "pinyin": "kànbìng", "toneNumbers": [4, 4], "gloss": "to see a doctor", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday extension; verify against the selected HSK source.", "familyId": "family-kan", "rootCharacterIds": ["char-kan"], "audioKey": "word-kanbing" },
+    { "id": "word-kanfa", "hanzi": "看法", "pinyin": "kànfǎ", "toneNumbers": [4, 3], "gloss": "opinion; view", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful meaning extension; verify against the selected HSK source.", "familyId": "family-kan", "rootCharacterIds": ["char-kan"], "audioKey": "word-kanfa" },
+    { "id": "word-haokan", "hanzi": "好看", "pinyin": "hǎokàn", "toneNumbers": [3, 4], "gloss": "good-looking; nice to watch", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful beginner extension; verify against the selected HSK source.", "familyId": "family-kan", "rootCharacterIds": ["char-kan"], "audioKey": "word-haokan" },
+
+    { "id": "word-haoren", "hanzi": "好人", "pinyin": "hǎorén", "toneNumbers": [3, 2], "gloss": "good person", "hskLevel": "Related", "isExtension": true, "extensionReason": "Clear beginner extension for the 好 family; verify against the selected HSK source.", "familyId": "family-hao", "rootCharacterIds": ["char-hao"], "audioKey": "word-haoren" },
+    { "id": "word-haochi", "hanzi": "好吃", "pinyin": "hǎochī", "toneNumbers": [3, 1], "gloss": "tasty; delicious", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday extension for the 好 family; verify against the selected HSK source.", "familyId": "family-hao", "rootCharacterIds": ["char-hao"], "audioKey": "word-haochi" },
+    { "id": "word-haoxue", "hanzi": "好学", "pinyin": "hàoxué", "toneNumbers": [4, 2], "gloss": "studious; eager to learn", "hskLevel": "Related", "isExtension": true, "extensionReason": "Meaning extension for the 好 family; verify against the selected HSK source.", "familyId": "family-hao", "rootCharacterIds": ["char-hao"], "audioKey": "word-haoxue" },
+    { "id": "word-nihao", "hanzi": "你好", "pinyin": "nǐhǎo", "toneNumbers": [3, 3], "gloss": "hello", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core greeting included as a family example; verify against the selected HSK source.", "familyId": "family-hao", "rootCharacterIds": ["char-hao"], "audioKey": "word-nihao" },
+    { "id": "word-haojiu", "hanzi": "好久", "pinyin": "hǎojiǔ", "toneNumbers": [3, 3], "gloss": "for a long time", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful time-expression extension for the 好 family; verify against the selected HSK source.", "familyId": "family-hao", "rootCharacterIds": ["char-hao"], "audioKey": "word-haojiu" },
+
+    { "id": "word-jiaren", "hanzi": "家人", "pinyin": "jiārén", "toneNumbers": [1, 2], "gloss": "family member", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday extension for the 家 family; verify against the selected HSK source.", "familyId": "family-jia", "rootCharacterIds": ["char-jia"], "audioKey": "word-jiaren" },
+    { "id": "word-jiating", "hanzi": "家庭", "pinyin": "jiātíng", "toneNumbers": [1, 2], "gloss": "family; household", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday extension for the 家 family; verify against the selected HSK source.", "familyId": "family-jia", "rootCharacterIds": ["char-jia"], "audioKey": "word-jiating" },
+    { "id": "word-huijia", "hanzi": "回家", "pinyin": "huíjiā", "toneNumbers": [2, 1], "gloss": "go home; return home", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful action phrase for the 家 family; verify against the selected HSK source.", "familyId": "family-jia", "rootCharacterIds": ["char-jia"], "audioKey": "word-huijia" },
+    { "id": "word-jiali", "hanzi": "家里", "pinyin": "jiālǐ", "toneNumbers": [1, 3], "gloss": "at home; in the home", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful location phrase for the 家 family; verify against the selected HSK source.", "familyId": "family-jia", "rootCharacterIds": ["char-jia"], "audioKey": "word-jiali" },
+    { "id": "word-guojia", "hanzi": "国家", "pinyin": "guójiā", "toneNumbers": [2, 1], "gloss": "country; nation", "hskLevel": "Related", "isExtension": true, "extensionReason": "Meaning extension from home to nation; verify against the selected HSK source.", "familyId": "family-jia", "rootCharacterIds": ["char-jia"], "audioKey": "word-guojia" },
+
+    { "id": "word-xiaohai", "hanzi": "小孩", "pinyin": "xiǎohái", "toneNumbers": [3, 2], "gloss": "child", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday extension for the 小 family; verify against the selected HSK source.", "familyId": "family-xiao", "rootCharacterIds": ["char-xiao"], "audioKey": "word-xiaohai" },
+    { "id": "word-xiaoxue", "hanzi": "小学", "pinyin": "xiǎoxué", "toneNumbers": [3, 2], "gloss": "primary school", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful education extension for the 小 family; verify against the selected HSK source.", "familyId": "family-xiao", "rootCharacterIds": ["char-xiao"], "audioKey": "word-xiaoxue" },
+    { "id": "word-xiaojie", "hanzi": "小姐", "pinyin": "xiǎojiě", "toneNumbers": [3, 3], "gloss": "Miss; young lady", "hskLevel": "Related", "isExtension": true, "extensionReason": "Common address extension for the 小 family; verify against the selected HSK source.", "familyId": "family-xiao", "rootCharacterIds": ["char-xiao"], "audioKey": "word-xiaojie" },
+    { "id": "word-xiaoxin", "hanzi": "小心", "pinyin": "xiǎoxīn", "toneNumbers": [3, 1], "gloss": "be careful; careful", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday expression for the 小 family; verify against the selected HSK source.", "familyId": "family-xiao", "rootCharacterIds": ["char-xiao"], "audioKey": "word-xiaoxin" },
+    { "id": "word-xiaoniao", "hanzi": "小鸟", "pinyin": "xiǎoniǎo", "toneNumbers": [3, 3], "gloss": "little bird", "hskLevel": "Related", "isExtension": true, "extensionReason": "Concrete beginner extension for the 小 family; verify against the selected HSK source.", "familyId": "family-xiao", "rootCharacterIds": ["char-xiao"], "audioKey": "word-xiaoniao" },
+
+    { "id": "word-shuiguo", "hanzi": "水果", "pinyin": "shuǐguǒ", "toneNumbers": [3, 3], "gloss": "fruit", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-shuiguo" },
+    { "id": "word-shuibei", "hanzi": "水杯", "pinyin": "shuǐbēi", "toneNumbers": [3, 1], "gloss": "water cup; glass", "hskLevel": "Related", "isExtension": true, "extensionReason": "Concrete everyday extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-shuibei" },
+    { "id": "word-shuiping", "hanzi": "水平", "pinyin": "shuǐpíng", "toneNumbers": [3, 2], "gloss": "level; standard", "hskLevel": "Related", "isExtension": true, "extensionReason": "Meaning extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-shuiping" },
+    { "id": "word-shuipingzi", "hanzi": "水瓶", "pinyin": "shuǐpíng", "toneNumbers": [3, 2], "gloss": "water bottle", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful object extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-shuipingzi" },
+    { "id": "word-kaishui", "hanzi": "开水", "pinyin": "kāishuǐ", "toneNumbers": [1, 3], "gloss": "boiled water; hot water", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful daily-life extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-kaishui" }
+  ]
+}
