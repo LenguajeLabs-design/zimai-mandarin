@@ -24,12 +24,13 @@ interface FamilyDetailPageProps {
 export function FamilyDetailPage({ family, root, words, saved, learnedWords, onBack, onToggleSaved, onToggleLearned, onOpenWord, onPrevious, onNext, audio, onViewed }: FamilyDetailPageProps) {
   useEffect(() => onViewed(), [family.id])
   const learnedCount = words.filter((word) => learnedWords.includes(word.id)).length
+  const familyLevel = words.find((word) => word.hskLevel !== 'Related')?.hskLevel ?? 'Curated'
   return (
     <div className="page page--detail">
       <button className="back-button" type="button" onClick={onBack}><span aria-hidden="true">←</span> All families</button>
       <header className="detail-header">
         <div>
-          <p className="eyebrow">Word map {String(family.sortOrder).padStart(2, '0')} · {family.sourceIds[0] === 'hsk-1-selected-placeholder' ? 'source pinned for review' : 'HSK 1'}</p>
+          <p className="eyebrow">Word map {String(family.sortOrder).padStart(2, '0')} · {familyLevel}</p>
           <h1>{family.title}</h1>
           <p className="detail-header__description">{family.shortDescription}</p>
         </div>

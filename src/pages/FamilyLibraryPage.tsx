@@ -7,8 +7,8 @@ interface FamilyLibraryPageProps {
   getRoot: (family: Family) => Character
   getWords: (family: Family) => Word[]
   savedFamilies: string[]
-  filter: 'all' | 'hsk' | 'saved' | 'recent'
-  onFilter: (filter: 'all' | 'hsk' | 'saved' | 'recent') => void
+  filter: 'all' | 'hsk' | 'hsk2' | 'saved' | 'recent'
+  onFilter: (filter: 'all' | 'hsk' | 'hsk2' | 'saved' | 'recent') => void
   recentFamilies: string[]
   onOpenFamily: (id: string) => void
   onToggleSaved: (id: string) => void
@@ -19,6 +19,7 @@ interface FamilyLibraryPageProps {
 const filters: Array<{ id: FamilyLibraryPageProps['filter']; label: string }> = [
   { id: 'all', label: 'All families' },
   { id: 'hsk', label: 'HSK 1 core' },
+  { id: 'hsk2', label: 'HSK 2 verified' },
   { id: 'saved', label: 'Saved' },
   { id: 'recent', label: 'Recently viewed' },
 ]
@@ -28,6 +29,7 @@ export function FamilyLibraryPage({ families, getRoot, getWords, savedFamilies, 
     if (filter === 'saved') return savedFamilies.includes(family.id)
     if (filter === 'recent') return recentFamilies.includes(family.id)
     if (filter === 'hsk') return getWords(family).some((word) => word.hskLevel === 'HSK 1')
+    if (filter === 'hsk2') return getWords(family).some((word) => word.hskLevel === 'HSK 2')
     return true
   }).sort((a, b) => filter === 'recent' ? recentFamilies.indexOf(a.id) - recentFamilies.indexOf(b.id) : a.sortOrder - b.sortOrder)
 

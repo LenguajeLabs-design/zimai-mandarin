@@ -54,6 +54,14 @@ describe('content utilities', () => {
     expect(data.words.every((word) => word.examples.length > 0)).toBe(true)
   })
 
+  it('keeps dedicated HSK 2 families source-backed', () => {
+    const hsk2Families = data.families.filter((family) => family.sourceIds.includes('hsk-2-official-syllabus'))
+    const hsk2Words = hsk2Families.flatMap((family) => familyWords(family, data.words))
+    expect(hsk2Families).toHaveLength(7)
+    expect(hsk2Words).toHaveLength(16)
+    expect(hsk2Words.every((word) => word.hskLevel === 'HSK 2' && !word.isExtension)).toBe(true)
+  })
+
   it('keeps the first HSK 2–3 practice lesson internally coherent', () => {
     expect(practice.builder.tokens.join('')).toBe('我现在在家学习')
     expect(practice.recall.choices.filter((choice) => choice.isCorrect)).toHaveLength(1)

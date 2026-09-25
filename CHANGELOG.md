@@ -19,6 +19,8 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added animated stroke-order sheets and optional tracing practice for every family root character.
 - Added the first HSK 2–3 Practice lesson with a daily-life conversation, listening-recall choices, sentence building, and a basic 在 grammar note.
 - Added context sentences to the remaining thirty-two extension words so all 125 vocabulary entries now open with an example.
+- Added the first verified HSK 2 content slice: seven dedicated families (边, 时, 生, 手, 问, 游, 公) with sixteen HSK 2 words and context sentences.
+- Added HSK 2 source metadata and a reproducible source-mirror note so HSK 2 labels are distinguishable from Related extensions.
 
 ### Changed
 
@@ -32,6 +34,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added a dedicated Practice destination so the next learning phase has one clear home instead of crowding the family map.
 - Updated the README to describe the current twenty-five-family build and backup workflow.
 - Added an “In context” sentence layer to the word quick view.
+- Added an HSK 2 verified library filter and dynamic HSK level labels on family detail pages.
 
 ### Verification
 
@@ -41,6 +44,6 @@ This file records meaningful product and implementation changes to Zìmài. Date
 
 ### Content note
 
-The new family vocabulary is intentionally marked `Related` until the source list and HSK mappings are formally verified. The current source metadata remains a prototype placeholder.
+The new HSK 2 slice is intentionally narrow: labels were added only to the sixteen words in seven dedicated families after checking their membership in the HSK 2.0 exclusive list. The larger existing collection remains a prototype HSK 1/Related set and is not automatically promoted.
 
 All vocabulary entries now require at least one complete example sentence during content validation. The new words remain intentionally marked `Related` until the source list and HSK mappings are formally verified. Native recordings are not bundled yet; the recording-only pipeline is ready to use them as soon as reviewed assets are supplied.
