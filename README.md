@@ -1,6 +1,6 @@
 # 字脉 / Zìmài
 
-Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with eight curated prototype maps: 学, 电, 人, 看, 好, 家, 小, and 水.
+Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with sixteen curated prototype maps: 学, 电, 人, 看, 好, 家, 小, 水, 吃, 去, 上, 下, 开, 来, 说, and 见.
 
 The product direction is to grow from a calm HSK 1 foundation toward HSK 6 through connected word families, natural audio, example sentences, and spaced review. New vocabulary remains explicitly marked as `Related` until its source and HSK level are verified.
 
@@ -31,7 +31,7 @@ In the repository settings, set `Pages -> Build and deployment -> Source` to `Gi
 
 Content lives in [`src/content/content.json`](src/content/content.json), separate from the map components. Words can now carry future HSK 1–9 labels, example sentences, and natural/slow audio asset slots. The HSK source metadata is intentionally a placeholder and every `Related` word has an explicit extension reason. Before release, replace the placeholder source with a licensed, versioned vocabulary list and reconcile every label.
 
-User state is stored separately from immutable content in versioned local storage (`zimai-library-v1`). Audio uses the browser's Mandarin speech-synthesis fallback in this prototype; the content model now has a place for reviewed natural recordings to be added behind the same `useAudio` interface later.
+User state is stored separately from immutable content in versioned local storage (`zimai-library-v1`). Audio now prefers a reviewed natural recording whenever a content item provides `audio.natural`, then falls back to Mandarin speech synthesis if the recording is unavailable or cannot play. Recording placement and review guidance live in [`public/audio/README.md`](public/audio/README.md).
 
 ## Change tracking and backups
 

@@ -17,7 +17,15 @@
     { "id": "char-hao", "hanzi": "好", "pinyin": "hǎo", "toneNumber": 3, "toneMark": "hǎo", "gloss": "good; well", "audioKey": "root-hao" },
     { "id": "char-jia", "hanzi": "家", "pinyin": "jiā", "toneNumber": 1, "toneMark": "jiā", "gloss": "home; family", "audioKey": "root-jia" },
     { "id": "char-xiao", "hanzi": "小", "pinyin": "xiǎo", "toneNumber": 3, "toneMark": "xiǎo", "gloss": "small; little", "audioKey": "root-xiao" },
-    { "id": "char-shui", "hanzi": "水", "pinyin": "shuǐ", "toneNumber": 3, "toneMark": "shuǐ", "gloss": "water", "audioKey": "root-shui" }
+    { "id": "char-shui", "hanzi": "水", "pinyin": "shuǐ", "toneNumber": 3, "toneMark": "shuǐ", "gloss": "water", "audioKey": "root-shui" },
+    { "id": "char-chi", "hanzi": "吃", "pinyin": "chī", "toneNumber": 1, "toneMark": "chī", "gloss": "eat", "audioKey": "root-chi" },
+    { "id": "char-qu", "hanzi": "去", "pinyin": "qù", "toneNumber": 4, "toneMark": "qù", "gloss": "go; leave", "audioKey": "root-qu" },
+    { "id": "char-shang", "hanzi": "上", "pinyin": "shàng", "toneNumber": 4, "toneMark": "shàng", "gloss": "up; on; attend", "audioKey": "root-shang" },
+    { "id": "char-xia", "hanzi": "下", "pinyin": "xià", "toneNumber": 4, "toneMark": "xià", "gloss": "down; below", "audioKey": "root-xia" },
+    { "id": "char-kai", "hanzi": "开", "pinyin": "kāi", "toneNumber": 1, "toneMark": "kāi", "gloss": "open; start", "audioKey": "root-kai" },
+    { "id": "char-lai", "hanzi": "来", "pinyin": "lái", "toneNumber": 2, "toneMark": "lái", "gloss": "come", "audioKey": "root-lai" },
+    { "id": "char-shuo", "hanzi": "说", "pinyin": "shuō", "toneNumber": 1, "toneMark": "shuō", "gloss": "speak; say", "audioKey": "root-shuo" },
+    { "id": "char-jian", "hanzi": "见", "pinyin": "jiàn", "toneNumber": 4, "toneMark": "jiàn", "gloss": "see; meet", "audioKey": "root-jian" }
   ],
   "families": [
     {
@@ -107,6 +115,94 @@
       "sortOrder": 8,
       "featured": true,
       "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-chi",
+      "rootCharacterId": "char-chi",
+      "title": "吃 family",
+      "shortDescription": "Words for eating, meals, and small tastes of daily life.",
+      "meaningNote": "吃 begins with eating, then opens into meals, ingredients, medicine, and the snacks around them.",
+      "members": ["word-chifan", "word-chidongxi", "word-chimian", "word-chiyao", "word-xiaochi"],
+      "sortOrder": 9,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-qu",
+      "rootCharacterId": "char-qu",
+      "title": "去 family",
+      "shortDescription": "Movement words for leaving, entering, and going back.",
+      "meaningNote": "去 points away from here; the surrounding character tells us when, where, or how that movement happens.",
+      "members": ["word-qunian", "word-qunar", "word-jinqu", "word-chuqu", "word-huiqu"],
+      "sortOrder": 10,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-shang",
+      "rootCharacterId": "char-shang",
+      "title": "上 family",
+      "shortDescription": "Words for going up, showing up, and the first half of the day.",
+      "meaningNote": "上 can point upward, toward a place, or toward an activity such as work, school, or class.",
+      "members": ["word-shangban", "word-shangxue", "word-shangke", "word-shangwu", "word-shangmian"],
+      "sortOrder": 11,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-xia",
+      "rootCharacterId": "char-xia",
+      "title": "下 family",
+      "shortDescription": "Words for going down, finishing, and the afternoon.",
+      "meaningNote": "下 moves downward or toward an ending, from finishing class to the rain falling outside.",
+      "members": ["word-xiaban", "word-xiake", "word-xiawu", "word-xiamian", "word-xiayu"],
+      "sortOrder": 12,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-kai",
+      "rootCharacterId": "char-kai",
+      "title": "开 family",
+      "shortDescription": "Words for opening, starting, and making something happen.",
+      "meaningNote": "开 turns something from closed or paused into open, active, or underway.",
+      "members": ["word-kaimen", "word-kaiche", "word-kaishi", "word-kaixue", "word-kaihui"],
+      "sortOrder": 13,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-lai",
+      "rootCharacterId": "char-lai",
+      "title": "来 family",
+      "shortDescription": "Movement words for coming in, out, back, and toward a place.",
+      "meaningNote": "来 moves toward the speaker or a shared point, and combines naturally with direction and return.",
+      "members": ["word-laihui", "word-laidao", "word-chulai", "word-jinlai", "word-huilai"],
+      "sortOrder": 14,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-shuo",
+      "rootCharacterId": "char-shuo",
+      "title": "说 family",
+      "shortDescription": "Words for speaking, explaining, and putting an idea into words.",
+      "meaningNote": "说 starts with speaking, then expands into explanations, opinions, stories, and conversation.",
+      "members": ["word-shuohua", "word-shuoming", "word-xiaoshuo", "word-shuofa", "word-shuoxiao"],
+      "sortOrder": 15,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-jian",
+      "rootCharacterId": "char-jian",
+      "title": "见 family",
+      "shortDescription": "Words for seeing, meeting, and saying goodbye.",
+      "meaningNote": "见 is the visual anchor for seeing and meeting, from a first hello to a final goodbye.",
+      "members": ["word-zaijian", "word-jianmian", "word-jiandao", "word-yijian", "word-jianguo"],
+      "sortOrder": 16,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
     }
   ],
   "words": [
@@ -156,6 +252,54 @@
     { "id": "word-shuibei", "hanzi": "水杯", "pinyin": "shuǐbēi", "toneNumbers": [3, 1], "gloss": "water cup; glass", "hskLevel": "Related", "isExtension": true, "extensionReason": "Concrete everyday extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-shuibei" },
     { "id": "word-shuiping", "hanzi": "水平", "pinyin": "shuǐpíng", "toneNumbers": [3, 2], "gloss": "level; standard", "hskLevel": "Related", "isExtension": true, "extensionReason": "Meaning extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-shuiping" },
     { "id": "word-shuipingzi", "hanzi": "水瓶", "pinyin": "shuǐpíng", "toneNumbers": [3, 2], "gloss": "water bottle", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful object extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-shuipingzi" },
-    { "id": "word-kaishui", "hanzi": "开水", "pinyin": "kāishuǐ", "toneNumbers": [1, 3], "gloss": "boiled water; hot water", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful daily-life extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-kaishui" }
+    { "id": "word-kaishui", "hanzi": "开水", "pinyin": "kāishuǐ", "toneNumbers": [1, 3], "gloss": "boiled water; hot water", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful daily-life extension for the 水 family; verify against the selected HSK source.", "familyId": "family-shui", "rootCharacterIds": ["char-shui"], "audioKey": "word-kaishui" },
+
+    { "id": "word-chifan", "hanzi": "吃饭", "pinyin": "chīfàn", "toneNumbers": [1, 4], "gloss": "eat; have a meal", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core daily-life extension for the 吃 family; verify against the selected HSK source.", "familyId": "family-chi", "rootCharacterIds": ["char-chi"], "audioKey": "word-chifan", "examples": [{ "hanzi": "我们一起吃饭。", "pinyin": "Wǒmen yìqǐ chīfàn.", "gloss": "We eat together." }] },
+    { "id": "word-chidongxi", "hanzi": "吃东西", "pinyin": "chī dōngxi", "toneNumbers": [1, 1, 5], "gloss": "eat something", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday phrase for the 吃 family; verify against the selected HSK source.", "familyId": "family-chi", "rootCharacterIds": ["char-chi"], "audioKey": "word-chidongxi", "examples": [{ "hanzi": "我不想吃东西。", "pinyin": "Wǒ bù xiǎng chī dōngxi.", "gloss": "I don't want to eat anything." }] },
+    { "id": "word-chimian", "hanzi": "吃面", "pinyin": "chīmiàn", "toneNumbers": [1, 4], "gloss": "eat noodles", "hskLevel": "Related", "isExtension": true, "extensionReason": "Concrete food phrase for the 吃 family; verify against the selected HSK source.", "familyId": "family-chi", "rootCharacterIds": ["char-chi"], "audioKey": "word-chimian", "examples": [{ "hanzi": "今天我们吃面。", "pinyin": "Jīntiān wǒmen chīmiàn.", "gloss": "Today we are eating noodles." }] },
+    { "id": "word-chiyao", "hanzi": "吃药", "pinyin": "chīyào", "toneNumbers": [1, 4], "gloss": "take medicine", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful health phrase for the 吃 family; verify against the selected HSK source.", "familyId": "family-chi", "rootCharacterIds": ["char-chi"], "audioKey": "word-chiyao", "examples": [{ "hanzi": "记得吃药。", "pinyin": "Jìde chīyào.", "gloss": "Remember to take your medicine." }] },
+    { "id": "word-xiaochi", "hanzi": "小吃", "pinyin": "xiǎochī", "toneNumbers": [3, 1], "gloss": "snack; snack food", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful food extension for the 吃 family; verify against the selected HSK source.", "familyId": "family-chi", "rootCharacterIds": ["char-chi"], "audioKey": "word-xiaochi", "examples": [{ "hanzi": "这里的小吃很好吃。", "pinyin": "Zhèlǐ de xiǎochī hěn hǎochī.", "gloss": "The snacks here are delicious." }] },
+
+    { "id": "word-qunian", "hanzi": "去年", "pinyin": "qùnián", "toneNumbers": [4, 2], "gloss": "last year", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful time expression for the 去 family; verify against the selected HSK source.", "familyId": "family-qu", "rootCharacterIds": ["char-qu"], "audioKey": "word-qunian", "examples": [{ "hanzi": "我去年去了北京。", "pinyin": "Wǒ qùnián qù le Běijīng.", "gloss": "I went to Beijing last year." }] },
+    { "id": "word-qunar", "hanzi": "去哪儿", "pinyin": "qùnǎr", "toneNumbers": [4, 3, 2], "gloss": "where to; where are you going", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful question phrase for the 去 family; verify against the selected HSK source.", "familyId": "family-qu", "rootCharacterIds": ["char-qu"], "audioKey": "word-qunar", "examples": [{ "hanzi": "你要去哪儿？", "pinyin": "Nǐ yào qù nǎr?", "gloss": "Where are you going?" }] },
+    { "id": "word-jinqu", "hanzi": "进去", "pinyin": "jìnqù", "toneNumbers": [4, 4], "gloss": "go in; enter", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful direction phrase for the 去 family; verify against the selected HSK source.", "familyId": "family-qu", "rootCharacterIds": ["char-qu"], "audioKey": "word-jinqu", "examples": [{ "hanzi": "请进去坐。", "pinyin": "Qǐng jìnqù zuò.", "gloss": "Please go in and sit." }] },
+    { "id": "word-chuqu", "hanzi": "出去", "pinyin": "chūqù", "toneNumbers": [1, 4], "gloss": "go out", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful direction phrase for the 去 family; verify against the selected HSK source.", "familyId": "family-qu", "rootCharacterIds": ["char-qu"], "audioKey": "word-chuqu", "examples": [{ "hanzi": "我们出去走走。", "pinyin": "Wǒmen chūqù zǒuzou.", "gloss": "Let's go out for a walk." }] },
+    { "id": "word-huiqu", "hanzi": "回去", "pinyin": "huíqù", "toneNumbers": [2, 4], "gloss": "go back", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful return phrase for the 去 family; verify against the selected HSK source.", "familyId": "family-qu", "rootCharacterIds": ["char-qu"], "audioKey": "word-huiqu", "examples": [{ "hanzi": "我先回去。", "pinyin": "Wǒ xiān huíqù.", "gloss": "I'll go back first." }] },
+
+    { "id": "word-shangban", "hanzi": "上班", "pinyin": "shàngbān", "toneNumbers": [4, 1], "gloss": "go to work; be at work", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful daily-life extension for the 上 family; verify against the selected HSK source.", "familyId": "family-shang", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangban", "examples": [{ "hanzi": "我八点上班。", "pinyin": "Wǒ bā diǎn shàngbān.", "gloss": "I go to work at eight." }] },
+    { "id": "word-shangxue", "hanzi": "上学", "pinyin": "shàngxué", "toneNumbers": [4, 2], "gloss": "go to school; attend school", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful education phrase for the 上 family; verify against the selected HSK source.", "familyId": "family-shang", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangxue", "examples": [{ "hanzi": "孩子们上学了。", "pinyin": "Háizimen shàngxué le.", "gloss": "The children went to school." }] },
+    { "id": "word-shangke", "hanzi": "上课", "pinyin": "shàngkè", "toneNumbers": [4, 4], "gloss": "attend class; have class", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful study phrase for the 上 family; verify against the selected HSK source.", "familyId": "family-shang", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangke", "examples": [{ "hanzi": "老师开始上课。", "pinyin": "Lǎoshī kāishǐ shàngkè.", "gloss": "The teacher starts class." }] },
+    { "id": "word-shangwu", "hanzi": "上午", "pinyin": "shàngwǔ", "toneNumbers": [4, 3], "gloss": "morning; before noon", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful time expression for the 上 family; verify against the selected HSK source.", "familyId": "family-shang", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangwu", "examples": [{ "hanzi": "我上午有课。", "pinyin": "Wǒ shàngwǔ yǒu kè.", "gloss": "I have class in the morning." }] },
+    { "id": "word-shangmian", "hanzi": "上面", "pinyin": "shàngmiàn", "toneNumbers": [4, 4], "gloss": "above; on top", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful location word for the 上 family; verify against the selected HSK source.", "familyId": "family-shang", "rootCharacterIds": ["char-shang"], "audioKey": "word-shangmian", "examples": [{ "hanzi": "书在桌子上面。", "pinyin": "Shū zài zhuōzi shàngmiàn.", "gloss": "The book is on the table." }] },
+
+    { "id": "word-xiaban", "hanzi": "下班", "pinyin": "xiàbān", "toneNumbers": [4, 1], "gloss": "finish work; get off work", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful daily-life extension for the 下 family; verify against the selected HSK source.", "familyId": "family-xia", "rootCharacterIds": ["char-xia"], "audioKey": "word-xiaban", "examples": [{ "hanzi": "我六点下班。", "pinyin": "Wǒ liù diǎn xiàbān.", "gloss": "I finish work at six." }] },
+    { "id": "word-xiake", "hanzi": "下课", "pinyin": "xiàkè", "toneNumbers": [4, 4], "gloss": "class ends; finish class", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful study phrase for the 下 family; verify against the selected HSK source.", "familyId": "family-xia", "rootCharacterIds": ["char-xia"], "audioKey": "word-xiake", "examples": [{ "hanzi": "下课以后见。", "pinyin": "Xiàkè yǐhòu jiàn.", "gloss": "See you after class." }] },
+    { "id": "word-xiawu", "hanzi": "下午", "pinyin": "xiàwǔ", "toneNumbers": [4, 3], "gloss": "afternoon", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful time expression for the 下 family; verify against the selected HSK source.", "familyId": "family-xia", "rootCharacterIds": ["char-xia"], "audioKey": "word-xiawu", "examples": [{ "hanzi": "下午我们去公园。", "pinyin": "Xiàwǔ wǒmen qù gōngyuán.", "gloss": "We are going to the park this afternoon." }] },
+    { "id": "word-xiamian", "hanzi": "下面", "pinyin": "xiàmiàn", "toneNumbers": [4, 4], "gloss": "below; underneath", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful location word for the 下 family; verify against the selected HSK source.", "familyId": "family-xia", "rootCharacterIds": ["char-xia"], "audioKey": "word-xiamian", "examples": [{ "hanzi": "猫在桌子下面。", "pinyin": "Māo zài zhuōzi xiàmiàn.", "gloss": "The cat is under the table." }] },
+    { "id": "word-xiayu", "hanzi": "下雨", "pinyin": "xiàyǔ", "toneNumbers": [4, 3], "gloss": "rain; be raining", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful weather phrase for the 下 family; verify against the selected HSK source.", "familyId": "family-xia", "rootCharacterIds": ["char-xia"], "audioKey": "word-xiayu", "examples": [{ "hanzi": "今天下雨了。", "pinyin": "Jīntiān xiàyǔ le.", "gloss": "It rained today." }] },
+
+    { "id": "word-kaimen", "hanzi": "开门", "pinyin": "kāimén", "toneNumbers": [1, 2], "gloss": "open the door", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday extension for the 开 family; verify against the selected HSK source.", "familyId": "family-kai", "rootCharacterIds": ["char-kai"], "audioKey": "word-kaimen", "examples": [{ "hanzi": "请开门。", "pinyin": "Qǐng kāimén.", "gloss": "Please open the door." }] },
+    { "id": "word-kaiche", "hanzi": "开车", "pinyin": "kāichē", "toneNumbers": [1, 1], "gloss": "drive; drive a car", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful transport phrase for the 开 family; verify against the selected HSK source.", "familyId": "family-kai", "rootCharacterIds": ["char-kai"], "audioKey": "word-kaiche", "examples": [{ "hanzi": "我不会开车。", "pinyin": "Wǒ bú huì kāichē.", "gloss": "I can't drive." }] },
+    { "id": "word-kaishi", "hanzi": "开始", "pinyin": "kāishǐ", "toneNumbers": [1, 3], "gloss": "begin; start", "hskLevel": "Related", "isExtension": true, "extensionReason": "High-value verb extension for the 开 family; verify against the selected HSK source.", "familyId": "family-kai", "rootCharacterIds": ["char-kai"], "audioKey": "word-kaishi", "examples": [{ "hanzi": "现在开始吧。", "pinyin": "Xiànzài kāishǐ ba.", "gloss": "Let's start now." }] },
+    { "id": "word-kaixue", "hanzi": "开学", "pinyin": "kāixué", "toneNumbers": [1, 2], "gloss": "school starts; begin a term", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful education extension for the 开 family; verify against the selected HSK source.", "familyId": "family-kai", "rootCharacterIds": ["char-kai"], "audioKey": "word-kaixue", "examples": [{ "hanzi": "下个月开学。", "pinyin": "Xià gè yuè kāixué.", "gloss": "The new term starts next month." }] },
+    { "id": "word-kaihui", "hanzi": "开会", "pinyin": "kāihuì", "toneNumbers": [1, 4], "gloss": "have a meeting", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful work-life extension for the 开 family; verify against the selected HSK source.", "familyId": "family-kai", "rootCharacterIds": ["char-kai"], "audioKey": "word-kaihui", "examples": [{ "hanzi": "我们下午开会。", "pinyin": "Wǒmen xiàwǔ kāihuì.", "gloss": "We have a meeting this afternoon." }] },
+
+    { "id": "word-laihui", "hanzi": "来回", "pinyin": "láihuí", "toneNumbers": [2, 2], "gloss": "back and forth", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful movement extension for the 来 family; verify against the selected HSK source.", "familyId": "family-lai", "rootCharacterIds": ["char-lai"], "audioKey": "word-laihui", "examples": [{ "hanzi": "我每天来回走路。", "pinyin": "Wǒ měitiān láihuí zǒulù.", "gloss": "I walk back and forth every day." }] },
+    { "id": "word-laidao", "hanzi": "来到", "pinyin": "láidào", "toneNumbers": [2, 4], "gloss": "come to; arrive at", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful arrival extension for the 来 family; verify against the selected HSK source.", "familyId": "family-lai", "rootCharacterIds": ["char-lai"], "audioKey": "word-laidao", "examples": [{ "hanzi": "欢迎来到中国。", "pinyin": "Huānyíng láidào Zhōngguó.", "gloss": "Welcome to China." }] },
+    { "id": "word-chulai", "hanzi": "出来", "pinyin": "chūlái", "toneNumbers": [1, 2], "gloss": "come out", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful direction phrase for the 来 family; verify against the selected HSK source.", "familyId": "family-lai", "rootCharacterIds": ["char-lai"], "audioKey": "word-chulai", "examples": [{ "hanzi": "请出来一下。", "pinyin": "Qǐng chūlái yíxià.", "gloss": "Please come out for a moment." }] },
+    { "id": "word-jinlai", "hanzi": "进来", "pinyin": "jìnlái", "toneNumbers": [4, 2], "gloss": "come in", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful direction phrase for the 来 family; verify against the selected HSK source.", "familyId": "family-lai", "rootCharacterIds": ["char-lai"], "audioKey": "word-jinlai", "examples": [{ "hanzi": "请进来。", "pinyin": "Qǐng jìnlái.", "gloss": "Please come in." }] },
+    { "id": "word-huilai", "hanzi": "回来", "pinyin": "huílái", "toneNumbers": [2, 2], "gloss": "come back; return", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful return phrase for the 来 family; verify against the selected HSK source.", "familyId": "family-lai", "rootCharacterIds": ["char-lai"], "audioKey": "word-huilai", "examples": [{ "hanzi": "你什么时候回来？", "pinyin": "Nǐ shénme shíhou huílái?", "gloss": "When will you come back?" }] },
+
+    { "id": "word-shuohua", "hanzi": "说话", "pinyin": "shuōhuà", "toneNumbers": [1, 4], "gloss": "speak; talk", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core communication extension for the 说 family; verify against the selected HSK source.", "familyId": "family-shuo", "rootCharacterIds": ["char-shuo"], "audioKey": "word-shuohua", "examples": [{ "hanzi": "请慢慢说话。", "pinyin": "Qǐng mànmàn shuōhuà.", "gloss": "Please speak slowly." }] },
+    { "id": "word-shuoming", "hanzi": "说明", "pinyin": "shuōmíng", "toneNumbers": [1, 2], "gloss": "explain; explanation", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful communication extension for the 说 family; verify against the selected HSK source.", "familyId": "family-shuo", "rootCharacterIds": ["char-shuo"], "audioKey": "word-shuoming", "examples": [{ "hanzi": "请说明你的想法。", "pinyin": "Qǐng shuōmíng nǐ de xiǎngfǎ.", "gloss": "Please explain your idea." }] },
+    { "id": "word-xiaoshuo", "hanzi": "小说", "pinyin": "xiǎoshuō", "toneNumbers": [3, 1], "gloss": "novel; fiction", "hskLevel": "Related", "isExtension": true, "extensionReason": "Reading extension for the 说 family; verify against the selected HSK source.", "familyId": "family-shuo", "rootCharacterIds": ["char-shuo"], "audioKey": "word-xiaoshuo", "examples": [{ "hanzi": "她喜欢看小说。", "pinyin": "Tā xǐhuān kàn xiǎoshuō.", "gloss": "She likes reading novels." }] },
+    { "id": "word-shuofa", "hanzi": "说法", "pinyin": "shuōfǎ", "toneNumbers": [1, 3], "gloss": "way of saying; view", "hskLevel": "Related", "isExtension": true, "extensionReason": "Meaning extension for the 说 family; verify against the selected HSK source.", "familyId": "family-shuo", "rootCharacterIds": ["char-shuo"], "audioKey": "word-shuofa", "examples": [{ "hanzi": "这个说法很有意思。", "pinyin": "Zhège shuōfǎ hěn yǒu yìsi.", "gloss": "This way of saying it is interesting." }] },
+    { "id": "word-shuoxiao", "hanzi": "说笑", "pinyin": "shuōxiào", "toneNumbers": [1, 4], "gloss": "chat and joke; talk and laugh", "hskLevel": "Related", "isExtension": true, "extensionReason": "Conversation extension for the 说 family; verify against the selected HSK source.", "familyId": "family-shuo", "rootCharacterIds": ["char-shuo"], "audioKey": "word-shuoxiao", "examples": [{ "hanzi": "大家说说笑笑。", "pinyin": "Dàjiā shuōshuōxiàoxiào.", "gloss": "Everyone chats and jokes together." }] },
+
+    { "id": "word-zaijian", "hanzi": "再见", "pinyin": "zàijiàn", "toneNumbers": [4, 4], "gloss": "goodbye; see you again", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core greeting included in the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-zaijian", "examples": [{ "hanzi": "明天见，再见！", "pinyin": "Míngtiān jiàn, zàijiàn!", "gloss": "See you tomorrow, goodbye!" }] },
+    { "id": "word-jianmian", "hanzi": "见面", "pinyin": "jiànmiàn", "toneNumbers": [4, 4], "gloss": "meet; see each other", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful meeting extension for the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-jianmian", "examples": [{ "hanzi": "我们明天见面。", "pinyin": "Wǒmen míngtiān jiànmiàn.", "gloss": "We will meet tomorrow." }] },
+    { "id": "word-jiandao", "hanzi": "见到", "pinyin": "jiàndào", "toneNumbers": [4, 4], "gloss": "see; meet", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful result phrase for the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-jiandao", "examples": [{ "hanzi": "很高兴见到你。", "pinyin": "Hěn gāoxìng jiàndào nǐ.", "gloss": "Nice to meet you." }] },
+    { "id": "word-yijian", "hanzi": "意见", "pinyin": "yìjiàn", "toneNumbers": [4, 4], "gloss": "opinion; suggestion", "hskLevel": "Related", "isExtension": true, "extensionReason": "Abstract extension for the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-yijian", "examples": [{ "hanzi": "你有什么意见？", "pinyin": "Nǐ yǒu shénme yìjiàn?", "gloss": "What opinion do you have?" }] },
+    { "id": "word-jianguo", "hanzi": "见过", "pinyin": "jiànguò", "toneNumbers": [4, 4], "gloss": "have seen; have met", "hskLevel": "Related", "isExtension": true, "extensionReason": "Experience phrase for the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-jianguo", "examples": [{ "hanzi": "我见过他。", "pinyin": "Wǒ jiànguò tā.", "gloss": "I have met him." }] }
   ]
 }

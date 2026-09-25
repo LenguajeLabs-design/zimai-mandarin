@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 function chooseMandarinVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | undefined {
   const mandarinVoices = voices.filter((voice) => /^zh(?:-|_)/i.test(voice.lang) || /mandarin|普通话|中文/i.test(voice.name))
@@ -12,6 +12,7 @@ export function useAudio() {
   const [playingKey, setPlayingKey] = useState<string | null>(null)
   const [audioMessage, setAudioMessage] = useState<string | null>(null)
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([])
+  const nativeAudioRef = useRef<HTMLAudioElement | null>(null)
 
   useEffect(() => {
     if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
@@ -21,8 +22,35 @@ export function useAudio() {
     return () => window.speechSynthesis.removeEventListener('voiceschanged', syncVoices)
   }, [])
 
-  const play = useCallback((key: string, text: string) => {
+  const play = useCallback((key: string, text: string, audioUrl?: string) => {
     setAudioMessage(null)
+    window.speechSynthesis?.cancel()
+    nativeAudioRef.current?.pause()
+    nativeAudioRef.current = null
+
+    if (audioUrl && typeof window !== 'undefined') {
+      const nativeAudio = new Audio(audioUrl)
+      nativeAudioRef.current = nativeAudio
+      nativeAudio.onplay = () => setPlayingKey(key)
+      nativeAudio.onended = () => {
+        nativeAudioRef.current = null
+        setPlayingKey(null)
+      }
+      nativeAudio.onerror = () => {
+        nativeAudioRef.current = null
+        setPlayingKey(null)
+        setAudioMessage('The recording could not play. Falling back to pronunciation audio.')
+        play(key, text)
+      }
+      void nativeAudio.play().catch(() => {
+        nativeAudioRef.current = null
+        setPlayingKey(null)
+        setAudioMessage('The recording could not play. Falling back to pronunciation audio.')
+        play(key, text)
+      })
+      return
+    }
+
     if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
       setAudioMessage('Audio is unavailable here. Pinyin is still available.')
       return
@@ -47,6 +75,8 @@ export function useAudio() {
 
   const stop = useCallback(() => {
     window.speechSynthesis?.cancel()
+    nativeAudioRef.current?.pause()
+    nativeAudioRef.current = null
     setPlayingKey(null)
   }, [])
 

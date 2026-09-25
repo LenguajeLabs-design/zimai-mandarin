@@ -35,7 +35,7 @@ export function FamilyDetailPage({ family, root, words, saved, learnedWords, onB
         </div>
         <div className="detail-actions">
           <button className={`button button--secondary${saved ? ' is-selected' : ''}`} type="button" onClick={onToggleSaved}>{saved ? '♥ Saved' : '♡ Save family'}</button>
-          <AudioButton audioKey={root.audioKey} text={root.hanzi} playingKey={audio.playingKey} onPlay={audio.onPlay} onStop={audio.onStop} label={`Play audio for root ${root.hanzi}`} />
+          <AudioButton audioKey={root.audioKey} text={root.hanzi} audioUrl={root.audio?.natural} playingKey={audio.playingKey} onPlay={audio.onPlay} onStop={audio.onStop} label={`Play audio for root ${root.hanzi}`} />
         </div>
       </header>
       <section className="detail-map-section" aria-labelledby="map-heading">
