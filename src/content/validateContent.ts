@@ -29,7 +29,10 @@ export function validateContent(data: ContentData): string[] {
     if (!familyIds.has(word.familyId)) errors.push(`Missing family for ${word.id}`)
     if (!word.rootCharacterIds.every((id) => characterIds.has(id))) errors.push(`Missing root reference for ${word.id}`)
     if (word.isExtension && !word.extensionReason) errors.push(`Related word without extensionReason: ${word.id}`)
-    if (word.hskLevel === 'HSK 1' && !word.examples?.length) errors.push(`HSK 1 word without an example sentence: ${word.id}`)
+    if (!word.examples.length) errors.push(`Word without an example sentence: ${word.id}`)
+    word.examples.forEach((example, index) => {
+      if (!example.hanzi || !example.pinyin || !example.gloss) errors.push(`Incomplete example sentence ${index + 1} for ${word.id}`)
+    })
   })
   return errors
 }

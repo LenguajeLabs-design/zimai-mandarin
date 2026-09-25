@@ -48,7 +48,7 @@ export interface Word {
   rootCharacterIds: string[]
   audioKey: string
   audio?: AudioAssets
-  examples?: ExampleSentence[]
+  examples: ExampleSentence[]
 }
 
 export interface Family {

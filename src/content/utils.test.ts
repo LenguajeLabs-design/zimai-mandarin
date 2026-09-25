@@ -51,6 +51,7 @@ describe('content utilities', () => {
 
   it('keeps the prototype content internally consistent', () => {
     expect(contentValidationErrors).toEqual([])
+    expect(data.words.every((word) => word.examples.length > 0)).toBe(true)
   })
 
   it('keeps the first HSK 2–3 practice lesson internally coherent', () => {

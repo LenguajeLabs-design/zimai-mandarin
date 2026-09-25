@@ -18,6 +18,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added a reviewed-recording workflow in `public/audio/README.md`.
 - Added animated stroke-order sheets and optional tracing practice for every family root character.
 - Added the first HSK 2–3 Practice lesson with a daily-life conversation, listening-recall choices, sentence building, and a basic 在 grammar note.
+- Added context sentences to the remaining thirty-two extension words so all 125 vocabulary entries now open with an example.
 
 ### Changed
 
@@ -42,4 +43,4 @@ This file records meaningful product and implementation changes to Zìmài. Date
 
 The new family vocabulary is intentionally marked `Related` until the source list and HSK mappings are formally verified. The current source metadata remains a prototype placeholder.
 
-HSK 1 entries now require at least one example sentence during content validation. The new words remain intentionally marked `Related` until the source list and HSK mappings are formally verified. Native recordings are not bundled yet; the recording-only pipeline is ready to use them as soon as reviewed assets are supplied.
+All vocabulary entries now require at least one complete example sentence during content validation. The new words remain intentionally marked `Related` until the source list and HSK mappings are formally verified. Native recordings are not bundled yet; the recording-only pipeline is ready to use them as soon as reviewed assets are supplied.
