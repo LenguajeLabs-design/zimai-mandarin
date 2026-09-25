@@ -52,14 +52,16 @@ describe('content utilities', () => {
   it('keeps the prototype content internally consistent', () => {
     expect(contentValidationErrors).toEqual([])
     expect(data.words.every((word) => word.examples.length > 0)).toBe(true)
+    expect(data.families.every((family) => family.members.length >= 5)).toBe(true)
   })
 
   it('keeps dedicated HSK 2 families source-backed', () => {
     const hsk2Families = data.families.filter((family) => family.sourceIds.includes('hsk-2-official-syllabus'))
-    const hsk2Words = hsk2Families.flatMap((family) => familyWords(family, data.words))
+    const hsk2Words = hsk2Families.flatMap((family) => familyWords(family, data.words)).filter((word) => word.hskLevel === 'HSK 2')
     expect(hsk2Families).toHaveLength(13)
     expect(hsk2Words).toHaveLength(28)
     expect(hsk2Words.every((word) => word.hskLevel === 'HSK 2' && !word.isExtension)).toBe(true)
+    expect(hsk2Families.every((family) => familyWords(family, data.words).length >= 5)).toBe(true)
   })
 
   it('keeps the first HSK 2–3 practice lesson internally coherent', () => {

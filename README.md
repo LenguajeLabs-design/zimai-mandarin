@@ -37,7 +37,7 @@ User state is stored separately from immutable content in versioned local storag
 
 The first HSK 2–3 practice slice lives in [`src/content/practice.json`](src/content/practice.json) and is intentionally small. It provides the interaction model for daily-life conversations, listening recall, sentence building, and basic grammar before more scenes and reviewed native recordings are added.
 
-The first HSK 2 content set now includes twenty-eight words in thirteen dedicated families. Labels are only applied to words in those source-backed families. The official HSK 2 syllabus is recorded in the content source metadata; exact exclusive-word membership is cross-checked against the reproducible HSK 2.0 mirror documented there. The official workbook reference remains available for a later licensing and reconciliation pass.
+The first HSK 2 content set now includes twenty-eight verified HSK 2 core words across thirteen dedicated five-word families. Each map also includes Related extensions where the HSK 2 list does not provide five natural compounds; those supporting words remain visibly separate from the verified HSK 2 core. The official HSK 2 syllabus is recorded in the content source metadata; exact exclusive-word membership is cross-checked against the reproducible HSK 2.0 mirror documented there. The official workbook reference remains available for a later licensing and reconciliation pass.
 
 ## Change tracking and backups
 

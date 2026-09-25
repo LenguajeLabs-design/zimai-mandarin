@@ -21,6 +21,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added context sentences to the remaining thirty-two extension words so all 125 vocabulary entries now open with an example.
 - Added the first verified HSK 2 content slice: seven dedicated families (边, 时, 生, 手, 问, 游, 公) with sixteen HSK 2 words and context sentences.
 - Expanded the verified HSK 2 slice to thirteen dedicated families and twenty-eight words, adding daily-life groups for 上, 人, 可, 快, 起, and 车.
+- Standardized the library so every family contains at least five connected words; HSK 2 maps now combine verified HSK 2 core words with clearly marked Related extensions when needed.
 - Added HSK 2 source metadata and a reproducible source-mirror note so HSK 2 labels are distinguishable from Related extensions.
 
 ### Changed

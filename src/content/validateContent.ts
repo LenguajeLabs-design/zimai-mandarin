@@ -22,6 +22,7 @@ export function validateContent(data: ContentData): string[] {
   const familiesById = new Map(data.families.map((family) => [family.id, family]))
   data.families.forEach((family) => {
     if (!characterIds.has(family.rootCharacterId)) errors.push(`Missing root character for ${family.id}`)
+    if (family.members.length < 5) errors.push(`Family has fewer than five words: ${family.id}`)
     family.members.forEach((wordId) => {
       if (!wordIds.has(wordId)) errors.push(`Missing word ${wordId} in ${family.id}`)
     })
@@ -37,7 +38,7 @@ export function validateContent(data: ContentData): string[] {
     })
   })
   data.families.forEach((family) => {
-    if (family.sourceIds.includes('hsk-2-official-syllabus') && family.members.some((wordId) => data.words.find((word) => word.id === wordId)?.hskLevel !== 'HSK 2')) errors.push(`HSK 2 family contains an unverified member: ${family.id}`)
+    if (family.sourceIds.includes('hsk-2-official-syllabus') && !family.members.some((wordId) => data.words.find((word) => word.id === wordId)?.hskLevel === 'HSK 2')) errors.push(`HSK 2 family has no verified core member: ${family.id}`)
   })
   return errors
 }
