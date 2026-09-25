@@ -10,9 +10,11 @@ interface AudioButtonProps {
 }
 
 export function AudioButton({ audioKey, text, audioUrl, playingKey, onPlay, onStop, label, compact = false }: AudioButtonProps) {
+  const { language } = useExplanationLanguage()
+  const copy = siteCopy[language].app
   const isPlaying = playingKey === audioKey
   const canPreview = !audioUrl && typeof window !== 'undefined' && 'speechSynthesis' in window
-  const accessibleLabel = audioUrl ? (label ?? `Play audio for ${text}`) : `Preview ${text} with the device Mandarin voice`
+  const accessibleLabel = label ?? (audioUrl ? `${copy.hearIt}: ${text}` : `${copy.previewVoice}: ${text}`)
   return (
     <button
       className={`audio-button${compact ? ' audio-button--compact' : ''}${isPlaying ? ' is-playing' : ''}`}
@@ -26,7 +28,9 @@ export function AudioButton({ audioKey, text, audioUrl, playingKey, onPlay, onSt
       <span className="audio-button__icon" aria-hidden="true">
         {isPlaying ? <svg viewBox="0 0 16 16" focusable="false"><rect x="4" y="4" width="8" height="8" rx="1" /></svg> : <svg viewBox="0 0 16 16" focusable="false"><path d="M5 3.5v9l7.5-4.5L5 3.5Z" /></svg>}
       </span>
-      {!compact && <span>{isPlaying ? 'Playing' : audioUrl ? 'Hear it' : 'Preview voice'}</span>}
+      {!compact && <span>{isPlaying ? copy.playing : audioUrl ? copy.hearIt : copy.previewVoice}</span>}
     </button>
   )
 }
+import { siteCopy } from '../content/previewTranslations'
+import { useExplanationLanguage } from '../hooks/useExplanationLanguage'

@@ -1,4 +1,6 @@
 import type { Source } from '../content/types'
+import { siteCopy } from '../content/previewTranslations'
+import { useExplanationLanguage } from '../hooks/useExplanationLanguage'
 
 interface AboutPageProps {
   source: Source
@@ -7,17 +9,19 @@ interface AboutPageProps {
 }
 
 export function AboutPage({ source, onBrowse, onGuide }: AboutPageProps) {
+  const { language } = useExplanationLanguage()
+  const copy = siteCopy[language].about
   return (
     <div className="page page--about">
-      <header className="page-header page-header--compact"><div><p className="eyebrow">Content and source notes</p><h1>A small,<br /><em>deliberate collection.</em></h1><p className="page-header__lede">Zìmài is designed as a visual reference, not a claim to cover every beginner word or every HSK version.</p></div></header>
-      <section className="about-intro"><span className="about-intro__mark" lang="zh-CN">脉</span><p>“Family” means a curated teaching grouping: a shared character, morpheme, or a beginner-useful relationship. It does not automatically mean historical etymology.</p></section>
+      <header className="page-header page-header--compact"><div><p className="eyebrow">{copy.eyebrow}</p><h1>{copy.titleFirst}<br /><em>{copy.titleSecond}</em></h1><p className="page-header__lede">{copy.description}</p></div></header>
+      <section className="about-intro"><span className="about-intro__mark" lang="zh-CN">脉</span><p>{copy.intro}</p></section>
       <section className="about-grid" aria-label="Collection notes">
-        <article className="about-card"><p className="eyebrow">Content policy</p><h2>Curate the connection first.</h2><p>Each family is edited for visual usefulness. HSK membership stays separate from the family relationship, and useful outside-list words are labeled Related.</p></article>
-        <article className="about-card"><p className="eyebrow">Audio</p><h2>Pronunciation stays close.</h2><p>Reviewed native recordings remain the goal. Until one is ready, the browser selects its best available Mandarin device voice; installing an enhanced Mandarin voice in your accessibility settings can improve the preview.</p></article>
-        <article className="about-card"><p className="eyebrow">Local by design</p><h2>Your shelf stays yours.</h2><p>Saved, learned, and recently viewed states live in versioned local storage. There are no accounts, streaks, or cloud profiles in this first slice.</p></article>
+        <article className="about-card"><p className="eyebrow">{copy.policy}</p><h2>{copy.policyTitle}</h2><p>{copy.policyText}</p></article>
+        <article className="about-card"><p className="eyebrow">{copy.audio}</p><h2>{copy.audioTitle}</h2><p>{copy.audioText}</p></article>
+        <article className="about-card"><p className="eyebrow">{copy.local}</p><h2>{copy.localTitle}</h2><p>{copy.localText}</p></article>
       </section>
-      <section className="source-panel" aria-labelledby="source-heading"><div><p className="eyebrow">Current prototype source</p><h2 id="source-heading">{source.name}</h2><p>{source.notes}</p></div><dl><div><dt>Version</dt><dd>{source.version}</dd></div><div><dt>Level</dt><dd>{source.level}</dd></div><div><dt>License</dt><dd>{source.license}</dd></div></dl></section>
-      <div className="about-actions"><button className="button button--primary" type="button" onClick={onBrowse}>Browse the families →</button><button className="text-button" type="button" onClick={onGuide}>Read the guide</button></div>
+      <section className="source-panel" aria-labelledby="source-heading"><div><p className="eyebrow">{copy.source}</p><h2 id="source-heading">{source.name}</h2><p>{source.notes}</p></div><dl><div><dt>{copy.version}</dt><dd>{source.version}</dd></div><div><dt>{copy.level}</dt><dd>{source.level}</dd></div><div><dt>{copy.license}</dt><dd>{source.license}</dd></div></dl></section>
+      <div className="about-actions"><button className="button button--primary" type="button" onClick={onBrowse}>{copy.browse} →</button><button className="text-button" type="button" onClick={onGuide}>{copy.guide}</button></div>
     </div>
   )
 }

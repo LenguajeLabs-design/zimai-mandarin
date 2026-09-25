@@ -15,10 +15,11 @@ import { SearchPage } from './pages/SearchPage'
 import { ReviewPage } from './pages/ReviewPage'
 import { GuidePage } from './pages/GuidePage'
 import { AboutPage } from './pages/AboutPage'
+import { LayoutPreviewPage } from './pages/LayoutPreviewPage'
 
 const content = rawContent as ContentData
 
-type Route = { kind: 'library' | 'saved' | 'search' | 'review' | 'guide' | 'about' | 'detail' | 'word'; familyId?: string; wordId?: string; query?: string }
+type Route = { kind: 'library' | 'saved' | 'search' | 'review' | 'guide' | 'about' | 'preview' | 'detail' | 'word'; familyId?: string; wordId?: string; query?: string }
 
 const appBasePath = import.meta.env.BASE_URL.replace(/\/$/, '')
 
@@ -42,6 +43,7 @@ function parseRouteFromPath(pathWithSearch: string): Route {
   if (path === '/review') return { kind: 'review' }
   if (path === '/guide') return { kind: 'guide' }
   if (path === '/about') return { kind: 'about' }
+  if (path === '/preview') return { kind: 'preview' }
   if (path === '/search') return { kind: 'search', query: new URLSearchParams(search ?? '').get('q') ?? '' }
   return { kind: 'library' }
 }
@@ -105,10 +107,12 @@ export default function App() {
     page = <GuidePage family={guideFamily} root={getRoot(guideFamily)} words={getWords(guideFamily)} onOpenFamily={openFamily} onOpenWord={openWord} onOpenAbout={() => goToDestination('about')} audio={audio} />
   } else if (backgroundRoute.kind === 'about') {
     page = <AboutPage source={content.sources[0]} onBrowse={() => goToDestination('families')} onGuide={() => goToDestination('guide')} />
+  } else if (backgroundRoute.kind === 'preview') {
+    page = <LayoutPreviewPage families={families} getRoot={getRoot} getWords={getWords} audio={audio} />
   } else if (backgroundRoute.kind === 'search') {
     page = <SearchPage query={backgroundRoute.query ?? ''} onQueryChange={onSearchQueryChange} families={families} getRoot={getRoot} words={content.words} onOpenWord={openWord} onOpenFamily={openFamily} audio={audio} onBrowse={() => goToDestination('families')} />
   } else {
-    page = <FamilyLibraryPage families={families} getRoot={getRoot} getWords={getWords} savedFamilies={library.state.savedFamilies} filter={libraryFilter} onFilter={setLibraryFilter} recentFamilies={library.state.recentFamilies} onOpenFamily={openFamily} onToggleSaved={library.toggleSavedFamily} onOpenWord={openWord} audio={audio} />
+    page = <FamilyLibraryPage families={families} getRoot={getRoot} getWords={getWords} savedFamilies={library.state.savedFamilies} learnedWords={library.state.learnedWords} filter={libraryFilter} onFilter={setLibraryFilter} recentFamilies={library.state.recentFamilies} onOpenFamily={openFamily} onToggleSaved={library.toggleSavedFamily} onOpenWord={openWord} audio={audio} />
   }
 
   return <AppShell current={baseDestination(backgroundRoute)} onNavigate={goToDestination} savedCount={library.state.savedFamilies.length} theme={theme.theme} onToggleTheme={theme.toggleTheme}>{page}{quickWord && quickFamily && quickRoot && <QuickView word={quickWord} family={quickFamily} root={quickRoot} saved={library.state.savedWords.includes(quickWord.id)} learned={library.state.learnedWords.includes(quickWord.id)} onClose={closeQuickView} onToggleSaved={() => library.toggleSavedWord(quickWord.id)} onToggleLearned={() => library.toggleLearnedWord(quickWord.id)} audio={audio} />}</AppShell>
