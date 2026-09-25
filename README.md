@@ -33,7 +33,7 @@ In the repository settings, set `Pages -> Build and deployment -> Source` to `Gi
 
 Content lives in [`src/content/content.json`](src/content/content.json), separate from the map components. Every word now requires at least one complete example sentence, alongside future HSK 1–9 labels and natural/slow audio asset slots. The HSK source metadata is intentionally a placeholder and every `Related` word has an explicit extension reason. Before release, replace the placeholder source with a licensed, versioned vocabulary list and reconcile every label.
 
-User state is stored separately from immutable content in versioned local storage (`zimai-library-v1`). Audio is now recording-only: a reviewed native asset plays when `audio.natural` is present, and items without one remain visibly pending instead of using browser speech synthesis. Recording placement and review guidance live in [`public/audio/README.md`](public/audio/README.md).
+User state is stored separately from immutable content in versioned local storage (`zimai-library-v1`). Reviewed native audio remains the preferred path: a reviewed asset plays when `audio.natural` is present. Until recordings are added, items expose a clearly labeled Mandarin device-voice preview so the map remains hearable without presenting synthetic speech as native audio. Recording placement and review guidance live in [`public/audio/README.md`](public/audio/README.md).
 
 The first HSK 2–3 practice slice lives in [`src/content/practice.json`](src/content/practice.json) and is intentionally small. It provides the interaction model for daily-life conversations, listening recall, sentence building, and basic grammar before more scenes and reviewed native recordings are added.
 

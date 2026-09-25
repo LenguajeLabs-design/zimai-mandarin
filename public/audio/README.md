@@ -13,7 +13,7 @@ Then add the public path to the matching content item:
 "audio": { "natural": "/zimai-mandarin/audio/word-xuesheng.mp3" }
 ```
 
-The app is recording-only. If the asset is missing, its control is labeled `Recording pending`; if it fails to play, the app reports the asset problem and does not substitute browser speech synthesis.
+Reviewed recordings remain the preferred audio. If an asset is missing, the app offers a clearly labeled `Preview voice` control that uses the browser's Mandarin device voice as a temporary listening aid; it does not count as native audio and does not change the content's review status. If a reviewed asset fails to play, the app reports the asset problem instead of silently substituting synthetic speech.
 
 Before adding a path to content, each file should be:
 
