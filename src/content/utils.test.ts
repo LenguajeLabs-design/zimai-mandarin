@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import content from './content.json'
+import practice from './practice.json'
 import { familyWords, highlightedCharacters, normalizePinyin, wordMatchesQuery } from './utils'
 import type { ContentData } from './types'
 import { initialLibraryState, readLibraryState, writeLibraryState } from '../services/storageService'
@@ -50,5 +51,11 @@ describe('content utilities', () => {
 
   it('keeps the prototype content internally consistent', () => {
     expect(contentValidationErrors).toEqual([])
+  })
+
+  it('keeps the first HSK 2–3 practice lesson internally coherent', () => {
+    expect(practice.builder.tokens.join('')).toBe('我现在在家学习')
+    expect(practice.recall.choices.filter((choice) => choice.isCorrect)).toHaveLength(1)
+    expect(practice.dialogue.some((turn) => turn.hanzi === practice.recall.audioText)).toBe(true)
   })
 })

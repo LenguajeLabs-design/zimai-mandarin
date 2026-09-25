@@ -17,6 +17,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added example sentences for the current HSK 1 core words.
 - Added a reviewed-recording workflow in `public/audio/README.md`.
 - Added animated stroke-order sheets and optional tracing practice for every family root character.
+- Added the first HSK 2–3 Practice lesson with a daily-life conversation, listening-recall choices, sentence building, and a basic 在 grammar note.
 
 ### Changed
 
@@ -27,6 +28,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Wired audio playback to prefer `audio.natural` recordings and gracefully fall back to Mandarin speech synthesis.
 - Replaced the speech-synthesis fallback with recording-only playback; missing native assets now show a clear pending state.
 - Removed the branch connector line from family rows; it was visually noisy and read like an error at mobile widths.
+- Added a dedicated Practice destination so the next learning phase has one clear home instead of crowding the family map.
 - Updated the README to describe the current twenty-five-family build and backup workflow.
 - Added an “In context” sentence layer to the word quick view.
 

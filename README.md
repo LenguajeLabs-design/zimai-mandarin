@@ -1,6 +1,6 @@
 # 字脉 / Zìmài
 
-Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with twenty-five curated prototype maps: 学, 电, 人, 看, 好, 家, 小, 水, 吃, 去, 上, 下, 开, 来, 说, 见, 喝, 买, 做, 有, 在, 住, 要, 给, and 会.
+Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with twenty-five curated prototype maps: 学, 电, 人, 看, 好, 家, 小, 水, 吃, 去, 上, 下, 开, 来, 说, 见, 喝, 买, 做, 有, 在, 住, 要, 给, and 会. It now also includes the first HSK 2–3 Practice lesson: a daily-life conversation, listening-recall shell, sentence builder, and grammar note built around 在.
 
 The product direction is to grow from a calm HSK 1 foundation toward HSK 6 through connected word families, natural audio, example sentences, and spaced review. New vocabulary remains explicitly marked as `Related` until its source and HSK level are verified.
 
@@ -34,6 +34,8 @@ In the repository settings, set `Pages -> Build and deployment -> Source` to `Gi
 Content lives in [`src/content/content.json`](src/content/content.json), separate from the map components. Words can now carry future HSK 1–9 labels, example sentences, and natural/slow audio asset slots. The HSK source metadata is intentionally a placeholder and every `Related` word has an explicit extension reason. Before release, replace the placeholder source with a licensed, versioned vocabulary list and reconcile every label.
 
 User state is stored separately from immutable content in versioned local storage (`zimai-library-v1`). Audio is now recording-only: a reviewed native asset plays when `audio.natural` is present, and items without one remain visibly pending instead of using browser speech synthesis. Recording placement and review guidance live in [`public/audio/README.md`](public/audio/README.md).
+
+The first HSK 2–3 practice slice lives in [`src/content/practice.json`](src/content/practice.json) and is intentionally small. It provides the interaction model for daily-life conversations, listening recall, sentence building, and basic grammar before more scenes and reviewed native recordings are added.
 
 ## Change tracking and backups
 

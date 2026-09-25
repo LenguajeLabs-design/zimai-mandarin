@@ -1,0 +1,81 @@
+{
+  "id": "at-home-now",
+  "level": "HSK 2–3",
+  "title": "At home, right now",
+  "scene": "Daily life · where you are",
+  "description": "Use 在 to place a person before an action. Start with the exchange, then rebuild the answer from memory.",
+  "dialogue": [
+    {
+      "speaker": "A",
+      "hanzi": "你现在在哪儿？",
+      "pinyin": "Nǐ xiànzài zài nǎr?",
+      "gloss": "Where are you now?",
+      "audioKey": "practice-at-home-question"
+    },
+    {
+      "speaker": "B",
+      "hanzi": "我现在在家学习。",
+      "pinyin": "Wǒ xiànzài zài jiā xuéxí.",
+      "gloss": "I’m studying at home now.",
+      "audioKey": "practice-at-home-answer"
+    },
+    {
+      "speaker": "A",
+      "hanzi": "晚上一起吃饭吗？",
+      "pinyin": "Wǎnshang yìqǐ chīfàn ma?",
+      "gloss": "Shall we eat together tonight?",
+      "audioKey": "practice-at-home-invite"
+    }
+  ],
+  "recall": {
+    "prompt": "Which sentence means “I’m studying at home now”?",
+    "audioKey": "practice-at-home-answer",
+    "audioText": "我现在在家学习。",
+    "choices": [
+      {
+        "hanzi": "我现在在家学习。",
+        "pinyin": "Wǒ xiànzài zài jiā xuéxí.",
+        "gloss": "I’m studying at home now.",
+        "isCorrect": true
+      },
+      {
+        "hanzi": "我现在去学校。",
+        "pinyin": "Wǒ xiànzài qù xuéxiào.",
+        "gloss": "I’m going to school now.",
+        "isCorrect": false
+      },
+      {
+        "hanzi": "我晚上一起吃饭。",
+        "pinyin": "Wǒ wǎnshang yìqǐ chīfàn.",
+        "gloss": "I eat together tonight.",
+        "isCorrect": false
+      }
+    ],
+    "answerNote": "在家 is the location, and 学习 is the action that follows it."
+  },
+  "builder": {
+    "prompt": "Build the answer",
+    "translation": "I’m studying at home now.",
+    "tokens": ["我", "现在", "在", "家", "学习"],
+    "tiles": ["我", "现在", "在", "家", "学习", "学校"],
+    "note": "In a simple location sentence, 在 + place comes before the verb."
+  },
+  "grammar": {
+    "label": "Grammar · 在",
+    "title": "Place before action.",
+    "pattern": "主语 + 在 + 地点 + 动作",
+    "explanation": "Use 在 before the place where an action happens. The setting comes close to the verb, so the listener knows where the action is taking place.",
+    "examples": [
+      {
+        "hanzi": "我在家学习。",
+        "pinyin": "Wǒ zài jiā xuéxí.",
+        "gloss": "I study at home."
+      },
+      {
+        "hanzi": "老师在教室。",
+        "pinyin": "Lǎoshī zài jiàoshì.",
+        "gloss": "The teacher is in the classroom."
+      }
+    ]
+  }
+}

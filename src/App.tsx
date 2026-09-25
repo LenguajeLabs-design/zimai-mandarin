@@ -12,12 +12,13 @@ import { FamilyLibraryPage } from './pages/FamilyLibraryPage'
 import { SavedPage } from './pages/SavedPage'
 import { SearchPage } from './pages/SearchPage'
 import { ReviewPage } from './pages/ReviewPage'
+import { PracticePage } from './pages/PracticePage'
 import { GuidePage } from './pages/GuidePage'
 import { AboutPage } from './pages/AboutPage'
 
 const content = rawContent as ContentData
 
-type Route = { kind: 'library' | 'saved' | 'search' | 'review' | 'guide' | 'about' | 'detail' | 'word'; familyId?: string; wordId?: string; query?: string }
+type Route = { kind: 'library' | 'saved' | 'search' | 'review' | 'practice' | 'guide' | 'about' | 'detail' | 'word'; familyId?: string; wordId?: string; query?: string }
 
 const appBasePath = import.meta.env.BASE_URL.replace(/\/$/, '')
 
@@ -39,6 +40,7 @@ function parseRouteFromPath(pathWithSearch: string): Route {
   if (path.startsWith('/words/')) return { kind: 'word', wordId: path.split('/')[2] }
   if (path === '/saved') return { kind: 'saved' }
   if (path === '/review') return { kind: 'review' }
+  if (path === '/practice') return { kind: 'practice' }
   if (path === '/guide') return { kind: 'guide' }
   if (path === '/about') return { kind: 'about' }
   if (path === '/search') return { kind: 'search', query: new URLSearchParams(search ?? '').get('q') ?? '' }
@@ -62,6 +64,7 @@ function useRoute() {
 function baseDestination(route: Route): NavDestination {
   if (route.kind === 'saved') return 'saved'
   if (route.kind === 'review') return 'review'
+  if (route.kind === 'practice') return 'practice'
   if (route.kind === 'guide') return 'guide'
   if (route.kind === 'about') return 'about'
   if (route.kind === 'search') return 'search'
@@ -98,6 +101,8 @@ export default function App() {
     page = <SavedPage families={families} getRoot={getRoot} getWords={getWords} savedFamilies={library.state.savedFamilies} savedWords={library.state.savedWords} recentFamilies={library.state.recentFamilies} onOpenFamily={(id) => id ? openFamily(id) : goToDestination('families')} onToggleSaved={library.toggleSavedFamily} onOpenWord={openWord} audio={audio} />
   } else if (backgroundRoute.kind === 'review') {
     page = <ReviewPage families={families} words={content.words} getRoot={getRoot} savedWords={library.state.savedWords} recentFamilies={library.state.recentFamilies} learnedWords={library.state.learnedWords} reviewProgress={library.state.reviewProgress} onOpenFamily={openFamily} onOpenWord={openWord} onToggleLearned={library.toggleLearnedWord} onReview={library.recordReview} audio={audio} />
+  } else if (backgroundRoute.kind === 'practice') {
+    page = <PracticePage audio={audio} />
   } else if (backgroundRoute.kind === 'guide') {
     const guideFamily = families[0]
     page = <GuidePage family={guideFamily} root={getRoot(guideFamily)} words={getWords(guideFamily)} onOpenFamily={openFamily} onOpenWord={openWord} onOpenAbout={() => goToDestination('about')} audio={audio} />
