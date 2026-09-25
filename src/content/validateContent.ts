@@ -34,6 +34,8 @@ export function validateContent(data: ContentData): string[] {
     if (word.hskLevel === 'HSK 2' && !familiesById.get(word.familyId)?.sourceIds.includes('hsk-2-official-syllabus')) errors.push(`HSK 2 word without official HSK 2 source: ${word.id}`)
     if (word.hskLevel === 'HSK 3' && !familiesById.get(word.familyId)?.sourceIds.includes('hsk-3-official-syllabus')) errors.push(`HSK 3 word without official HSK 3 source: ${word.id}`)
     if (word.hskLevel === 'HSK 4' && !familiesById.get(word.familyId)?.sourceIds.includes('hsk-4-official-syllabus')) errors.push(`HSK 4 word without official HSK 4 source: ${word.id}`)
+    if (word.hskLevel === 'HSK 5' && !familiesById.get(word.familyId)?.sourceIds.includes('hsk-5-official-syllabus')) errors.push(`HSK 5 word without official HSK 5 source: ${word.id}`)
+    if (word.hskLevel === 'HSK 6' && !familiesById.get(word.familyId)?.sourceIds.includes('hsk-6-official-syllabus')) errors.push(`HSK 6 word without official HSK 6 source: ${word.id}`)
     if (!word.examples.length) errors.push(`Word without an example sentence: ${word.id}`)
     word.examples.forEach((example, index) => {
       if (!example.hanzi || !example.pinyin || !example.gloss) errors.push(`Incomplete example sentence ${index + 1} for ${word.id}`)
@@ -43,6 +45,8 @@ export function validateContent(data: ContentData): string[] {
     if (family.sourceIds.includes('hsk-2-official-syllabus') && !family.members.some((wordId) => data.words.find((word) => word.id === wordId)?.hskLevel === 'HSK 2')) errors.push(`HSK 2 family has no verified core member: ${family.id}`)
     if (family.sourceIds.includes('hsk-3-official-syllabus') && !family.members.some((wordId) => data.words.find((word) => word.id === wordId)?.hskLevel === 'HSK 3')) errors.push(`HSK 3 family has no verified core member: ${family.id}`)
     if (family.sourceIds.includes('hsk-4-official-syllabus') && !family.members.some((wordId) => data.words.find((word) => word.id === wordId)?.hskLevel === 'HSK 4')) errors.push(`HSK 4 family has no verified core member: ${family.id}`)
+    if (family.sourceIds.includes('hsk-5-official-syllabus') && !family.members.some((wordId) => data.words.find((word) => word.id === wordId)?.hskLevel === 'HSK 5')) errors.push(`HSK 5 family has no verified core member: ${family.id}`)
+    if (family.sourceIds.includes('hsk-6-official-syllabus') && !family.members.some((wordId) => data.words.find((word) => word.id === wordId)?.hskLevel === 'HSK 6')) errors.push(`HSK 6 family has no verified core member: ${family.id}`)
   })
   return errors
 }

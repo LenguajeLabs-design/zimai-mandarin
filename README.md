@@ -1,6 +1,6 @@
 # 字脉 / Zìmài
 
-Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with twenty-five HSK 1 prototype maps, thirteen dedicated HSK 2 maps, twelve dedicated HSK 3 maps, and the first fourteen dedicated HSK 4 maps. It also includes the first HSK 2–3 Practice lesson: a daily-life conversation, listening-recall shell, sentence builder, and grammar note built around 在.
+Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with twenty-five HSK 1 prototype maps, thirteen dedicated HSK 2 maps, twelve dedicated HSK 3 maps, fourteen dedicated HSK 4 maps, six HSK 5 maps, and seven HSK 6 maps. It also includes the first HSK 2–3 Practice lesson: a daily-life conversation, listening-recall shell, sentence builder, and grammar note built around 在.
 
 The product direction is to grow from a calm HSK 1 foundation toward HSK 6 through connected word families, natural audio, example sentences, and spaced review. New vocabulary remains explicitly marked as `Related` until its source and HSK level are verified.
 
@@ -42,6 +42,8 @@ The first HSK 2 content set now includes twenty-eight verified HSK 2 core words 
 The first HSK 3 content set now includes thirty-three verified HSK 3 core words across twelve dedicated five-word families, each with a context sentence. Related extensions complete the maps without being promoted to HSK 3. The official HSK 3 syllabus and the reproducible HSK 2.0 Level 3 mirror are recorded in the content source metadata.
 
 The first HSK 4 content set now includes forty-nine verified HSK 4 core words across fourteen dedicated five-word families, each with a context sentence. Related extensions complete the maps without being promoted to HSK 4. The official HSK 4 syllabus and the reproducible HSK 2.0 Level 4 mirror are recorded in the content source metadata; this is an initial verified slice, not the complete HSK 4 vocabulary inventory.
+
+The first HSK 5 slice includes twenty-two verified HSK 5 core words across six dedicated five-word families. The first HSK 6 slice includes twenty-eight verified HSK 6 core words across seven dedicated five-word families. Both slices include context sentences and clearly marked Related extensions; their official syllabi and reproducible HSK 2.0 mirrors are recorded in the content source metadata. These are starting points for the broader HSK 5/6 reading, listening, speaking, and summarization curriculum, not complete level inventories.
 
 ## Change tracking and backups
 

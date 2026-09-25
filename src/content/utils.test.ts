@@ -82,6 +82,24 @@ describe('content utilities', () => {
     expect(hsk4Families.every((family) => familyWords(family, data.words).length >= 5)).toBe(true)
   })
 
+  it('keeps dedicated HSK 5 families source-backed', () => {
+    const hsk5Families = data.families.filter((family) => family.sourceIds.includes('hsk-5-official-syllabus'))
+    const hsk5Words = hsk5Families.flatMap((family) => familyWords(family, data.words)).filter((word) => word.hskLevel === 'HSK 5')
+    expect(hsk5Families).toHaveLength(6)
+    expect(hsk5Words).toHaveLength(22)
+    expect(hsk5Words.every((word) => word.hskLevel === 'HSK 5' && !word.isExtension)).toBe(true)
+    expect(hsk5Families.every((family) => familyWords(family, data.words).length >= 5)).toBe(true)
+  })
+
+  it('keeps dedicated HSK 6 families source-backed', () => {
+    const hsk6Families = data.families.filter((family) => family.sourceIds.includes('hsk-6-official-syllabus'))
+    const hsk6Words = hsk6Families.flatMap((family) => familyWords(family, data.words)).filter((word) => word.hskLevel === 'HSK 6')
+    expect(hsk6Families).toHaveLength(7)
+    expect(hsk6Words).toHaveLength(28)
+    expect(hsk6Words.every((word) => word.hskLevel === 'HSK 6' && !word.isExtension)).toBe(true)
+    expect(hsk6Families.every((family) => familyWords(family, data.words).length >= 5)).toBe(true)
+  })
+
   it('keeps the first HSK 2–3 practice lesson internally coherent', () => {
     expect(practice.builder.tokens.join('')).toBe('我现在在家学习')
     expect(practice.recall.choices.filter((choice) => choice.isCorrect)).toHaveLength(1)

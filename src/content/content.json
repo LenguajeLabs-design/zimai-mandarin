@@ -61,6 +61,42 @@
       "license": "Repository license; verify redistribution rights before release",
       "retrievedAt": "2026-09-25",
       "notes": "The first HSK 4 labels are cross-checked against the exclusive HSK 2.0 Level 4 list mirrored at https://raw.githubusercontent.com/jelleverheyen/hsk-vocabulary/main/wordlists/exclusive/old/4.json. Upstream project: https://github.com/jelleverheyen/hsk-vocabulary. The official syllabus remains the primary level framework."
+    },
+    {
+      "id": "hsk-5-official-syllabus",
+      "name": "Official HSK 5 examination syllabus",
+      "version": "HSK 2.0",
+      "level": "HSK 5",
+      "license": "Official reference",
+      "retrievedAt": "2026-09-25",
+      "notes": "Chinese Test Service syllabus: HSK 5 is framed around 2500 cumulative words, reading Chinese newspapers and magazines, enjoying media, and giving a more complete speech. https://www.chinesetest.cn/userfiles/file/dagang/HSK5.pdf"
+    },
+    {
+      "id": "hsk-5-exclusive-mirror",
+      "name": "HSK 2.0 exclusive Level 5 vocabulary mirror",
+      "version": "reproducible verification mirror",
+      "level": "HSK 5",
+      "license": "Repository license; verify redistribution rights before release",
+      "retrievedAt": "2026-09-25",
+      "notes": "The first HSK 5 labels are cross-checked against the exclusive HSK 2.0 Level 5 list mirrored at https://raw.githubusercontent.com/jelleverheyen/hsk-vocabulary/main/wordlists/exclusive/old/5.json. Upstream project: https://github.com/jelleverheyen/hsk-vocabulary. The official syllabus remains the primary level framework."
+    },
+    {
+      "id": "hsk-6-official-syllabus",
+      "name": "Official HSK 6 examination syllabus",
+      "version": "HSK 2.0",
+      "level": "HSK 6",
+      "license": "Official reference",
+      "retrievedAt": "2026-09-25",
+      "notes": "Chinese Test Service syllabus: HSK 6 is framed around 5000 or more common words, fluent comprehension and expression, and summarizing a roughly 1000-character narrative. https://www.chinesetest.cn/userfiles/file/dagang/HSK6.pdf"
+    },
+    {
+      "id": "hsk-6-exclusive-mirror",
+      "name": "HSK 2.0 exclusive Level 6 vocabulary mirror",
+      "version": "reproducible verification mirror",
+      "level": "HSK 6",
+      "license": "Repository license; verify redistribution rights before release",
+      "retrievedAt": "2026-09-25",
+      "notes": "The first HSK 6 labels are cross-checked against the exclusive HSK 2.0 Level 6 list mirrored at https://raw.githubusercontent.com/jelleverheyen/hsk-vocabulary/main/wordlists/exclusive/old/6.json. Upstream project: https://github.com/jelleverheyen/hsk-vocabulary. The official syllabus remains the primary level framework."
     }
   ],
   "characters": [
@@ -126,6 +162,16 @@
     ,{ "id": "char-liao", "hanzi": "料", "pinyin": "liào", "toneNumber": 4, "toneMark": "liào", "gloss": "material; ingredient", "audioKey": "root-liao" }
     ,{ "id": "char-du-hsk4", "hanzi": "度", "pinyin": "dù", "toneNumber": 4, "toneMark": "dù", "gloss": "degree; manner", "audioKey": "root-du-hsk4" }
     ,{ "id": "char-xin-hsk4", "hanzi": "信", "pinyin": "xìn", "toneNumber": 4, "toneMark": "xìn", "gloss": "trust; confidence; letter", "audioKey": "root-xin-hsk4" }
+    ,{ "id": "char-cheng-hsk5", "hanzi": "成", "pinyin": "chéng", "toneNumber": 2, "toneMark": "chéng", "gloss": "become; accomplish", "audioKey": "root-cheng-hsk5" }
+    ,{ "id": "char-bao-hsk5", "hanzi": "保", "pinyin": "bǎo", "toneNumber": 3, "toneMark": "bǎo", "gloss": "protect; keep", "audioKey": "root-bao-hsk5" }
+    ,{ "id": "char-ai-hsk5", "hanzi": "爱", "pinyin": "ài", "toneNumber": 4, "toneMark": "ài", "gloss": "love; care", "audioKey": "root-ai-hsk5" }
+    ,{ "id": "char-an-hsk5", "hanzi": "安", "pinyin": "ān", "toneNumber": 1, "toneMark": "ān", "gloss": "peaceful; settle", "audioKey": "root-an-hsk5" }
+    ,{ "id": "char-chong-hsk5", "hanzi": "充", "pinyin": "chōng", "toneNumber": 1, "toneMark": "chōng", "gloss": "fill; sufficient", "audioKey": "root-chong-hsk5" }
+    ,{ "id": "char-bao-report-hsk6", "hanzi": "报", "pinyin": "bào", "toneNumber": 4, "toneMark": "bào", "gloss": "report; repay", "audioKey": "root-bao-report-hsk6" }
+    ,{ "id": "char-ben-hsk6", "hanzi": "本", "pinyin": "běn", "toneNumber": 3, "toneMark": "běn", "gloss": "本; origin; self", "audioKey": "root-ben-hsk6" }
+    ,{ "id": "char-bao-package-hsk6", "hanzi": "包", "pinyin": "bāo", "toneNumber": 1, "toneMark": "bāo", "gloss": "包; wrap; include", "audioKey": "root-bao-package-hsk6" }
+    ,{ "id": "char-bian-hsk6", "hanzi": "变", "pinyin": "biàn", "toneNumber": 4, "toneMark": "biàn", "gloss": "change; transform", "audioKey": "root-bian-hsk6" }
+    ,{ "id": "char-bian-argument-hsk6", "hanzi": "辩", "pinyin": "biàn", "toneNumber": 4, "toneMark": "biàn", "gloss": "argue; debate", "audioKey": "root-bian-argument-hsk6" }
   ],
   "families": [
     {
@@ -870,6 +916,162 @@
       "featured": false,
       "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
       "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-bu-hsk5",
+      "rootCharacterId": "char-bu",
+      "title": "不 family",
+      "shortDescription": "Nuance words for necessity, doubt, and limits.",
+      "meaningNote": "不 becomes more precise at HSK 5, marking what is unnecessary, unlikely, or continuing without pause.",
+      "members": ["word-buan-hsk5", "word-bubi-hsk5", "word-budeliaohsk5", "word-buduan-hsk5", "word-bujiande-hsk5"],
+      "sortOrder": 65,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 5 family; its core HSK 5 members are verified in the HSK 2.0 exclusive Level 5 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-5-official-syllabus", "hsk-5-exclusive-mirror"]
+    },
+    {
+      "id": "family-cheng-hsk5",
+      "rootCharacterId": "char-cheng-hsk5",
+      "title": "成 family",
+      "shortDescription": "Words for formation, accomplishment, and growing into something.",
+      "meaningNote": "成 links what something is made of with the results, achievements, and stories it becomes.",
+      "members": ["word-chengfen-hsk5", "word-chengguo-hsk5", "word-chengjiu-hsk5", "word-chengli-hsk5", "word-chengyu-hsk5"],
+      "sortOrder": 66,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 5 family; its core HSK 5 members are verified in the HSK 2.0 exclusive Level 5 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-5-official-syllabus", "hsk-5-exclusive-mirror"]
+    },
+    {
+      "id": "family-bao-hsk5",
+      "rootCharacterId": "char-bao-hsk5",
+      "title": "保 family",
+      "shortDescription": "Words for keeping, preserving, and protecting what matters.",
+      "meaningNote": "保 moves from holding something in place to preserving value and managing risk.",
+      "members": ["word-baochi-hsk5", "word-baocun-hsk5", "word-baoliu-hsk5", "word-baoxian-hsk5", "word-baohu-hsk5"],
+      "sortOrder": 67,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 5 family; its core HSK 5 members are verified in the HSK 2.0 exclusive Level 5 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-5-official-syllabus", "hsk-5-exclusive-mirror"]
+    },
+    {
+      "id": "family-ai-hsk5",
+      "rootCharacterId": "char-ai-hsk5",
+      "title": "爱 family",
+      "shortDescription": "Words for care, affection, and the value we place on people.",
+      "meaningNote": "爱 ranges from active care and appreciation to the small acts that show affection.",
+      "members": ["word-aihu-hsk5", "word-aixi-hsk5", "word-aixin-hsk5", "word-airen-hsk5", "word-aihao-hsk5"],
+      "sortOrder": 68,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 5 family; its core HSK 5 members are verified in the HSK 2.0 exclusive Level 5 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-5-official-syllabus", "hsk-5-exclusive-mirror"]
+    },
+    {
+      "id": "family-an-hsk5",
+      "rootCharacterId": "char-an-hsk5",
+      "title": "安 family",
+      "shortDescription": "Words for reassurance, setup, and making a place workable.",
+      "meaningNote": "安 connects emotional reassurance with the practical work of installing and arranging a space.",
+      "members": ["word-anwei-hsk5", "word-anzhuang-hsk5", "word-anquan-hsk5", "word-anpai-hsk5", "word-anxin-hsk5"],
+      "sortOrder": 69,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 5 family; its core HSK 5 members are verified in the HSK 2.0 exclusive Level 5 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-5-official-syllabus", "hsk-5-exclusive-mirror"]
+    },
+    {
+      "id": "family-chong-hsk5",
+      "rootCharacterId": "char-chong-hsk5",
+      "title": "充 family",
+      "shortDescription": "Words for enoughness, fullness, and keeping devices powered.",
+      "meaningNote": "充 describes filling a space, meeting a need, or supplying the energy something requires.",
+      "members": ["word-chongfen-hsk5", "word-chongman-hsk5", "word-chongdianqi-hsk5", "word-chongdian-hsk5", "word-chongshi-hsk5"],
+      "sortOrder": 70,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 5 family; its core HSK 5 members are verified in the HSK 2.0 exclusive Level 5 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-5-official-syllabus", "hsk-5-exclusive-mirror"]
+    },
+    {
+      "id": "family-bao-hsk6",
+      "rootCharacterId": "char-bao-hsk5",
+      "title": "保 family",
+      "shortDescription": "Formal protection words for privacy, care, and defense.",
+      "meaningNote": "At HSK 6, 保 moves into institutions and responsibilities: confidentiality, guardianship, and defense.",
+      "members": ["word-baoguan-hsk6", "word-baomi-hsk6", "word-baomu-hsk6", "word-baoshou-hsk6", "word-baowei-hsk6"],
+      "sortOrder": 71,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 6 family; its core HSK 6 members are verified in the HSK 2.0 exclusive Level 6 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-6-official-syllabus", "hsk-6-exclusive-mirror"]
+    },
+    {
+      "id": "family-bao-report-hsk6",
+      "rootCharacterId": "char-bao-report-hsk6",
+      "title": "报 family",
+      "shortDescription": "Words for reporting, responding, and returning what is owed.",
+      "meaningNote": "报 links public reporting with personal response, repayment, and the consequences of action.",
+      "members": ["word-baochou-revenge-hsk6", "word-baochou-pay-hsk6", "word-baoda-hsk6", "word-baodao-hsk6", "word-baofu-hsk6"],
+      "sortOrder": 72,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 6 family; its core HSK 6 members are verified in the HSK 2.0 exclusive Level 6 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-6-official-syllabus", "hsk-6-exclusive-mirror"]
+    },
+    {
+      "id": "family-ben-hsk6",
+      "rootCharacterId": "char-ben-hsk6",
+      "title": "本 family",
+      "shortDescription": "Words for inner nature, personal identity, and practical capital.",
+      "meaningNote": "本 points inward: to what is original, personal, essential, or available to build from.",
+      "members": ["word-benneng-hsk6", "word-benqian-hsk6", "word-benren-hsk6", "word-benshen-hsk6", "word-benshi-hsk6"],
+      "sortOrder": 73,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 6 family; its core HSK 6 members are verified in the HSK 2.0 exclusive Level 6 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-6-official-syllabus", "hsk-6-exclusive-mirror"]
+    },
+    {
+      "id": "family-bao-package-hsk6",
+      "rootCharacterId": "char-bao-package-hsk6",
+      "title": "包 family",
+      "shortDescription": "Words for covering, enclosing, and carrying something together.",
+      "meaningNote": "包 expands from a physical bundle to the figurative acts of surrounding, concealing, and including.",
+      "members": ["word-baobi-hsk6", "word-baofu-hsk6", "word-baowei-hsk6", "word-baozhuang-hsk6", "word-baoguo-hsk6"],
+      "sortOrder": 74,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 6 family; its core HSK 6 members are verified in the HSK 2.0 exclusive Level 6 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-6-official-syllabus", "hsk-6-exclusive-mirror"]
+    },
+    {
+      "id": "family-bian-hsk6",
+      "rootCharacterId": "char-bian-hsk6",
+      "title": "变 family",
+      "shortDescription": "Words for turning points, transitions, and changes in condition.",
+      "meaningNote": "变 gives language to shifts that alter a situation, a path, or the character of a thing.",
+      "members": ["word-biangu-hsk6", "word-bianqian-hsk6", "word-bianzhi-hsk6", "word-bianhua-hsk6", "word-biancheng-hsk6"],
+      "sortOrder": 75,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 6 family; its core HSK 6 members are verified in the HSK 2.0 exclusive Level 6 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-6-official-syllabus", "hsk-6-exclusive-mirror"]
+    },
+    {
+      "id": "family-bian-argument-hsk6",
+      "rootCharacterId": "char-bian-argument-hsk6",
+      "title": "辩 family",
+      "shortDescription": "Words for debate, defense, and testing an idea through argument.",
+      "meaningNote": "辩 treats disagreement as a structured act: defending a position, explaining it, and weighing evidence.",
+      "members": ["word-bianhu-hsk6", "word-bianjie-hsk6", "word-bianzheng-hsk6", "word-bianlun-hsk6", "word-bianming-hsk6"],
+      "sortOrder": 76,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 6 family; its core HSK 6 members are verified in the HSK 2.0 exclusive Level 6 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-6-official-syllabus", "hsk-6-exclusive-mirror"]
+    },
+    {
+      "id": "family-biao-hsk6",
+      "rootCharacterId": "char-biao",
+      "title": "表 family",
+      "shortDescription": "Public expression words for positions, decisions, and recognition.",
+      "meaningNote": "表 brings an inner position into public form: a vote, a stance, or an act of recognition.",
+      "members": ["word-biaoju-hsk6", "word-biaotai-hsk6", "word-biaozhang-hsk6", "word-biaoda-hsk6", "word-biaobai-hsk6"],
+      "sortOrder": 77,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 6 family; its core HSK 6 members are verified in the HSK 2.0 exclusive Level 6 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-6-official-syllabus", "hsk-6-exclusive-mirror"]
     }
   ],
   "words": [
@@ -1245,5 +1447,82 @@
     { "id": "word-xinyongka", "hanzi": "信用卡", "pinyin": "xìnyòngkǎ", "toneNumbers": [4, 4, 3], "gloss": "credit card", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-xin-hsk4", "rootCharacterIds": ["char-xin-hsk4"], "audioKey": "word-xinyongka", "examples": [{ "hanzi": "我可以用信用卡付款吗？", "pinyin": "Wǒ kěyǐ yòng xìnyòngkǎ fùkuǎn ma.", "gloss": "Can I pay by credit card?" }] },
     { "id": "word-xinhao", "hanzi": "信号", "pinyin": "xìnhào", "toneNumbers": [4, 4], "gloss": "signal; sign", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural communication extension for the 信 family; verify against the selected HSK source.", "familyId": "family-xin-hsk4", "rootCharacterIds": ["char-xin-hsk4"], "audioKey": "word-xinhao", "examples": [{ "hanzi": "这里的手机信号不太好。", "pinyin": "Zhèlǐ de shǒujī xìnhào bú tài hǎo.", "gloss": "The phone signal here is not very good." }] },
     { "id": "word-xinxi", "hanzi": "信息", "pinyin": "xìnxī", "toneNumbers": [4, 1], "gloss": "information; message", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural information extension for the 信 family; verify against the selected HSK source.", "familyId": "family-xin-hsk4", "rootCharacterIds": ["char-xin-hsk4"], "audioKey": "word-xinxi", "examples": [{ "hanzi": "请把最新信息发给我。", "pinyin": "Qǐng bǎ zuìxīn xìnxī fā gěi wǒ.", "gloss": "Please send me the latest information." }] }
+    ,{ "id": "word-buan-hsk5", "hanzi": "不安", "pinyin": "bù'ān", "toneNumbers": [4, 1], "gloss": "uneasy; restless", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-bu-hsk5", "rootCharacterIds": ["char-bu"], "audioKey": "word-buan-hsk5", "examples": [{ "hanzi": "等待结果的时候，我心里有些不安。", "pinyin": "Děngdài jiéguǒ de shíhou, wǒ xīnli yǒuxiē bù'ān.", "gloss": "While waiting for the result, I felt a little uneasy." }] }
+    ,{ "id": "word-bubi-hsk5", "hanzi": "不必", "pinyin": "búbì", "toneNumbers": [2, 4], "gloss": "need not; not have to", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-bu-hsk5", "rootCharacterIds": ["char-bu"], "audioKey": "word-bubi-hsk5", "examples": [{ "hanzi": "你不必担心，我已经安排好了。", "pinyin": "Nǐ búbì dānxīn, wǒ yǐjīng ānpái hǎo le.", "gloss": "You do not need to worry; I have arranged everything." }] }
+    ,{ "id": "word-budeliaohsk5", "hanzi": "不得了", "pinyin": "bùdéliǎo", "toneNumbers": [4, 2, 3], "gloss": "terrible; extremely", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-bu-hsk5", "rootCharacterIds": ["char-bu"], "audioKey": "word-budeliaohsk5", "examples": [{ "hanzi": "今天热得不得了。", "pinyin": "Jīntiān rè de bùdéliǎo.", "gloss": "It is unbearably hot today." }] }
+    ,{ "id": "word-buduan-hsk5", "hanzi": "不断", "pinyin": "búduàn", "toneNumbers": [2, 4], "gloss": "continuously; unceasingly", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-bu-hsk5", "rootCharacterIds": ["char-bu"], "audioKey": "word-buduan-hsk5", "examples": [{ "hanzi": "这座城市正在不断发展。", "pinyin": "Zhè zuò chéngshì zhèngzài búduàn fāzhǎn.", "gloss": "This city is developing continuously." }] }
+    ,{ "id": "word-bujiande-hsk5", "hanzi": "不见得", "pinyin": "bújiànde", "toneNumbers": [2, 4, 5], "gloss": "not necessarily", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-bu-hsk5", "rootCharacterIds": ["char-bu"], "audioKey": "word-bujiande-hsk5", "examples": [{ "hanzi": "价格高不见得质量就好。", "pinyin": "Jiàgé gāo bújiànde zhìliàng jiù hǎo.", "gloss": "A high price does not necessarily mean good quality." }] }
+
+    ,{ "id": "word-chengfen-hsk5", "hanzi": "成分", "pinyin": "chéngfèn", "toneNumbers": [2, 4], "gloss": "ingredient; component", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-cheng-hsk5", "rootCharacterIds": ["char-cheng-hsk5"], "audioKey": "word-chengfen-hsk5", "examples": [{ "hanzi": "请先看看食品的成分。", "pinyin": "Qǐng xiān kànkan shípǐn de chéngfèn.", "gloss": "Please look at the ingredients of the food first." }] }
+    ,{ "id": "word-chengguo-hsk5", "hanzi": "成果", "pinyin": "chéngguǒ", "toneNumbers": [2, 3], "gloss": "achievement; result", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-cheng-hsk5", "rootCharacterIds": ["char-cheng-hsk5"], "audioKey": "word-chengguo-hsk5", "examples": [{ "hanzi": "大家分享了这次合作的成果。", "pinyin": "Dàjiā fēnxiǎng le zhè cì hézuò de chéngguǒ.", "gloss": "Everyone shared the results of this collaboration." }] }
+    ,{ "id": "word-chengjiu-hsk5", "hanzi": "成就", "pinyin": "chéngjiù", "toneNumbers": [2, 4], "gloss": "achievement; accomplishment", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-cheng-hsk5", "rootCharacterIds": ["char-cheng-hsk5"], "audioKey": "word-chengjiu-hsk5", "examples": [{ "hanzi": "她在科学研究方面取得了很大的成就。", "pinyin": "Tā zài kēxué yánjiū fāngmiàn qǔdé le hěn dà de chéngjiù.", "gloss": "She has made great achievements in scientific research." }] }
+    ,{ "id": "word-chengli-hsk5", "hanzi": "成立", "pinyin": "chénglì", "toneNumbers": [2, 4], "gloss": "establish; be founded", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-cheng-hsk5", "rootCharacterIds": ["char-cheng-hsk5"], "audioKey": "word-chengli-hsk5", "examples": [{ "hanzi": "这个机构成立于二十年前。", "pinyin": "Zhège jīgòu chénglì yú èrshí nián qián.", "gloss": "This organization was founded twenty years ago." }] }
+    ,{ "id": "word-chengyu-hsk5", "hanzi": "成语", "pinyin": "chéngyǔ", "toneNumbers": [2, 3], "gloss": "Chinese idiom", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-cheng-hsk5", "rootCharacterIds": ["char-cheng-hsk5"], "audioKey": "word-chengyu-hsk5", "examples": [{ "hanzi": "老师用一个成语解释了这个道理。", "pinyin": "Lǎoshī yòng yí ge chéngyǔ jiěshì le zhège dàolǐ.", "gloss": "The teacher used an idiom to explain this principle." }] }
+
+    ,{ "id": "word-baochi-hsk5", "hanzi": "保持", "pinyin": "bǎochí", "toneNumbers": [3, 2], "gloss": "maintain; keep", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-bao-hsk5", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baochi-hsk5", "examples": [{ "hanzi": "请保持安静。", "pinyin": "Qǐng bǎochí ānjìng.", "gloss": "Please remain quiet." }] }
+    ,{ "id": "word-baocun-hsk5", "hanzi": "保存", "pinyin": "bǎocún", "toneNumbers": [3, 2], "gloss": "save; preserve", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-bao-hsk5", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baocun-hsk5", "examples": [{ "hanzi": "记得保存这份文件。", "pinyin": "Jìde bǎocún zhè fèn wénjiàn.", "gloss": "Remember to save this file." }] }
+    ,{ "id": "word-baoliu-hsk5", "hanzi": "保留", "pinyin": "bǎoliú", "toneNumbers": [3, 2], "gloss": "retain; preserve", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-bao-hsk5", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baoliu-hsk5", "examples": [{ "hanzi": "这座老房子保留了原来的样子。", "pinyin": "Zhè zuò lǎo fángzi bǎoliú le yuánlái de yàngzi.", "gloss": "This old house has kept its original appearance." }] }
+    ,{ "id": "word-baoxian-hsk5", "hanzi": "保险", "pinyin": "bǎoxiǎn", "toneNumbers": [3, 3], "gloss": "insurance; safe", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-bao-hsk5", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baoxian-hsk5", "examples": [{ "hanzi": "很多人会为汽车购买保险。", "pinyin": "Hěn duō rén huì wèi qìchē gòumǎi bǎoxiǎn.", "gloss": "Many people buy insurance for their cars." }] }
+    ,{ "id": "word-baohu-hsk5", "hanzi": "保护", "pinyin": "bǎohù", "toneNumbers": [3, 4], "gloss": "protect; safeguard", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural protection extension for the 保 family; verify against the selected HSK source.", "familyId": "family-bao-hsk5", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baohu-hsk5", "examples": [{ "hanzi": "我们应该保护环境。", "pinyin": "Wǒmen yīnggāi bǎohù huánjìng.", "gloss": "We should protect the environment." }] }
+
+    ,{ "id": "word-aihu-hsk5", "hanzi": "爱护", "pinyin": "àihù", "toneNumbers": [4, 4], "gloss": "care for; cherish", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-ai-hsk5", "rootCharacterIds": ["char-ai-hsk5"], "audioKey": "word-aihu-hsk5", "examples": [{ "hanzi": "我们要爱护身边的花草。", "pinyin": "Wǒmen yào àihù shēnbiān de huācǎo.", "gloss": "We should take care of the plants around us." }] }
+    ,{ "id": "word-aixi-hsk5", "hanzi": "爱惜", "pinyin": "àixī", "toneNumbers": [4, 1], "gloss": "cherish; use carefully", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-ai-hsk5", "rootCharacterIds": ["char-ai-hsk5"], "audioKey": "word-aixi-hsk5", "examples": [{ "hanzi": "请爱惜公共设施。", "pinyin": "Qǐng àixī gōnggòng shèshī.", "gloss": "Please take care of public facilities." }] }
+    ,{ "id": "word-aixin-hsk5", "hanzi": "爱心", "pinyin": "àixīn", "toneNumbers": [4, 1], "gloss": "compassion; love", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-ai-hsk5", "rootCharacterIds": ["char-ai-hsk5"], "audioKey": "word-aixin-hsk5", "examples": [{ "hanzi": "这项活动需要更多人的爱心。", "pinyin": "Zhè xiàng huódòng xūyào gèng duō rén de àixīn.", "gloss": "This activity needs more people's compassion." }] }
+    ,{ "id": "word-airen-hsk5", "hanzi": "爱人", "pinyin": "àiren", "toneNumbers": [4, 2], "gloss": "spouse; loved one", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural relationship extension for the 爱 family; verify against the selected HSK source.", "familyId": "family-ai-hsk5", "rootCharacterIds": ["char-ai-hsk5"], "audioKey": "word-airen-hsk5", "examples": [{ "hanzi": "她和爱人一起经营这家店。", "pinyin": "Tā hé àiren yìqǐ jīngyíng zhè jiā diàn.", "gloss": "She runs this shop together with her spouse." }] }
+    ,{ "id": "word-aihao-hsk5", "hanzi": "爱好", "pinyin": "àihào", "toneNumbers": [4, 4], "gloss": "hobby; interest", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural interest extension for the 爱 family; verify against the selected HSK source.", "familyId": "family-ai-hsk5", "rootCharacterIds": ["char-ai-hsk5"], "audioKey": "word-aihao-hsk5", "examples": [{ "hanzi": "我的爱好是听音乐。", "pinyin": "Wǒ de àihào shì tīng yīnyuè.", "gloss": "My hobby is listening to music." }] }
+
+    ,{ "id": "word-anwei-hsk5", "hanzi": "安慰", "pinyin": "ānwèi", "toneNumbers": [1, 4], "gloss": "comfort; console", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-an-hsk5", "rootCharacterIds": ["char-an-hsk5"], "audioKey": "word-anwei-hsk5", "examples": [{ "hanzi": "朋友的话让我感到安慰。", "pinyin": "Péngyou de huà ràng wǒ gǎndào ānwèi.", "gloss": "My friend's words comforted me." }] }
+    ,{ "id": "word-anzhuang-hsk5", "hanzi": "安装", "pinyin": "ānzhuāng", "toneNumbers": [1, 1], "gloss": "install; installation", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-an-hsk5", "rootCharacterIds": ["char-an-hsk5"], "audioKey": "word-anzhuang-hsk5", "examples": [{ "hanzi": "工作人员正在安装新的设备。", "pinyin": "Gōngzuò rényuán zhèngzài ānzhuāng xīn de shèbèi.", "gloss": "The staff are installing new equipment." }] }
+    ,{ "id": "word-anquan-hsk5", "hanzi": "安全", "pinyin": "ānquán", "toneNumbers": [1, 2], "gloss": "safe; safety", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural safety extension for the 安 family; verify against the selected HSK source.", "familyId": "family-an-hsk5", "rootCharacterIds": ["char-an-hsk5"], "audioKey": "word-anquan-hsk5", "examples": [{ "hanzi": "请确认门已经关好，保证安全。", "pinyin": "Qǐng quèrèn mén yǐjīng guān hǎo, bǎozhèng ānquán.", "gloss": "Please make sure the door is closed to ensure safety." }] }
+    ,{ "id": "word-anpai-hsk5", "hanzi": "安排", "pinyin": "ānpái", "toneNumbers": [1, 2], "gloss": "arrange; plan", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural planning extension for the 安 family; verify against the selected HSK source.", "familyId": "family-an-hsk5", "rootCharacterIds": ["char-an-hsk5"], "audioKey": "word-anpai-hsk5", "examples": [{ "hanzi": "经理安排了明天的会议。", "pinyin": "Jīnglǐ ānpái le míngtiān de huìyì.", "gloss": "The manager arranged tomorrow's meeting." }] }
+    ,{ "id": "word-anxin-hsk5", "hanzi": "安心", "pinyin": "ānxīn", "toneNumbers": [1, 1], "gloss": "feel at ease; set one's mind at rest", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural reassurance extension for the 安 family; verify against the selected HSK source.", "familyId": "family-an-hsk5", "rootCharacterIds": ["char-an-hsk5"], "audioKey": "word-anxin-hsk5", "examples": [{ "hanzi": "事情解决以后，大家终于安心了。", "pinyin": "Shìqing jiějué yǐhòu, dàjiā zhōngyú ānxīn le.", "gloss": "After the problem was solved, everyone finally felt at ease." }] }
+
+    ,{ "id": "word-chongfen-hsk5", "hanzi": "充分", "pinyin": "chōngfèn", "toneNumbers": [1, 4], "gloss": "ample; fully", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-chong-hsk5", "rootCharacterIds": ["char-chong-hsk5"], "audioKey": "word-chongfen-hsk5", "examples": [{ "hanzi": "我们需要充分准备再开始。", "pinyin": "Wǒmen xūyào chōngfèn zhǔnbèi zài kāishǐ.", "gloss": "We need to prepare fully before starting." }] }
+    ,{ "id": "word-chongman-hsk5", "hanzi": "充满", "pinyin": "chōngmǎn", "toneNumbers": [1, 3], "gloss": "be full of; fill", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-chong-hsk5", "rootCharacterIds": ["char-chong-hsk5"], "audioKey": "word-chongman-hsk5", "examples": [{ "hanzi": "房间里充满了阳光。", "pinyin": "Fángjiān lǐ chōngmǎn le yángguāng.", "gloss": "The room was filled with sunlight." }] }
+    ,{ "id": "word-chongdianqi-hsk5", "hanzi": "充电器", "pinyin": "chōngdiànqì", "toneNumbers": [1, 4, 4], "gloss": "charger", "hskLevel": "HSK 5", "isExtension": false, "familyId": "family-chong-hsk5", "rootCharacterIds": ["char-chong-hsk5"], "audioKey": "word-chongdianqi-hsk5", "examples": [{ "hanzi": "我把充电器放在桌子上了。", "pinyin": "Wǒ bǎ chōngdiànqì fàng zài zhuōzi shàng le.", "gloss": "I put the charger on the table." }] }
+    ,{ "id": "word-chongdian-hsk5", "hanzi": "充电", "pinyin": "chōngdiàn", "toneNumbers": [1, 4], "gloss": "charge; recharge", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural technology extension for the 充 family; verify against the selected HSK source.", "familyId": "family-chong-hsk5", "rootCharacterIds": ["char-chong-hsk5"], "audioKey": "word-chongdian-hsk5", "examples": [{ "hanzi": "手机没电了，需要充电。", "pinyin": "Shǒujī méi diàn le, xūyào chōngdiàn.", "gloss": "The phone is out of power and needs charging." }] }
+    ,{ "id": "word-chongshi-hsk5", "hanzi": "充实", "pinyin": "chōngshí", "toneNumbers": [1, 2], "gloss": "rich; fulfilling", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural fullness-and-life extension for the 充 family; verify against the selected HSK source.", "familyId": "family-chong-hsk5", "rootCharacterIds": ["char-chong-hsk5"], "audioKey": "word-chongshi-hsk5", "examples": [{ "hanzi": "学习让我的生活更加充实。", "pinyin": "Xuéxí ràng wǒ de shēnghuó gèng jiā chōngshí.", "gloss": "Learning makes my life more fulfilling." }] }
+
+    ,{ "id": "word-baoguan-hsk6", "hanzi": "保管", "pinyin": "bǎoguǎn", "toneNumbers": [3, 3], "gloss": "keep safe; take care of", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-hsk6", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baoguan-hsk6", "examples": [{ "hanzi": "请妥善保管好自己的证件。", "pinyin": "Qǐng tuǒshàn bǎoguǎn hǎo zìjǐ de zhèngjiàn.", "gloss": "Please keep your identification documents safe." }] }
+    ,{ "id": "word-baomi-hsk6", "hanzi": "保密", "pinyin": "bǎomì", "toneNumbers": [3, 4], "gloss": "keep secret; confidentiality", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-hsk6", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baomi-hsk6", "examples": [{ "hanzi": "这项计划目前需要保密。", "pinyin": "Zhè xiàng jìhuà mùqián xūyào bǎomì.", "gloss": "This plan needs to remain confidential for now." }] }
+    ,{ "id": "word-baomu-hsk6", "hanzi": "保姆", "pinyin": "bǎomǔ", "toneNumbers": [3, 3], "gloss": "nanny; housekeeper", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-hsk6", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baomu-hsk6", "examples": [{ "hanzi": "他们请了一位保姆照顾孩子。", "pinyin": "Tāmen qǐng le yí wèi bǎomǔ zhàogù háizi.", "gloss": "They hired a nanny to care for the child." }] }
+    ,{ "id": "word-baoshou-hsk6", "hanzi": "保守", "pinyin": "bǎoshǒu", "toneNumbers": [3, 3], "gloss": "conservative; guard; keep", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-hsk6", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baoshou-hsk6", "examples": [{ "hanzi": "他的投资态度比较保守。", "pinyin": "Tā de tóuzī tàidu bǐjiào bǎoshǒu.", "gloss": "His investment approach is relatively conservative." }] }
+    ,{ "id": "word-baowei-hsk6", "hanzi": "保卫", "pinyin": "bǎowèi", "toneNumbers": [3, 4], "gloss": "defend; protect", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-hsk6", "rootCharacterIds": ["char-bao-hsk5"], "audioKey": "word-baowei-hsk6", "examples": [{ "hanzi": "每个人都有责任保卫家园。", "pinyin": "Měi ge rén dōu yǒu zérèn bǎowèi jiāyuán.", "gloss": "Everyone has a responsibility to defend their homeland." }] }
+
+    ,{ "id": "word-baochou-revenge-hsk6", "hanzi": "报仇", "pinyin": "bàochóu", "toneNumbers": [4, 2], "gloss": "take revenge", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-report-hsk6", "rootCharacterIds": ["char-bao-report-hsk6"], "audioKey": "word-baochou-revenge-hsk6", "examples": [{ "hanzi": "他没有选择报仇，而是选择了原谅。", "pinyin": "Tā méiyǒu xuǎnzé bàochóu, ér shì xuǎnzé le yuánliàng.", "gloss": "He chose forgiveness instead of revenge." }] }
+    ,{ "id": "word-baochou-pay-hsk6", "hanzi": "报酬", "pinyin": "bàochou", "toneNumbers": [4, 5], "gloss": "pay; remuneration", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-report-hsk6", "rootCharacterIds": ["char-bao-report-hsk6"], "audioKey": "word-baochou-pay-hsk6", "examples": [{ "hanzi": "这份工作的报酬和责任都很高。", "pinyin": "Zhè fèn gōngzuò de bàochou hé zérèn dōu hěn gāo.", "gloss": "This job has high pay and high responsibility." }] }
+    ,{ "id": "word-baoda-hsk6", "hanzi": "报答", "pinyin": "bàodá", "toneNumbers": [4, 2], "gloss": "repay; requite", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-report-hsk6", "rootCharacterIds": ["char-bao-report-hsk6"], "audioKey": "word-baoda-hsk6", "examples": [{ "hanzi": "我会用实际行动报答你的帮助。", "pinyin": "Wǒ huì yòng shíjì xíngdòng bàodá nǐ de bāngzhù.", "gloss": "I will repay your help through concrete action." }] }
+    ,{ "id": "word-baodao-hsk6", "hanzi": "报到", "pinyin": "bàodào", "toneNumbers": [4, 4], "gloss": "check in; report for duty", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-report-hsk6", "rootCharacterIds": ["char-bao-report-hsk6"], "audioKey": "word-baodao-hsk6", "examples": [{ "hanzi": "新生请在上午九点以前报到。", "pinyin": "Xīnshēng qǐng zài shàngwǔ jiǔ diǎn yǐqián bàodào.", "gloss": "New students should check in before nine in the morning." }] }
+    ,{ "id": "word-baofu-hsk6", "hanzi": "报复", "pinyin": "bàofù", "toneNumbers": [4, 4], "gloss": "take revenge on; retaliate", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-report-hsk6", "rootCharacterIds": ["char-bao-report-hsk6"], "audioKey": "word-baofu-hsk6", "examples": [{ "hanzi": "用暴力报复只会让问题更严重。", "pinyin": "Yòng bàolì bàofù zhǐ huì ràng wèntí gèng yánzhòng.", "gloss": "Using violence to retaliate will only make the problem worse." }] }
+
+    ,{ "id": "word-benneng-hsk6", "hanzi": "本能", "pinyin": "běnnéng", "toneNumbers": [3, 2], "gloss": "instinct; innate ability", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-ben-hsk6", "rootCharacterIds": ["char-ben-hsk6"], "audioKey": "word-benneng-hsk6", "examples": [{ "hanzi": "保护孩子是父母的本能。", "pinyin": "Bǎohù háizi shì fùmǔ de běnnéng.", "gloss": "Protecting children is a parent's instinct." }] }
+    ,{ "id": "word-benqian-hsk6", "hanzi": "本钱", "pinyin": "běnqián", "toneNumbers": [3, 2], "gloss": "capital; assets", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-ben-hsk6", "rootCharacterIds": ["char-ben-hsk6"], "audioKey": "word-benqian-hsk6", "examples": [{ "hanzi": "知识和经验是他创业的本钱。", "pinyin": "Zhīshi hé jīngyàn shì tā chuàngyè de běnqián.", "gloss": "Knowledge and experience are his capital for starting a business." }] }
+    ,{ "id": "word-benren-hsk6", "hanzi": "本人", "pinyin": "běnrén", "toneNumbers": [3, 2], "gloss": "oneself; the person concerned", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-ben-hsk6", "rootCharacterIds": ["char-ben-hsk6"], "audioKey": "word-benren-hsk6", "examples": [{ "hanzi": "这份申请必须由本人签字。", "pinyin": "Zhè fèn shēnqǐng bìxū yóu běnrén qiānzì.", "gloss": "This application must be signed by the person concerned." }] }
+    ,{ "id": "word-benshen-hsk6", "hanzi": "本身", "pinyin": "běnshēn", "toneNumbers": [3, 1], "gloss": "itself; in itself", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-ben-hsk6", "rootCharacterIds": ["char-ben-hsk6"], "audioKey": "word-benshen-hsk6", "examples": [{ "hanzi": "问题本身并不复杂。", "pinyin": "Wèntí běnshēn bìng bù fùzá.", "gloss": "The problem itself is not complicated." }] }
+    ,{ "id": "word-benshi-hsk6", "hanzi": "本事", "pinyin": "běnshi", "toneNumbers": [3, 5], "gloss": "ability; skill", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-ben-hsk6", "rootCharacterIds": ["char-ben-hsk6"], "audioKey": "word-benshi-hsk6", "examples": [{ "hanzi": "有本事的人不一定喜欢炫耀。", "pinyin": "Yǒu běnshi de rén bù yídìng xǐhuān xuànyào.", "gloss": "People with real ability do not necessarily like to show off." }] }
+
+    ,{ "id": "word-baobi-hsk6", "hanzi": "包庇", "pinyin": "bāobì", "toneNumbers": [1, 4], "gloss": "shield; harbor; cover up", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-package-hsk6", "rootCharacterIds": ["char-bao-package-hsk6"], "audioKey": "word-baobi-hsk6", "examples": [{ "hanzi": "任何人都不应该包庇违法行为。", "pinyin": "Rènhé rén dōu bù yīnggāi bāobì wéifǎ xíngwéi.", "gloss": "No one should shield illegal behavior." }] }
+    ,{ "id": "word-baofu-package-hsk6", "hanzi": "包袱", "pinyin": "bāofu", "toneNumbers": [1, 5], "gloss": "bundle; burden", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-package-hsk6", "rootCharacterIds": ["char-bao-package-hsk6"], "audioKey": "word-baofu-package-hsk6", "examples": [{ "hanzi": "过去的失败不应该成为你的包袱。", "pinyin": "Guòqù de shībài bù yīnggāi chéngwéi nǐ de bāofu.", "gloss": "Past failures should not become your burden." }] }
+    ,{ "id": "word-baowei-package-hsk6", "hanzi": "包围", "pinyin": "bāowéi", "toneNumbers": [1, 2], "gloss": "surround; encircle", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-package-hsk6", "rootCharacterIds": ["char-bao-package-hsk6"], "audioKey": "word-baowei-package-hsk6", "examples": [{ "hanzi": "这座小城被群山包围。", "pinyin": "Zhè zuò xiǎochéng bèi qúnshān bāowéi.", "gloss": "This small city is surrounded by mountains." }] }
+    ,{ "id": "word-baozhuang-hsk6", "hanzi": "包装", "pinyin": "bāozhuāng", "toneNumbers": [1, 1], "gloss": "package; packaging", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bao-package-hsk6", "rootCharacterIds": ["char-bao-package-hsk6"], "audioKey": "word-baozhuang-hsk6", "examples": [{ "hanzi": "这个产品的包装很有特色。", "pinyin": "Zhège chǎnpǐn de bāozhuāng hěn yǒu tèsè.", "gloss": "This product's packaging is distinctive." }] }
+    ,{ "id": "word-baoguo-hsk6", "hanzi": "包裹", "pinyin": "bāoguǒ", "toneNumbers": [1, 3], "gloss": "parcel; package", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural physical-bundle extension for the 包 family; verify against the selected HSK source.", "familyId": "family-bao-package-hsk6", "rootCharacterIds": ["char-bao-package-hsk6"], "audioKey": "word-baoguo-hsk6", "examples": [{ "hanzi": "你的包裹已经送到了。", "pinyin": "Nǐ de bāoguǒ yǐjīng sòng dào le.", "gloss": "Your parcel has arrived." }] }
+
+    ,{ "id": "word-biangu-hsk6", "hanzi": "变故", "pinyin": "biàngù", "toneNumbers": [4, 4], "gloss": "unexpected event; mishap", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bian-hsk6", "rootCharacterIds": ["char-bian-hsk6"], "audioKey": "word-biangu-hsk6", "examples": [{ "hanzi": "计划因为突然的变故被迫改变。", "pinyin": "Jìhuà yīnwèi tūrán de biàngù bèi pò gǎibiàn.", "gloss": "The plan had to change because of an unexpected event." }] }
+    ,{ "id": "word-bianqian-hsk6", "hanzi": "变迁", "pinyin": "biànqiān", "toneNumbers": [4, 1], "gloss": "change; transformation", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bian-hsk6", "rootCharacterIds": ["char-bian-hsk6"], "audioKey": "word-bianqian-hsk6", "examples": [{ "hanzi": "这本书记录了城市的历史变迁。", "pinyin": "Zhè běn shū jìlù le chéngshì de lìshǐ biànqiān.", "gloss": "This book records the city's historical changes." }] }
+    ,{ "id": "word-bianzhi-hsk6", "hanzi": "变质", "pinyin": "biànzhì", "toneNumbers": [4, 4], "gloss": "go bad; deteriorate; change in nature", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bian-hsk6", "rootCharacterIds": ["char-bian-hsk6"], "audioKey": "word-bianzhi-hsk6", "examples": [{ "hanzi": "天气太热，牛奶很容易变质。", "pinyin": "Tiānqì tài rè, niúnǎi hěn róngyì biànzhì.", "gloss": "Milk spoils easily in hot weather." }] }
+    ,{ "id": "word-bianhua-hsk6", "hanzi": "变化", "pinyin": "biànhuà", "toneNumbers": [4, 4], "gloss": "change; variation", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural everyday change extension for the 变 family; verify against the selected HSK source.", "familyId": "family-bian-hsk6", "rootCharacterIds": ["char-bian-hsk6"], "audioKey": "word-bianhua-hsk6", "examples": [{ "hanzi": "最近天气变化很大。", "pinyin": "Zuìjìn tiānqì biànhuà hěn dà.", "gloss": "The weather has changed a lot recently." }] }
+    ,{ "id": "word-biancheng-hsk6", "hanzi": "变成", "pinyin": "biànchéng", "toneNumbers": [4, 2], "gloss": "become; turn into", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural result-of-change extension for the 变 family; verify against the selected HSK source.", "familyId": "family-bian-hsk6", "rootCharacterIds": ["char-bian-hsk6"], "audioKey": "word-biancheng-hsk6", "examples": [{ "hanzi": "几年以后，这片荒地变成了公园。", "pinyin": "Jǐ nián yǐhòu, zhè piàn huāngdì biànchéng le gōngyuán.", "gloss": "A few years later, this wasteland became a park." }] }
+
+    ,{ "id": "word-bianhu-hsk6", "hanzi": "辩护", "pinyin": "biànhù", "toneNumbers": [4, 4], "gloss": "defend; plead", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bian-argument-hsk6", "rootCharacterIds": ["char-bian-argument-hsk6"], "audioKey": "word-bianhu-hsk6", "examples": [{ "hanzi": "律师在法庭上为被告辩护。", "pinyin": "Lǜshī zài fǎtíng shàng wèi bèigào biànhù.", "gloss": "The lawyer defended the defendant in court." }] }
+    ,{ "id": "word-bianjie-hsk6", "hanzi": "辩解", "pinyin": "biànjiě", "toneNumbers": [4, 3], "gloss": "argue in self-defense; explain away", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bian-argument-hsk6", "rootCharacterIds": ["char-bian-argument-hsk6"], "audioKey": "word-bianjie-hsk6", "examples": [{ "hanzi": "犯了错误就应该承认，不要为自己辩解。", "pinyin": "Fàn le cuòwù jiù yīnggāi chéngrèn, bú yào wèi zìjǐ biànjiě.", "gloss": "When you make a mistake, admit it instead of making excuses." }] }
+    ,{ "id": "word-bianzheng-hsk6", "hanzi": "辩证", "pinyin": "biànzhèng", "toneNumbers": [4, 4], "gloss": "dialectical; dialectically", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-bian-argument-hsk6", "rootCharacterIds": ["char-bian-argument-hsk6"], "audioKey": "word-bianzheng-hsk6", "examples": [{ "hanzi": "我们应该辩证地看待这个问题。", "pinyin": "Wǒmen yīnggāi biànzhèng de kàndài zhège wèntí.", "gloss": "We should view this issue dialectically." }] }
+    ,{ "id": "word-bianlun-hsk6", "hanzi": "辩论", "pinyin": "biànlùn", "toneNumbers": [4, 4], "gloss": "debate; argue", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural structured-discussion extension for the 辩 family; verify against the selected HSK source.", "familyId": "family-bian-argument-hsk6", "rootCharacterIds": ["char-bian-argument-hsk6"], "audioKey": "word-bianlun-hsk6", "examples": [{ "hanzi": "学生们围绕这个主题展开了辩论。", "pinyin": "Xuéshengmen wéirào zhège zhǔtí zhǎnkāi le biànlùn.", "gloss": "The students held a debate around this topic." }] }
+    ,{ "id": "word-bianming-hsk6", "hanzi": "辩明", "pinyin": "biànmíng", "toneNumbers": [4, 2], "gloss": "clarify through argument", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural clarification extension for the 辩 family; verify against the selected HSK source.", "familyId": "family-bian-argument-hsk6", "rootCharacterIds": ["char-bian-argument-hsk6"], "audioKey": "word-bianming-hsk6", "examples": [{ "hanzi": "我们需要把事实辩明。", "pinyin": "Wǒmen xūyào bǎ shìshí biànmíng.", "gloss": "We need to clarify the facts through discussion." }] }
+
+    ,{ "id": "word-biaoju-hsk6", "hanzi": "表决", "pinyin": "biǎojué", "toneNumbers": [3, 2], "gloss": "vote; decide by vote", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-biao-hsk6", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaoju-hsk6", "examples": [{ "hanzi": "委员会将对这项提案进行表决。", "pinyin": "Wěiyuánhuì jiāng duì zhè xiàng tí'àn jìnxíng biǎojué.", "gloss": "The committee will vote on this proposal." }] }
+    ,{ "id": "word-biaotai-hsk6", "hanzi": "表态", "pinyin": "biǎotài", "toneNumbers": [3, 4], "gloss": "state one's position", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-biao-hsk6", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaotai-hsk6", "examples": [{ "hanzi": "在了解全部情况以前，他不愿意表态。", "pinyin": "Zài liǎojiě quánbù qíngkuàng yǐqián, tā bù yuànyì biǎotài.", "gloss": "Before understanding the whole situation, he did not want to state his position." }] }
+    ,{ "id": "word-biaozhang-hsk6", "hanzi": "表彰", "pinyin": "biǎozhāng", "toneNumbers": [3, 1], "gloss": "commend; honor", "hskLevel": "HSK 6", "isExtension": false, "familyId": "family-biao-hsk6", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaozhang-hsk6", "examples": [{ "hanzi": "学校决定表彰那些帮助别人的学生。", "pinyin": "Xuéxiào juédìng biǎozhāng nàxiē bāngzhù biérén de xuésheng.", "gloss": "The school decided to honor the students who helped others." }] }
+    ,{ "id": "word-biaoda-hsk6", "hanzi": "表达", "pinyin": "biǎodá", "toneNumbers": [3, 2], "gloss": "express; convey", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural public-expression extension for the 表 family; verify against the selected HSK source.", "familyId": "family-biao-hsk6", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaoda-hsk6", "examples": [{ "hanzi": "他不太擅长用语言表达自己的感受。", "pinyin": "Tā bú tài shàncháng yòng yǔyán biǎodá zìjǐ de gǎnshòu.", "gloss": "He is not very good at expressing his feelings in words." }] }
+    ,{ "id": "word-biaobai-hsk6", "hanzi": "表白", "pinyin": "biǎobái", "toneNumbers": [3, 2], "gloss": "declare one's feelings; confess", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural statement-and-feeling extension for the 表 family; verify against the selected HSK source.", "familyId": "family-biao-hsk6", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaobai-hsk6", "examples": [{ "hanzi": "他终于鼓起勇气向她表白。", "pinyin": "Tā zhōngyú gǔ qǐ yǒngqì xiàng tā biǎobái.", "gloss": "He finally worked up the courage to confess his feelings to her." }] }
   ]
 }
