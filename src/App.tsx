@@ -7,6 +7,7 @@ import { AppShell, type NavDestination } from './components/AppShell'
 import { QuickView } from './components/QuickView'
 import { useAudio } from './hooks/useAudio'
 import { useLibraryState } from './hooks/useLibraryState'
+import { useTheme } from './hooks/useTheme'
 import { FamilyDetailPage } from './pages/FamilyDetailPage'
 import { FamilyLibraryPage } from './pages/FamilyLibraryPage'
 import { SavedPage } from './pages/SavedPage'
@@ -75,6 +76,7 @@ export default function App() {
   const { route, navigate } = useRoute()
   const audio = useAudio()
   const library = useLibraryState()
+  const theme = useTheme()
   const [libraryFilter, setLibraryFilter] = useState<'all' | 'hsk' | 'hsk2' | 'hsk3' | 'hsk4' | 'hsk5' | 'hsk6' | 'saved' | 'recent'>('all')
   const currentPath = `${window.location.pathname}${window.location.search}`
   const backgroundRoute = route.kind === 'word' ? parseRouteFromPath(window.history.state?.from ?? '/families') : route
@@ -114,5 +116,5 @@ export default function App() {
     page = <FamilyLibraryPage families={families} getRoot={getRoot} getWords={getWords} savedFamilies={library.state.savedFamilies} filter={libraryFilter} onFilter={setLibraryFilter} recentFamilies={library.state.recentFamilies} onOpenFamily={openFamily} onToggleSaved={library.toggleSavedFamily} onOpenWord={openWord} audio={audio} />
   }
 
-  return <AppShell current={baseDestination(backgroundRoute)} onNavigate={goToDestination} savedCount={library.state.savedFamilies.length}>{page}{quickWord && quickFamily && quickRoot && <QuickView word={quickWord} family={quickFamily} root={quickRoot} saved={library.state.savedWords.includes(quickWord.id)} learned={library.state.learnedWords.includes(quickWord.id)} onClose={closeQuickView} onToggleSaved={() => library.toggleSavedWord(quickWord.id)} onToggleLearned={() => library.toggleLearnedWord(quickWord.id)} audio={audio} />}</AppShell>
+  return <AppShell current={baseDestination(backgroundRoute)} onNavigate={goToDestination} savedCount={library.state.savedFamilies.length} theme={theme.theme} onToggleTheme={theme.toggleTheme}>{page}{quickWord && quickFamily && quickRoot && <QuickView word={quickWord} family={quickFamily} root={quickRoot} saved={library.state.savedWords.includes(quickWord.id)} learned={library.state.learnedWords.includes(quickWord.id)} onClose={closeQuickView} onToggleSaved={() => library.toggleSavedWord(quickWord.id)} onToggleLearned={() => library.toggleLearnedWord(quickWord.id)} audio={audio} />}</AppShell>
 }

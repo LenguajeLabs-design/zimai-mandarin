@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import type { Theme } from '../hooks/useTheme'
 
 export type NavDestination = 'families' | 'practice' | 'review' | 'saved' | 'search' | 'guide' | 'about'
 
@@ -7,6 +8,8 @@ interface AppShellProps {
   onNavigate: (destination: NavDestination) => void
   children: ReactNode
   savedCount: number
+  theme: Theme
+  onToggleTheme: () => void
 }
 
 const navItems: Array<{ id: NavDestination; label: string; icon: string }> = [
@@ -17,7 +20,14 @@ const navItems: Array<{ id: NavDestination; label: string; icon: string }> = [
   { id: 'search', label: 'Search', icon: '⌕' },
 ]
 
-export function AppShell({ current, onNavigate, children, savedCount }: AppShellProps) {
+export function AppShell({ current, onNavigate, children, savedCount, theme, onToggleTheme }: AppShellProps) {
+  const isDark = theme === 'dark'
+  const themeLabel = isDark ? 'Use light mode' : 'Use dark mode'
+  const themeToggle = (className = '') => <button className={`theme-toggle${className ? ` ${className}` : ''}`} type="button" onClick={onToggleTheme} aria-label={themeLabel} aria-pressed={isDark} title={themeLabel}>
+    <span className="theme-toggle__icon" aria-hidden="true">{isDark ? '☼' : '☾'}</span>
+    <span>{isDark ? 'Light mode' : 'Dark mode'}</span>
+  </button>
+
   return (
     <div className="app-shell">
       <aside className="side-rail">
@@ -33,6 +43,7 @@ export function AppShell({ current, onNavigate, children, savedCount }: AppShell
             {item.id === 'saved' && savedCount > 0 && <span className="nav-item__count">{savedCount}</span>}
           </button>)}
         </nav>
+        {themeToggle()}
         <div className="rail-footer">
           <span className="rail-footer__chinese">字脉</span>
           <span>See the words connect.</span>
@@ -41,6 +52,7 @@ export function AppShell({ current, onNavigate, children, savedCount }: AppShell
       </aside>
       <main className="main-content">{children}</main>
       <nav className="bottom-nav" aria-label="Mobile navigation">
+        {themeToggle('theme-toggle--mobile')}
         {navItems.map((item) => <button className={`nav-item${current === item.id ? ' is-active' : ''}`} key={item.id} type="button" onClick={() => onNavigate(item.id)} aria-current={current === item.id ? 'page' : undefined}>
           <span className="nav-item__icon" aria-hidden="true">{item.icon}</span>
           <span>{item.label}</span>

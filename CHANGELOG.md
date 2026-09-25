@@ -28,6 +28,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added the first verified HSK 4 content slice: fourteen dedicated five-word families with forty-nine HSK 4 core words and context sentences.
 - Added the first verified HSK 5 slice: six dedicated five-word families with twenty-two HSK 5 core words and context sentences.
 - Added the first verified HSK 6 slice: seven dedicated five-word families with twenty-eight HSK 6 core words and context sentences.
+- Added a persistent light/dark theme toggle with first-visit system preference detection.
 
 ### Changed
 
@@ -45,6 +46,8 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added an HSK 3 verified library filter and source-backed HSK 3 content validation.
 - Added an HSK 4 verified library filter and source-backed HSK 4 content validation.
 - Added HSK 5 and HSK 6 verified library filters and source-backed validation for both levels.
+- Added a semantic “Midnight Porcelain” dark palette: blue-black surfaces, softened indigo interaction states, muted teal extensions, and warm coral feedback.
+- Replaced hard-coded card, overlay, navigation, and practice-state colors with theme-aware design tokens.
 
 ### Verification
 

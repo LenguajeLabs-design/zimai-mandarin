@@ -4,6 +4,8 @@ Zìmài is an iPad-first visual browser for Mandarin word families. The current 
 
 The product direction is to grow from a calm HSK 1 foundation toward HSK 6 through connected word families, natural audio, example sentences, and spaced review. New vocabulary remains explicitly marked as `Related` until its source and HSK level are verified.
 
+The visual system now supports a persistent light/dark theme. Dark mode uses a “Midnight Porcelain” palette: `#0B111A` for the page, `#111A27` for elevated surfaces, `#9AAFFF` for the main indigo accent, `#7ED4D5` for related content, and `#F09A87` for warm error states. The palette avoids pure black and keeps the indigo accent soft enough for long study sessions.
+
 Tap any root character to open animated stroke order and an optional tracing practice mode. Stroke data is supplied by the MIT-licensed Hanzi Writer package and its permissively licensed character dataset.
 
 ## Run it
