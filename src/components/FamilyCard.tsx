@@ -18,7 +18,7 @@ export function FamilyCard({ family, root, words, saved, onOpen, onToggleSaved, 
       <div className="family-card__header">
         <div>
           <p className="eyebrow">Word map {String(family.sortOrder).padStart(2, '0')}</p>
-          <h2><span className="family-card__title-character" lang="zh-CN">{root.hanzi}</span><span className="family-card__title-kind">family</span></h2>
+          <h2 aria-label={family.title}><span className="family-card__title-character" lang="zh-CN">{root.hanzi}</span></h2>
           <p className="family-card__description">{family.shortDescription}</p>
         </div>
         <button className={`icon-button${saved ? ' is-selected' : ''}`} type="button" onClick={onToggleSaved} aria-pressed={saved} aria-label={saved ? `Remove ${family.title} from saved` : `Save ${family.title}`} title={saved ? 'Remove from saved' : 'Save family'}>

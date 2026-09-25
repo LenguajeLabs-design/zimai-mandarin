@@ -14,6 +14,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 
 - Shifted the visual system to a cool porcelain, graphite, indigo, and teal palette.
 - Made family-card titles lead with the Chinese anchor character and de-emphasize the word “family.”
+- Removed the visible “family” descriptor from individual card headings; the card remains accessible as “学 family” to assistive technology.
 - Replaced ambiguous audio half-circle marks with clear circular play and stop icons.
 - Updated the README to describe the current eight-family build and backup workflow.
 
