@@ -25,6 +25,24 @@
       "license": "Repository license; verify redistribution rights before release",
       "retrievedAt": "2026-09-25",
       "notes": "The first HSK 2 labels are cross-checked against the 147-word exclusive HSK 2.0 list mirrored at https://raw.githubusercontent.com/jelleverheyen/hsk-vocabulary/main/wordlists/exclusive/old/2.json. Upstream project: https://github.com/jelleverheyen/hsk-vocabulary. The official workbook reference is https://admin.chinesetest.cn/userfiles/file/HSK/HSK-2015.xlsx; its direct download was inaccessible during implementation."
+    },
+    {
+      "id": "hsk-3-official-syllabus",
+      "name": "Official HSK 3 examination syllabus",
+      "version": "HSK 2.0",
+      "level": "HSK 3",
+      "license": "Official reference",
+      "retrievedAt": "2026-09-25",
+      "notes": "Chinese Test Service syllabus: HSK 3 is framed around 600 cumulative words and basic communication in life, study, work, and travel. https://www.chinesetest.cn/userfiles/file/dagang/HSK3.pdf"
+    },
+    {
+      "id": "hsk-3-exclusive-mirror",
+      "name": "HSK 2.0 exclusive Level 3 vocabulary mirror",
+      "version": "reproducible verification mirror",
+      "level": "HSK 3",
+      "license": "Repository license; verify redistribution rights before release",
+      "retrievedAt": "2026-09-25",
+      "notes": "The first HSK 3 labels are cross-checked against the exclusive HSK 2.0 Level 3 list mirrored at https://raw.githubusercontent.com/jelleverheyen/hsk-vocabulary/main/wordlists/exclusive/old/3.json. Upstream project: https://github.com/jelleverheyen/hsk-vocabulary. The official syllabus remains the primary level framework."
     }
   ],
   "characters": [
@@ -64,6 +82,18 @@
     { "id": "char-kuai", "hanzi": "快", "pinyin": "kuài", "toneNumber": 4, "toneMark": "kuài", "gloss": "fast; quick", "audioKey": "root-kuai" },
     { "id": "char-qi", "hanzi": "起", "pinyin": "qǐ", "toneNumber": 3, "toneMark": "qǐ", "gloss": "rise; get up", "audioKey": "root-qi" },
     { "id": "char-che", "hanzi": "车", "pinyin": "chē", "toneNumber": 1, "toneMark": "chē", "gloss": "vehicle; car", "audioKey": "root-che" }
+    ,{ "id": "char-guan", "hanzi": "关", "pinyin": "guān", "toneNumber": 1, "toneMark": "guān", "gloss": "close; concern; relation", "audioKey": "root-guan" }
+    ,{ "id": "char-yi-number", "hanzi": "一", "pinyin": "yī", "toneNumber": 1, "toneMark": "yī", "gloss": "one; a; once", "audioKey": "root-yi-number" }
+    ,{ "id": "char-di", "hanzi": "地", "pinyin": "dì", "toneNumber": 4, "toneMark": "dì", "gloss": "place; ground", "audioKey": "root-di" }
+    ,{ "id": "char-yi-reason", "hanzi": "以", "pinyin": "yǐ", "toneNumber": 3, "toneMark": "yǐ", "gloss": "before; by means of; take as", "audioKey": "root-yi-reason" }
+    ,{ "id": "char-bi", "hanzi": "比", "pinyin": "bǐ", "toneNumber": 3, "toneMark": "bǐ", "gloss": "compare; than", "audioKey": "root-bi" }
+    ,{ "id": "char-biao", "hanzi": "表", "pinyin": "biǎo", "toneNumber": 3, "toneMark": "biǎo", "gloss": "express; perform; surface", "audioKey": "root-biao" }
+    ,{ "id": "char-tong", "hanzi": "同", "pinyin": "tóng", "toneNumber": 2, "toneMark": "tóng", "gloss": "same; together", "audioKey": "root-tong" }
+    ,{ "id": "char-xi", "hanzi": "洗", "pinyin": "xǐ", "toneNumber": 3, "toneMark": "xǐ", "gloss": "wash", "audioKey": "root-xi" }
+    ,{ "id": "char-zhao", "hanzi": "照", "pinyin": "zhào", "toneNumber": 4, "toneMark": "zhào", "gloss": "look after; shine; photograph", "audioKey": "root-zhao" }
+    ,{ "id": "char-wu", "hanzi": "物", "pinyin": "wù", "toneNumber": 4, "toneMark": "wù", "gloss": "thing; object", "audioKey": "root-wu" }
+    ,{ "id": "char-jie", "hanzi": "结", "pinyin": "jié", "toneNumber": 2, "toneMark": "jié", "gloss": "tie; end; marry", "audioKey": "root-jie" }
+    ,{ "id": "char-xian", "hanzi": "现", "pinyin": "xiàn", "toneNumber": 4, "toneMark": "xiàn", "gloss": "appear; present", "audioKey": "root-xian" }
   ],
   "families": [
     {
@@ -292,7 +322,7 @@
       "title": "在 family",
       "shortDescription": "Location words for being here, there, or at home.",
       "meaningNote": "在 anchors a place in the sentence, making a person, object, or moment feel present and specific.",
-      "members": ["word-xianzai", "word-zaijia", "word-zainar", "word-buzai", "word-zai-zher"],
+      "members": ["word-xianzai-zai", "word-zaijia", "word-zainar", "word-buzai", "word-zai-zher"],
       "sortOrder": 21,
       "featured": true,
       "sourceIds": ["hsk-1-selected-placeholder"]
@@ -496,6 +526,150 @@
       "featured": false,
       "contentNotes": "Dedicated HSK 2 family; its core HSK 2 members are verified in the HSK 2.0 exclusive Level 2 list, with Related extensions for a complete five-word map.",
       "sourceIds": ["hsk-2-official-syllabus", "hsk-2-exclusive-mirror"]
+    },
+    {
+      "id": "family-guan-hsk3",
+      "rootCharacterId": "char-guan",
+      "title": "关 family",
+      "shortDescription": "Relationship and attention words for everyday communication.",
+      "meaningNote": "关 connects closing something with caring about a person or topic.",
+      "members": ["word-guan", "word-guanxi", "word-guanxin", "word-guanyu", "word-guanmen"],
+      "sortOrder": 39,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-yi-hsk3",
+      "rootCharacterId": "char-yi-number",
+      "title": "一 family",
+      "shortDescription": "Small quantity and sequence phrases for daily speech.",
+      "meaningNote": "一 expands into compact phrases about one time, one side, and a shared amount.",
+      "members": ["word-yibian", "word-yiding", "word-yigong", "word-yihuier", "word-yiyang"],
+      "sortOrder": 40,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-di-hsk3",
+      "rootCharacterId": "char-di",
+      "title": "地 family",
+      "shortDescription": "Place and location words for moving through a city.",
+      "meaningNote": "地 anchors places, routes, and the ground beneath everyday movement.",
+      "members": ["word-di", "word-difang", "word-ditie", "word-ditu", "word-dishang"],
+      "sortOrder": 41,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-yi-reason-hsk3",
+      "rootCharacterId": "char-yi-reason",
+      "title": "以 family",
+      "shortDescription": "Time and framing phrases for connecting ideas.",
+      "meaningNote": "以 helps frame when something happened and how one idea is understood.",
+      "members": ["word-yiqian", "word-yihou", "word-yiwei", "word-yishang", "word-yiwai"],
+      "sortOrder": 42,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-bi-hsk3",
+      "rootCharacterId": "char-bi",
+      "title": "比 family",
+      "shortDescription": "Comparison words for describing differences and examples.",
+      "meaningNote": "比 turns a simple observation into a comparison, contest, or example.",
+      "members": ["word-bijiao", "word-bisai", "word-biru", "word-bifang", "word-bibushang"],
+      "sortOrder": 43,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-biao-hsk3",
+      "rootCharacterId": "char-biao",
+      "title": "表 family",
+      "shortDescription": "Words for expressing, performing, and showing an outer form.",
+      "meaningNote": "表 moves from expressing an idea to performing it and showing how something looks.",
+      "members": ["word-biaoshi", "word-biaoyan", "word-biaoxian", "word-biaoqing", "word-biaomian"],
+      "sortOrder": 44,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-tong-hsk3",
+      "rootCharacterId": "char-tong",
+      "title": "同 family",
+      "shortDescription": "Words for shared identity, agreement, and togetherness.",
+      "meaningNote": "同 keeps a sense of sameness or shared connection across people and moments.",
+      "members": ["word-tongshi", "word-tongyi", "word-tongxue", "word-tongshi-time", "word-tongyang"],
+      "sortOrder": 45,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-xi-hsk3",
+      "rootCharacterId": "char-xi",
+      "title": "洗 family",
+      "shortDescription": "Practical washing words for home and personal routines.",
+      "meaningNote": "洗 links everyday cleaning actions with body and household routines.",
+      "members": ["word-xishoujian", "word-xizao", "word-xishou", "word-xilian", "word-xiyifu"],
+      "sortOrder": 46,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-zhao-hsk3",
+      "rootCharacterId": "char-zhao",
+      "title": "照 family",
+      "shortDescription": "Words for care, photographs, and looking closely.",
+      "meaningNote": "照 can point to caring for someone, shining on something, or making a photograph.",
+      "members": ["word-zhaogu", "word-zhaopian", "word-zhaoxiangji", "word-zhaoxiang", "word-zhaokan"],
+      "sortOrder": 47,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-wu-hsk3",
+      "rootCharacterId": "char-wu",
+      "title": "物 family",
+      "shortDescription": "Concrete thing words for people, gifts, and everyday objects.",
+      "meaningNote": "物 keeps attention on a thing, whether it is an animal, a gift, or an object.",
+      "members": ["word-dongwu", "word-liwu", "word-gouwu", "word-shiwu", "word-wupin"],
+      "sortOrder": 48,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-jie-hsk3",
+      "rootCharacterId": "char-jie",
+      "title": "结 family",
+      "shortDescription": "Words for ending, marrying, and bringing something to a close.",
+      "meaningNote": "结 gathers ideas of tying together, ending, and reaching a result.",
+      "members": ["word-jiehun", "word-jieshu", "word-jieguo", "word-jiezhang", "word-jiebing"],
+      "sortOrder": 49,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-xian-hsk3",
+      "rootCharacterId": "char-xian",
+      "title": "现 family",
+      "shortDescription": "Words for appearing, discovering, and what is present.",
+      "meaningNote": "现 makes something visible, whether it appears, is discovered, or exists in the present.",
+      "members": ["word-chuxian", "word-faxian", "word-xianzai", "word-xianshi", "word-xianjin"],
+      "sortOrder": 50,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
     }
   ],
   "words": [
@@ -619,7 +793,7 @@
     { "id": "word-haiyou", "hanzi": "还有", "pinyin": "háiyǒu", "toneNumbers": [2, 3], "gloss": "also have; there is still", "hskLevel": "Related", "isExtension": true, "extensionReason": "High-value continuation phrase for the 有 family; verify against the selected HSK source.", "familyId": "family-you", "rootCharacterIds": ["char-you"], "audioKey": "word-haiyou", "examples": [{ "hanzi": "还有一个问题。", "pinyin": "Hái yǒu yí ge wèntí.", "gloss": "There is one more question." }] },
     { "id": "word-meiyou", "hanzi": "没有", "pinyin": "méiyǒu", "toneNumbers": [2, 3], "gloss": "do not have; there is not", "hskLevel": "Related", "isExtension": true, "extensionReason": "Essential negative phrase for the 有 family; verify against the selected HSK source.", "familyId": "family-you", "rootCharacterIds": ["char-you"], "audioKey": "word-meiyou", "examples": [{ "hanzi": "我没有时间。", "pinyin": "Wǒ méiyǒu shíjiān.", "gloss": "I do not have time." }] },
 
-    { "id": "word-xianzai", "hanzi": "现在", "pinyin": "xiànzài", "toneNumbers": [4, 4], "gloss": "now; at present", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core time-and-place phrase for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-xianzai", "examples": [{ "hanzi": "我现在很忙。", "pinyin": "Wǒ xiànzài hěn máng.", "gloss": "I am busy right now." }] },
+    { "id": "word-xianzai-zai", "hanzi": "现在", "pinyin": "xiànzài", "toneNumbers": [4, 4], "gloss": "now; at present", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core time-and-place phrase for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-xianzai-zai", "examples": [{ "hanzi": "我现在很忙。", "pinyin": "Wǒ xiànzài hěn máng.", "gloss": "I am busy right now." }] },
     { "id": "word-zaijia", "hanzi": "在家", "pinyin": "zàijiā", "toneNumbers": [4, 1], "gloss": "at home", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful location phrase for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-zaijia", "examples": [{ "hanzi": "今天我在家学习。", "pinyin": "Jīntiān wǒ zài jiā xuéxí.", "gloss": "Today I am studying at home." }] },
     { "id": "word-zainar", "hanzi": "在哪儿", "pinyin": "zài nǎr", "toneNumbers": [4, 3, 2], "gloss": "where is; where are", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful location question for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-zainar", "examples": [{ "hanzi": "我的书在哪儿？", "pinyin": "Wǒ de shū zài nǎr?", "gloss": "Where is my book?" }] },
     { "id": "word-buzai", "hanzi": "不在", "pinyin": "bùzài", "toneNumbers": [4, 4], "gloss": "not be at; not be present", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful negative location phrase for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-buzai", "examples": [{ "hanzi": "老师不在教室。", "pinyin": "Lǎoshī bú zài jiàoshì.", "gloss": "The teacher is not in the classroom." }] },
@@ -714,6 +888,78 @@
     { "id": "word-qishen", "hanzi": "起身", "pinyin": "qǐshēn", "toneNumbers": [3, 1], "gloss": "get up; stand up", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful movement extension for the 起 family; verify against the selected HSK source.", "familyId": "family-qi-hsk2", "rootCharacterIds": ["char-qi"], "audioKey": "word-qishen", "examples": [{ "hanzi": "他起身开门。", "pinyin": "Tā qǐshēn kāimén.", "gloss": "He got up to open the door." }] },
     { "id": "word-chezhan", "hanzi": "车站", "pinyin": "chēzhàn", "toneNumbers": [1, 4], "gloss": "station", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful transport-place extension for the 车 family; verify against the selected HSK source.", "familyId": "family-che-hsk2", "rootCharacterIds": ["char-che"], "audioKey": "word-chezhan", "examples": [{ "hanzi": "车站在学校旁边。", "pinyin": "Chēzhàn zài xuéxiào pángbiān.", "gloss": "The station is beside the school." }] },
     { "id": "word-chepiao", "hanzi": "车票", "pinyin": "chēpiào", "toneNumbers": [1, 4], "gloss": "train or bus ticket", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful travel-object extension for the 车 family; verify against the selected HSK source.", "familyId": "family-che-hsk2", "rootCharacterIds": ["char-che"], "audioKey": "word-chepiao", "examples": [{ "hanzi": "我已经买了车票。", "pinyin": "Wǒ yǐjīng mǎi le chēpiào.", "gloss": "I have already bought the ticket." }] },
-    { "id": "word-chezi", "hanzi": "车子", "pinyin": "chēzi", "toneNumbers": [1, 5], "gloss": "vehicle; car", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday transport extension for the 车 family; verify against the selected HSK source.", "familyId": "family-che-hsk2", "rootCharacterIds": ["char-che"], "audioKey": "word-chezi", "examples": [{ "hanzi": "他的车子很新。", "pinyin": "Tā de chēzi hěn xīn.", "gloss": "His car is very new." }] }
+    { "id": "word-chezi", "hanzi": "车子", "pinyin": "chēzi", "toneNumbers": [1, 5], "gloss": "vehicle; car", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful everyday transport extension for the 车 family; verify against the selected HSK source.", "familyId": "family-che-hsk2", "rootCharacterIds": ["char-che"], "audioKey": "word-chezi", "examples": [{ "hanzi": "他的车子很新。", "pinyin": "Tā de chēzi hěn xīn.", "gloss": "His car is very new." }] },
+
+    { "id": "word-guan", "hanzi": "关", "pinyin": "guān", "toneNumbers": [1], "gloss": "close; shut; concern", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-guan-hsk3", "rootCharacterIds": ["char-guan"], "audioKey": "word-guan", "examples": [{ "hanzi": "请关门。", "pinyin": "Qǐng guān mén.", "gloss": "Please close the door." }] },
+    { "id": "word-guanxi", "hanzi": "关系", "pinyin": "guānxì", "toneNumbers": [1, 4], "gloss": "relationship; connection", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-guan-hsk3", "rootCharacterIds": ["char-guan"], "audioKey": "word-guanxi", "examples": [{ "hanzi": "我们关系很好。", "pinyin": "Wǒmen guānxì hěn hǎo.", "gloss": "We have a good relationship." }] },
+    { "id": "word-guanxin", "hanzi": "关心", "pinyin": "guānxīn", "toneNumbers": [1, 1], "gloss": "care about; be concerned about", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-guan-hsk3", "rootCharacterIds": ["char-guan"], "audioKey": "word-guanxin", "examples": [{ "hanzi": "谢谢你关心我。", "pinyin": "Xièxie nǐ guānxīn wǒ.", "gloss": "Thank you for caring about me." }] },
+    { "id": "word-guanyu", "hanzi": "关于", "pinyin": "guānyú", "toneNumbers": [1, 2], "gloss": "about; regarding", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-guan-hsk3", "rootCharacterIds": ["char-guan"], "audioKey": "word-guanyu", "examples": [{ "hanzi": "这是关于旅行的书。", "pinyin": "Zhè shì guānyú lǚxíng de shū.", "gloss": "This is a book about travel." }] },
+    { "id": "word-guanmen", "hanzi": "关门", "pinyin": "guānmén", "toneNumbers": [1, 2], "gloss": "close the door; close up", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural everyday compound for the 关 family; verify against the selected HSK source.", "familyId": "family-guan-hsk3", "rootCharacterIds": ["char-guan"], "audioKey": "word-guanmen", "examples": [{ "hanzi": "商店晚上九点关门。", "pinyin": "Shāngdiàn wǎnshang jiǔ diǎn guānmén.", "gloss": "The shop closes at nine in the evening." }] },
+
+    { "id": "word-yibian", "hanzi": "一边", "pinyin": "yìbiān", "toneNumbers": [4, 1], "gloss": "one side; while", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-yi-hsk3", "rootCharacterIds": ["char-yi-number"], "audioKey": "word-yibian", "examples": [{ "hanzi": "她一边听音乐，一边做作业。", "pinyin": "Tā yìbiān tīng yīnyuè, yìbiān zuò zuòyè.", "gloss": "She listens to music while doing homework." }] },
+    { "id": "word-yiding", "hanzi": "一定", "pinyin": "yídìng", "toneNumbers": [2, 4], "gloss": "certainly; surely; definite", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-yi-hsk3", "rootCharacterIds": ["char-yi-number"], "audioKey": "word-yiding", "examples": [{ "hanzi": "你一定会成功。", "pinyin": "Nǐ yídìng huì chénggōng.", "gloss": "You will definitely succeed." }] },
+    { "id": "word-yigong", "hanzi": "一共", "pinyin": "yígòng", "toneNumbers": [2, 4], "gloss": "altogether; in total", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-yi-hsk3", "rootCharacterIds": ["char-yi-number"], "audioKey": "word-yigong", "examples": [{ "hanzi": "我们一共有五个人。", "pinyin": "Wǒmen yígòng yǒu wǔ ge rén.", "gloss": "There are five of us in total." }] },
+    { "id": "word-yihuier", "hanzi": "一会儿", "pinyin": "yíhuìr", "toneNumbers": [2, 4, 5], "gloss": "a moment; a little while", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-yi-hsk3", "rootCharacterIds": ["char-yi-number"], "audioKey": "word-yihuier", "examples": [{ "hanzi": "请等我一会儿。", "pinyin": "Qǐng děng wǒ yíhuìr.", "gloss": "Please wait for me a moment." }] },
+    { "id": "word-yiyang", "hanzi": "一样", "pinyin": "yíyàng", "toneNumbers": [2, 4], "gloss": "same; alike", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-yi-hsk3", "rootCharacterIds": ["char-yi-number"], "audioKey": "word-yiyang", "examples": [{ "hanzi": "我们的想法一样。", "pinyin": "Wǒmen de xiǎngfǎ yíyàng.", "gloss": "Our ideas are the same." }] },
+
+    { "id": "word-di", "hanzi": "地", "pinyin": "dì", "toneNumbers": [4], "gloss": "ground; place", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-di-hsk3", "rootCharacterIds": ["char-di"], "audioKey": "word-di", "examples": [{ "hanzi": "地上有一本书。", "pinyin": "Dìshàng yǒu yì běn shū.", "gloss": "There is a book on the ground." }] },
+    { "id": "word-difang", "hanzi": "地方", "pinyin": "dìfang", "toneNumbers": [4, 5], "gloss": "place; area", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-di-hsk3", "rootCharacterIds": ["char-di"], "audioKey": "word-difang", "examples": [{ "hanzi": "这是一个安静的地方。", "pinyin": "Zhè shì yí ge ānjìng de dìfang.", "gloss": "This is a quiet place." }] },
+    { "id": "word-ditie", "hanzi": "地铁", "pinyin": "dìtiě", "toneNumbers": [4, 3], "gloss": "subway; metro", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-di-hsk3", "rootCharacterIds": ["char-di"], "audioKey": "word-ditie", "examples": [{ "hanzi": "我坐地铁去公司。", "pinyin": "Wǒ zuò dìtiě qù gōngsī.", "gloss": "I take the subway to the company." }] },
+    { "id": "word-ditu", "hanzi": "地图", "pinyin": "dìtú", "toneNumbers": [4, 2], "gloss": "map", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-di-hsk3", "rootCharacterIds": ["char-di"], "audioKey": "word-ditu", "examples": [{ "hanzi": "请在地图上找找。", "pinyin": "Qǐng zài dìtú shàng zhǎozhao.", "gloss": "Please look for it on the map." }] },
+    { "id": "word-dishang", "hanzi": "地上", "pinyin": "dìshang", "toneNumbers": [4, 5], "gloss": "on the ground; ground", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural location compound for the 地 family; verify against the selected HSK source.", "familyId": "family-di-hsk3", "rootCharacterIds": ["char-di"], "audioKey": "word-dishang", "examples": [{ "hanzi": "钥匙掉在地上了。", "pinyin": "Yàoshi diào zài dìshang le.", "gloss": "The keys fell on the ground." }] },
+
+    { "id": "word-yiqian", "hanzi": "以前", "pinyin": "yǐqián", "toneNumbers": [3, 2], "gloss": "before; formerly", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-yi-reason-hsk3", "rootCharacterIds": ["char-yi-reason"], "audioKey": "word-yiqian", "examples": [{ "hanzi": "我以前住在北京。", "pinyin": "Wǒ yǐqián zhù zài Běijīng.", "gloss": "I used to live in Beijing." }] },
+    { "id": "word-yihou", "hanzi": "以后", "pinyin": "yǐhòu", "toneNumbers": [3, 4], "gloss": "after; later; in the future", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-yi-reason-hsk3", "rootCharacterIds": ["char-yi-reason"], "audioKey": "word-yihou", "examples": [{ "hanzi": "以后有问题可以问我。", "pinyin": "Yǐhòu yǒu wèntí kěyǐ wèn wǒ.", "gloss": "If you have questions later, you can ask me." }] },
+    { "id": "word-yiwei", "hanzi": "以为", "pinyin": "yǐwéi", "toneNumbers": [3, 2], "gloss": "to think; to assume", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-yi-reason-hsk3", "rootCharacterIds": ["char-yi-reason"], "audioKey": "word-yiwei", "examples": [{ "hanzi": "我以为你今天不来。", "pinyin": "Wǒ yǐwéi nǐ jīntiān bù lái.", "gloss": "I thought you were not coming today." }] },
+    { "id": "word-yishang", "hanzi": "以上", "pinyin": "yǐshàng", "toneNumbers": [3, 4], "gloss": "above; more than", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural quantity and location extension for the 以 family; verify against the selected HSK source.", "familyId": "family-yi-reason-hsk3", "rootCharacterIds": ["char-yi-reason"], "audioKey": "word-yishang", "examples": [{ "hanzi": "以上内容很重要。", "pinyin": "Yǐshàng nèiróng hěn zhòngyào.", "gloss": "The above content is important." }] },
+    { "id": "word-yiwai", "hanzi": "以外", "pinyin": "yǐwài", "toneNumbers": [3, 4], "gloss": "outside; besides", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural contrast extension for the 以 family; verify against the selected HSK source.", "familyId": "family-yi-reason-hsk3", "rootCharacterIds": ["char-yi-reason"], "audioKey": "word-yiwai", "examples": [{ "hanzi": "除了你以外，大家都到了。", "pinyin": "Chúle nǐ yǐwài, dàjiā dōu dào le.", "gloss": "Everyone arrived except you." }] },
+
+    { "id": "word-bijiao", "hanzi": "比较", "pinyin": "bǐjiào", "toneNumbers": [3, 4], "gloss": "compare; relatively", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-bi-hsk3", "rootCharacterIds": ["char-bi"], "audioKey": "word-bijiao", "examples": [{ "hanzi": "今天比较冷。", "pinyin": "Jīntiān bǐjiào lěng.", "gloss": "It is relatively cold today." }] },
+    { "id": "word-bisai", "hanzi": "比赛", "pinyin": "bǐsài", "toneNumbers": [3, 4], "gloss": "competition; match", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-bi-hsk3", "rootCharacterIds": ["char-bi"], "audioKey": "word-bisai", "examples": [{ "hanzi": "明天有一场比赛。", "pinyin": "Míngtiān yǒu yì chǎng bǐsài.", "gloss": "There is a match tomorrow." }] },
+    { "id": "word-biru", "hanzi": "比如", "pinyin": "bǐrú", "toneNumbers": [3, 2], "gloss": "for example; such as", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural example-giving extension for the 比 family; verify against the selected HSK source.", "familyId": "family-bi-hsk3", "rootCharacterIds": ["char-bi"], "audioKey": "word-biru", "examples": [{ "hanzi": "我喜欢水果，比如苹果。", "pinyin": "Wǒ xǐhuān shuǐguǒ, bǐrú píngguǒ.", "gloss": "I like fruit, such as apples." }] },
+    { "id": "word-bifang", "hanzi": "比方", "pinyin": "bǐfang", "toneNumbers": [3, 5], "gloss": "for example; analogy", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural example-giving extension for the 比 family; verify against the selected HSK source.", "familyId": "family-bi-hsk3", "rootCharacterIds": ["char-bi"], "audioKey": "word-bifang", "examples": [{ "hanzi": "比方说，我们可以坐地铁。", "pinyin": "Bǐfang shuō, wǒmen kěyǐ zuò dìtiě.", "gloss": "For example, we can take the subway." }] },
+    { "id": "word-bibushang", "hanzi": "比不上", "pinyin": "bǐbushàng", "toneNumbers": [3, 5, 4], "gloss": "cannot compare with; not as good as", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural comparison extension for the 比 family; verify against the selected HSK source.", "familyId": "family-bi-hsk3", "rootCharacterIds": ["char-bi"], "audioKey": "word-bibushang", "examples": [{ "hanzi": "这里的风景比不上家乡。", "pinyin": "Zhèlǐ de fēngjǐng bǐbushàng jiāxiāng.", "gloss": "The scenery here cannot compare with my hometown." }] },
+
+    { "id": "word-biaoshi", "hanzi": "表示", "pinyin": "biǎoshì", "toneNumbers": [3, 4], "gloss": "express; indicate", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-biao-hsk3", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaoshi", "examples": [{ "hanzi": "我表示同意。", "pinyin": "Wǒ biǎoshì tóngyì.", "gloss": "I express my agreement." }] },
+    { "id": "word-biaoyan", "hanzi": "表演", "pinyin": "biǎoyǎn", "toneNumbers": [3, 3], "gloss": "perform; performance", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-biao-hsk3", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaoyan", "examples": [{ "hanzi": "学生们准备了一个表演。", "pinyin": "Xuéshengmen zhǔnbèile yí ge biǎoyǎn.", "gloss": "The students prepared a performance." }] },
+    { "id": "word-biaoxian", "hanzi": "表现", "pinyin": "biǎoxiàn", "toneNumbers": [3, 4], "gloss": "performance; behavior; show", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural showing-and-performance extension for the 表 family; verify against the selected HSK source.", "familyId": "family-biao-hsk3", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaoxian", "examples": [{ "hanzi": "他今天表现很好。", "pinyin": "Tā jīntiān biǎoxiàn hěn hǎo.", "gloss": "He performed very well today." }] },
+    { "id": "word-biaoqing", "hanzi": "表情", "pinyin": "biǎoqíng", "toneNumbers": [3, 2], "gloss": "facial expression", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural visible-expression extension for the 表 family; verify against the selected HSK source.", "familyId": "family-biao-hsk3", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaoqing", "examples": [{ "hanzi": "她的表情很奇怪。", "pinyin": "Tā de biǎoqíng hěn qíguài.", "gloss": "Her expression is strange." }] },
+    { "id": "word-biaomian", "hanzi": "表面", "pinyin": "biǎomiàn", "toneNumbers": [3, 4], "gloss": "surface; outside", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural surface extension for the 表 family; verify against the selected HSK source.", "familyId": "family-biao-hsk3", "rootCharacterIds": ["char-biao"], "audioKey": "word-biaomian", "examples": [{ "hanzi": "水面很平，表面没有风。", "pinyin": "Shuǐmiàn hěn píng, biǎomiàn méiyǒu fēng.", "gloss": "The water is smooth; there is no wind on the surface." }] },
+
+    { "id": "word-tongshi", "hanzi": "同事", "pinyin": "tóngshì", "toneNumbers": [2, 4], "gloss": "colleague; coworker", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-tong-hsk3", "rootCharacterIds": ["char-tong"], "audioKey": "word-tongshi", "examples": [{ "hanzi": "我的同事很友好。", "pinyin": "Wǒ de tóngshì hěn yǒuhǎo.", "gloss": "My colleagues are friendly." }] },
+    { "id": "word-tongyi", "hanzi": "同意", "pinyin": "tóngyì", "toneNumbers": [2, 4], "gloss": "agree; consent", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-tong-hsk3", "rootCharacterIds": ["char-tong"], "audioKey": "word-tongyi", "examples": [{ "hanzi": "我同意你的想法。", "pinyin": "Wǒ tóngyì nǐ de xiǎngfǎ.", "gloss": "I agree with your idea." }] },
+    { "id": "word-tongxue", "hanzi": "同学", "pinyin": "tóngxué", "toneNumbers": [2, 2], "gloss": "classmate; schoolmate", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural school-life extension for the 同 family; verify against the selected HSK source.", "familyId": "family-tong-hsk3", "rootCharacterIds": ["char-tong"], "audioKey": "word-tongxue", "examples": [{ "hanzi": "他是我的同学。", "pinyin": "Tā shì wǒ de tóngxué.", "gloss": "He is my classmate." }] },
+    { "id": "word-tongshi-time", "hanzi": "同时", "pinyin": "tóngshí", "toneNumbers": [2, 2], "gloss": "at the same time; meanwhile", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural time-and-connection extension for the 同 family; verify against the selected HSK source.", "familyId": "family-tong-hsk3", "rootCharacterIds": ["char-tong"], "audioKey": "word-tongshi-time", "examples": [{ "hanzi": "我们同时到达。", "pinyin": "Wǒmen tóngshí dàodá.", "gloss": "We arrived at the same time." }] },
+    { "id": "word-tongyang", "hanzi": "同样", "pinyin": "tóngyàng", "toneNumbers": [2, 4], "gloss": "same; likewise", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural similarity extension for the 同 family; verify against the selected HSK source.", "familyId": "family-tong-hsk3", "rootCharacterIds": ["char-tong"], "audioKey": "word-tongyang", "examples": [{ "hanzi": "我也有同样的问题。", "pinyin": "Wǒ yě yǒu tóngyàng de wèntí.", "gloss": "I have the same problem too." }] },
+
+    { "id": "word-xishoujian", "hanzi": "洗手间", "pinyin": "xǐshǒujiān", "toneNumbers": [3, 3, 1], "gloss": "restroom; washroom", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-xi-hsk3", "rootCharacterIds": ["char-xi"], "audioKey": "word-xishoujian", "examples": [{ "hanzi": "请问洗手间在哪儿？", "pinyin": "Qǐngwèn xǐshǒujiān zài nǎr?", "gloss": "Excuse me, where is the restroom?" }] },
+    { "id": "word-xizao", "hanzi": "洗澡", "pinyin": "xǐzǎo", "toneNumbers": [3, 3], "gloss": "bathe; take a shower", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-xi-hsk3", "rootCharacterIds": ["char-xi"], "audioKey": "word-xizao", "examples": [{ "hanzi": "我晚上洗澡。", "pinyin": "Wǒ wǎnshang xǐzǎo.", "gloss": "I shower in the evening." }] },
+    { "id": "word-xishou", "hanzi": "洗手", "pinyin": "xǐshǒu", "toneNumbers": [3, 3], "gloss": "wash one's hands", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural hygiene extension for the 洗 family; verify against the selected HSK source.", "familyId": "family-xi-hsk3", "rootCharacterIds": ["char-xi"], "audioKey": "word-xishou", "examples": [{ "hanzi": "吃饭以前要洗手。", "pinyin": "Chīfàn yǐqián yào xǐshǒu.", "gloss": "Wash your hands before eating." }] },
+    { "id": "word-xilian", "hanzi": "洗脸", "pinyin": "xǐliǎn", "toneNumbers": [3, 3], "gloss": "wash one's face", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural personal-routine extension for the 洗 family; verify against the selected HSK source.", "familyId": "family-xi-hsk3", "rootCharacterIds": ["char-xi"], "audioKey": "word-xilian", "examples": [{ "hanzi": "孩子起床以后洗脸。", "pinyin": "Háizi qǐchuáng yǐhòu xǐliǎn.", "gloss": "The child washes their face after getting up." }] },
+    { "id": "word-xiyifu", "hanzi": "洗衣服", "pinyin": "xǐ yīfu", "toneNumbers": [3, 1, 5], "gloss": "wash clothes", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural household-routine extension for the 洗 family; verify against the selected HSK source.", "familyId": "family-xi-hsk3", "rootCharacterIds": ["char-xi"], "audioKey": "word-xiyifu", "examples": [{ "hanzi": "周末我在家洗衣服。", "pinyin": "Zhōumò wǒ zài jiā xǐ yīfu.", "gloss": "I wash clothes at home on weekends." }] },
+
+    { "id": "word-zhaogu", "hanzi": "照顾", "pinyin": "zhàogù", "toneNumbers": [4, 4], "gloss": "look after; take care of", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-zhao-hsk3", "rootCharacterIds": ["char-zhao"], "audioKey": "word-zhaogu", "examples": [{ "hanzi": "请照顾好自己。", "pinyin": "Qǐng zhàogù hǎo zìjǐ.", "gloss": "Please take good care of yourself." }] },
+    { "id": "word-zhaopian", "hanzi": "照片", "pinyin": "zhàopiàn", "toneNumbers": [4, 4], "gloss": "photo; photograph", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-zhao-hsk3", "rootCharacterIds": ["char-zhao"], "audioKey": "word-zhaopian", "examples": [{ "hanzi": "这张照片是去年拍的。", "pinyin": "Zhè zhāng zhàopiàn shì qùnián pāi de.", "gloss": "This photo was taken last year." }] },
+    { "id": "word-zhaoxiangji", "hanzi": "照相机", "pinyin": "zhàoxiàngjī", "toneNumbers": [4, 4, 1], "gloss": "camera", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-zhao-hsk3", "rootCharacterIds": ["char-zhao"], "audioKey": "word-zhaoxiangji", "examples": [{ "hanzi": "我的照相机没电了。", "pinyin": "Wǒ de zhàoxiàngjī méi diàn le.", "gloss": "My camera has no battery." }] },
+    { "id": "word-zhaoxiang", "hanzi": "照相", "pinyin": "zhàoxiàng", "toneNumbers": [4, 4], "gloss": "take a photograph", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural photography extension for the 照 family; verify against the selected HSK source.", "familyId": "family-zhao-hsk3", "rootCharacterIds": ["char-zhao"], "audioKey": "word-zhaoxiang", "examples": [{ "hanzi": "我们在公园照相。", "pinyin": "Wǒmen zài gōngyuán zhàoxiàng.", "gloss": "We take photos in the park." }] },
+    { "id": "word-zhaokan", "hanzi": "照看", "pinyin": "zhàokàn", "toneNumbers": [4, 4], "gloss": "look after; watch", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural care extension for the 照 family; verify against the selected HSK source.", "familyId": "family-zhao-hsk3", "rootCharacterIds": ["char-zhao"], "audioKey": "word-zhaokan", "examples": [{ "hanzi": "你能帮我照看孩子吗？", "pinyin": "Nǐ néng bāng wǒ zhàokàn háizi ma?", "gloss": "Can you help me look after the child?" }] },
+
+    { "id": "word-dongwu", "hanzi": "动物", "pinyin": "dòngwù", "toneNumbers": [4, 4], "gloss": "animal", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-wu-hsk3", "rootCharacterIds": ["char-wu"], "audioKey": "word-dongwu", "examples": [{ "hanzi": "我喜欢看动物。", "pinyin": "Wǒ xǐhuān kàn dòngwù.", "gloss": "I like looking at animals." }] },
+    { "id": "word-liwu", "hanzi": "礼物", "pinyin": "lǐwù", "toneNumbers": [3, 4], "gloss": "gift; present", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-wu-hsk3", "rootCharacterIds": ["char-wu"], "audioKey": "word-liwu", "examples": [{ "hanzi": "这是给你的礼物。", "pinyin": "Zhè shì gěi nǐ de lǐwù.", "gloss": "This is a gift for you." }] },
+    { "id": "word-gouwu", "hanzi": "购物", "pinyin": "gòuwù", "toneNumbers": [4, 4], "gloss": "shop; shopping", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural everyday activity extension for the 物 family; verify against the selected HSK source.", "familyId": "family-wu-hsk3", "rootCharacterIds": ["char-wu"], "audioKey": "word-gouwu", "examples": [{ "hanzi": "周末我们去购物。", "pinyin": "Zhōumò wǒmen qù gòuwù.", "gloss": "We go shopping on weekends." }] },
+    { "id": "word-shiwu", "hanzi": "食物", "pinyin": "shíwù", "toneNumbers": [2, 4], "gloss": "food", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural food-object extension for the 物 family; verify against the selected HSK source.", "familyId": "family-wu-hsk3", "rootCharacterIds": ["char-wu"], "audioKey": "word-shiwu", "examples": [{ "hanzi": "冰箱里有很多食物。", "pinyin": "Bīngxiāng lǐ yǒu hěn duō shíwù.", "gloss": "There is a lot of food in the refrigerator." }] },
+    { "id": "word-wupin", "hanzi": "物品", "pinyin": "wùpǐn", "toneNumbers": [4, 3], "gloss": "article; item; object", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural object-noun extension for the 物 family; verify against the selected HSK source.", "familyId": "family-wu-hsk3", "rootCharacterIds": ["char-wu"], "audioKey": "word-wupin", "examples": [{ "hanzi": "请保管好自己的物品。", "pinyin": "Qǐng bǎoguǎn hǎo zìjǐ de wùpǐn.", "gloss": "Please take care of your belongings." }] },
+
+    { "id": "word-jiehun", "hanzi": "结婚", "pinyin": "jiéhūn", "toneNumbers": [2, 1], "gloss": "marry; get married", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-jie-hsk3", "rootCharacterIds": ["char-jie"], "audioKey": "word-jiehun", "examples": [{ "hanzi": "他们明年结婚。", "pinyin": "Tāmen míngnián jiéhūn.", "gloss": "They are getting married next year." }] },
+    { "id": "word-jieshu", "hanzi": "结束", "pinyin": "jiéshù", "toneNumbers": [2, 4], "gloss": "end; finish", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-jie-hsk3", "rootCharacterIds": ["char-jie"], "audioKey": "word-jieshu", "examples": [{ "hanzi": "电影几点结束？", "pinyin": "Diànyǐng jǐ diǎn jiéshù?", "gloss": "What time does the movie end?" }] },
+    { "id": "word-jieguo", "hanzi": "结果", "pinyin": "jiéguǒ", "toneNumbers": [2, 3], "gloss": "result; outcome", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural outcome extension for the 结 family; verify against the selected HSK source.", "familyId": "family-jie-hsk3", "rootCharacterIds": ["char-jie"], "audioKey": "word-jieguo", "examples": [{ "hanzi": "结果比我们想的好。", "pinyin": "Jiéguǒ bǐ wǒmen xiǎng de hǎo.", "gloss": "The result was better than we expected." }] },
+    { "id": "word-jiezhang", "hanzi": "结账", "pinyin": "jiézhàng", "toneNumbers": [2, 4], "gloss": "pay the bill; settle an account", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural restaurant-life extension for the 结 family; verify against the selected HSK source.", "familyId": "family-jie-hsk3", "rootCharacterIds": ["char-jie"], "audioKey": "word-jiezhang", "examples": [{ "hanzi": "吃完饭以后我们去结账。", "pinyin": "Chī wán fàn yǐhòu wǒmen qù jiézhàng.", "gloss": "After eating, we go pay the bill." }] },
+    { "id": "word-jiebing", "hanzi": "结冰", "pinyin": "jié bīng", "toneNumbers": [2, 1], "gloss": "freeze; become ice", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural change-of-state extension for the 结 family; verify against the selected HSK source.", "familyId": "family-jie-hsk3", "rootCharacterIds": ["char-jie"], "audioKey": "word-jiebing", "examples": [{ "hanzi": "冬天河水会结冰。", "pinyin": "Dōngtiān héshuǐ huì jié bīng.", "gloss": "The river may freeze in winter." }] },
+
+    { "id": "word-chuxian", "hanzi": "出现", "pinyin": "chūxiàn", "toneNumbers": [1, 4], "gloss": "appear; arise", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-chuxian", "examples": [{ "hanzi": "问题出现了。", "pinyin": "Wèntí chūxiàn le.", "gloss": "A problem appeared." }] },
+    { "id": "word-faxian", "hanzi": "发现", "pinyin": "fāxiàn", "toneNumbers": [1, 4], "gloss": "discover; find", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-faxian", "examples": [{ "hanzi": "我发现他不在家。", "pinyin": "Wǒ fāxiàn tā bú zài jiā.", "gloss": "I discovered that he was not at home." }] },
+    { "id": "word-xianzai", "hanzi": "现在", "pinyin": "xiànzài", "toneNumbers": [4, 4], "gloss": "now; at present", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural present-time extension for the 现 family; verify against the selected HSK source.", "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-xianzai", "examples": [{ "hanzi": "我现在有时间。", "pinyin": "Wǒ xiànzài yǒu shíjiān.", "gloss": "I have time now." }] },
+    { "id": "word-xianshi", "hanzi": "现实", "pinyin": "xiànshí", "toneNumbers": [4, 2], "gloss": "reality; real", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural present-and-reality extension for the 现 family; verify against the selected HSK source.", "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-xianshi", "examples": [{ "hanzi": "现实和想象不一样。", "pinyin": "Xiànshí hé xiǎngxiàng bù yíyàng.", "gloss": "Reality and imagination are not the same." }] },
+    { "id": "word-xianjin", "hanzi": "现金", "pinyin": "xiànjīn", "toneNumbers": [4, 1], "gloss": "cash", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural money extension for the 现 family; verify against the selected HSK source.", "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-xianjin", "examples": [{ "hanzi": "这里可以用现金吗？", "pinyin": "Zhèlǐ kěyǐ yòng xiànjīn ma?", "gloss": "Can I use cash here?" }] }
   ]
 }

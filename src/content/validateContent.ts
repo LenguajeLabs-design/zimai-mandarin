@@ -32,6 +32,7 @@ export function validateContent(data: ContentData): string[] {
     if (!word.rootCharacterIds.every((id) => characterIds.has(id))) errors.push(`Missing root reference for ${word.id}`)
     if (word.isExtension && !word.extensionReason) errors.push(`Related word without extensionReason: ${word.id}`)
     if (word.hskLevel === 'HSK 2' && !familiesById.get(word.familyId)?.sourceIds.includes('hsk-2-official-syllabus')) errors.push(`HSK 2 word without official HSK 2 source: ${word.id}`)
+    if (word.hskLevel === 'HSK 3' && !familiesById.get(word.familyId)?.sourceIds.includes('hsk-3-official-syllabus')) errors.push(`HSK 3 word without official HSK 3 source: ${word.id}`)
     if (!word.examples.length) errors.push(`Word without an example sentence: ${word.id}`)
     word.examples.forEach((example, index) => {
       if (!example.hanzi || !example.pinyin || !example.gloss) errors.push(`Incomplete example sentence ${index + 1} for ${word.id}`)
@@ -39,6 +40,7 @@ export function validateContent(data: ContentData): string[] {
   })
   data.families.forEach((family) => {
     if (family.sourceIds.includes('hsk-2-official-syllabus') && !family.members.some((wordId) => data.words.find((word) => word.id === wordId)?.hskLevel === 'HSK 2')) errors.push(`HSK 2 family has no verified core member: ${family.id}`)
+    if (family.sourceIds.includes('hsk-3-official-syllabus') && !family.members.some((wordId) => data.words.find((word) => word.id === wordId)?.hskLevel === 'HSK 3')) errors.push(`HSK 3 family has no verified core member: ${family.id}`)
   })
   return errors
 }
