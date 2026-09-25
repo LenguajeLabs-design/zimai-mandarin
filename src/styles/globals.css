@@ -49,7 +49,9 @@ button:focus-visible, input:focus-visible { outline: 3px solid rgba(83, 111, 232
 .family-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .family-card { background: var(--surface); border: 1px solid rgba(189, 184, 173, 0.48); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); display: flex; flex-direction: column; min-height: 390px; overflow: hidden; padding: 23px 24px 18px; }
 .family-card__header { align-items: start; display: flex; gap: 16px; justify-content: space-between; }
-.family-card h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.75rem; font-weight: 400; letter-spacing: -0.045em; margin: 0; }
+.family-card h2 { align-items: baseline; display: flex; font-family: Georgia, "Times New Roman", serif; font-size: 1.75rem; font-weight: 400; letter-spacing: -0.045em; margin: 0; }
+.family-card__title-character { color: var(--accent); font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif; font-size: 1.08em; }
+.family-card__title-kind { color: var(--text-secondary); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", sans-serif; font-size: 0.56em; font-weight: 600; letter-spacing: 0.015em; margin-left: 7px; }
 .family-card__description { color: var(--text-secondary); font-size: 0.78rem; line-height: 1.45; margin: 7px 0 0; max-width: 280px; }
 .icon-button { align-items: center; background: transparent; border: 1px solid var(--line); border-radius: 50%; color: var(--text-secondary); display: inline-flex; flex: 0 0 auto; font-size: 1.1rem; height: 40px; justify-content: center; padding: 0; transition: border-color 160ms ease, background 160ms ease, color 160ms ease; width: 40px; }
 .icon-button:hover, .icon-button.is-selected { background: var(--accent-soft); border-color: transparent; color: var(--accent-deep); }
@@ -91,10 +93,12 @@ button:focus-visible, input:focus-visible { outline: 3px solid rgba(83, 111, 232
 .status-badge--hsk { background: var(--accent-soft); color: var(--accent-deep); }
 .status-badge--related { background: var(--extension-soft); color: var(--extension); }
 .word-node--compact .status-badge { font-size: 0.5rem; padding: 4px 4px; }
-.audio-button { align-items: center; background: transparent; border: 1px solid var(--line); border-radius: var(--radius-pill); color: var(--text-secondary); display: inline-flex; flex: 0 0 auto; font-size: 0.69rem; gap: 6px; min-height: 36px; padding: 0 11px; transition: background 160ms ease, border-color 160ms ease, color 160ms ease; }
+.audio-button { align-items: center; background: transparent; border: 1px solid var(--line); border-radius: var(--radius-pill); color: var(--text-secondary); display: inline-flex; flex: 0 0 auto; font-size: 0.69rem; gap: 6px; min-height: 40px; padding: 0 11px; transition: background 160ms ease, border-color 160ms ease, color 160ms ease; }
+.audio-button__icon { align-items: center; display: inline-flex; height: 15px; justify-content: center; width: 15px; }
+.audio-button__icon svg { display: block; fill: currentColor; height: 14px; width: 14px; }
 .audio-button:hover, .audio-button.is-playing { background: var(--accent-soft); border-color: transparent; color: var(--accent-deep); }
-.audio-button--compact { border: 0; font-size: 0.83rem; min-height: 30px; padding: 0 4px; }
-.audio-button--compact:hover { background: transparent; }
+.audio-button--compact { background: var(--surface); border: 1px solid var(--line); border-radius: 50%; font-size: 0.83rem; height: 34px; justify-content: center; min-height: 34px; padding: 0; width: 34px; }
+.audio-button--compact:hover { background: var(--accent-soft); border-color: var(--accent-soft); }
 
 .button { align-items: center; border: 0; border-radius: var(--radius-pill); display: inline-flex; font-size: 0.78rem; font-weight: 700; justify-content: center; min-height: 42px; padding: 0 16px; }
 .button--primary { background: var(--text); color: var(--surface); }
