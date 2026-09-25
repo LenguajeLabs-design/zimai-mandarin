@@ -25,6 +25,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added a clearly labeled Mandarin device-voice preview for words without reviewed recordings, while keeping native audio assets as the preferred path.
 - Added HSK 2 source metadata and a reproducible source-mirror note so HSK 2 labels are distinguishable from Related extensions.
 - Added the first verified HSK 3 content slice: twelve dedicated five-word families with thirty-three HSK 3 core words and context sentences.
+- Added the first verified HSK 4 content slice: fourteen dedicated five-word families with forty-nine HSK 4 core words and context sentences.
 
 ### Changed
 
@@ -40,6 +41,7 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added an “In context” sentence layer to the word quick view.
 - Added an HSK 2 verified library filter and dynamic HSK level labels on family detail pages.
 - Added an HSK 3 verified library filter and source-backed HSK 3 content validation.
+- Added an HSK 4 verified library filter and source-backed HSK 4 content validation.
 
 ### Verification
 

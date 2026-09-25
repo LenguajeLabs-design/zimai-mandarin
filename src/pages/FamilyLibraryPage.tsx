@@ -7,8 +7,8 @@ interface FamilyLibraryPageProps {
   getRoot: (family: Family) => Character
   getWords: (family: Family) => Word[]
   savedFamilies: string[]
-  filter: 'all' | 'hsk' | 'hsk2' | 'hsk3' | 'saved' | 'recent'
-  onFilter: (filter: 'all' | 'hsk' | 'hsk2' | 'hsk3' | 'saved' | 'recent') => void
+  filter: 'all' | 'hsk' | 'hsk2' | 'hsk3' | 'hsk4' | 'saved' | 'recent'
+  onFilter: (filter: 'all' | 'hsk' | 'hsk2' | 'hsk3' | 'hsk4' | 'saved' | 'recent') => void
   recentFamilies: string[]
   onOpenFamily: (id: string) => void
   onToggleSaved: (id: string) => void
@@ -21,6 +21,7 @@ const filters: Array<{ id: FamilyLibraryPageProps['filter']; label: string }> = 
   { id: 'hsk', label: 'HSK 1 core' },
   { id: 'hsk2', label: 'HSK 2 verified' },
   { id: 'hsk3', label: 'HSK 3 verified' },
+  { id: 'hsk4', label: 'HSK 4 verified' },
   { id: 'saved', label: 'Saved' },
   { id: 'recent', label: 'Recently viewed' },
 ]
@@ -32,6 +33,7 @@ export function FamilyLibraryPage({ families, getRoot, getWords, savedFamilies, 
     if (filter === 'hsk') return getWords(family).some((word) => word.hskLevel === 'HSK 1')
     if (filter === 'hsk2') return getWords(family).some((word) => word.hskLevel === 'HSK 2')
     if (filter === 'hsk3') return getWords(family).some((word) => word.hskLevel === 'HSK 3')
+    if (filter === 'hsk4') return getWords(family).some((word) => word.hskLevel === 'HSK 4')
     return true
   }).sort((a, b) => filter === 'recent' ? recentFamilies.indexOf(a.id) - recentFamilies.indexOf(b.id) : a.sortOrder - b.sortOrder)
 
@@ -39,7 +41,7 @@ export function FamilyLibraryPage({ families, getRoot, getWords, savedFamilies, 
     <div className="page page--library">
       <header className="page-header page-header--library">
         <div>
-          <p className="eyebrow">A visual vocabulary browser · HSK 1–3 verified scope</p>
+          <p className="eyebrow">A visual vocabulary browser · HSK 1–4 verified scope</p>
           <h1>See the words<br /><em>connect.</em></h1>
           <p className="page-header__lede">Browse beginner Mandarin through small, memorable word families.</p>
         </div>

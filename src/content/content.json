@@ -43,6 +43,24 @@
       "license": "Repository license; verify redistribution rights before release",
       "retrievedAt": "2026-09-25",
       "notes": "The first HSK 3 labels are cross-checked against the exclusive HSK 2.0 Level 3 list mirrored at https://raw.githubusercontent.com/jelleverheyen/hsk-vocabulary/main/wordlists/exclusive/old/3.json. Upstream project: https://github.com/jelleverheyen/hsk-vocabulary. The official syllabus remains the primary level framework."
+    },
+    {
+      "id": "hsk-4-official-syllabus",
+      "name": "Official HSK 4 examination syllabus",
+      "version": "HSK 2.0",
+      "level": "HSK 4",
+      "license": "Official reference",
+      "retrievedAt": "2026-09-25",
+      "notes": "Chinese Test Service syllabus: HSK 4 is framed around 1200 cumulative words and wider communication across everyday, study, and work topics. https://www.chinesetest.cn/userfiles/file/dagang/HSK4.pdf"
+    },
+    {
+      "id": "hsk-4-exclusive-mirror",
+      "name": "HSK 2.0 exclusive Level 4 vocabulary mirror",
+      "version": "reproducible verification mirror",
+      "level": "HSK 4",
+      "license": "Repository license; verify redistribution rights before release",
+      "retrievedAt": "2026-09-25",
+      "notes": "The first HSK 4 labels are cross-checked against the exclusive HSK 2.0 Level 4 list mirrored at https://raw.githubusercontent.com/jelleverheyen/hsk-vocabulary/main/wordlists/exclusive/old/4.json. Upstream project: https://github.com/jelleverheyen/hsk-vocabulary. The official syllabus remains the primary level framework."
     }
   ],
   "characters": [
@@ -94,6 +112,20 @@
     ,{ "id": "char-wu", "hanzi": "物", "pinyin": "wù", "toneNumber": 4, "toneMark": "wù", "gloss": "thing; object", "audioKey": "root-wu" }
     ,{ "id": "char-jie", "hanzi": "结", "pinyin": "jié", "toneNumber": 2, "toneMark": "jié", "gloss": "tie; end; marry", "audioKey": "root-jie" }
     ,{ "id": "char-xian", "hanzi": "现", "pinyin": "xiàn", "toneNumber": 4, "toneMark": "xiàn", "gloss": "appear; present", "audioKey": "root-xian" }
+    ,{ "id": "char-gan", "hanzi": "感", "pinyin": "gǎn", "toneNumber": 3, "toneMark": "gǎn", "gloss": "feel; sense; emotion", "audioKey": "root-gan" }
+    ,{ "id": "char-da", "hanzi": "打", "pinyin": "dǎ", "toneNumber": 3, "toneMark": "dǎ", "gloss": "hit; do; make", "audioKey": "root-da" }
+    ,{ "id": "char-bu", "hanzi": "不", "pinyin": "bù", "toneNumber": 4, "toneMark": "bù", "gloss": "not; no", "audioKey": "root-bu" }
+    ,{ "id": "char-qing", "hanzi": "情", "pinyin": "qíng", "toneNumber": 2, "toneMark": "qíng", "gloss": "feeling; situation", "audioKey": "root-qing" }
+    ,{ "id": "char-ren-hsk4", "hanzi": "任", "pinyin": "rèn", "toneNumber": 4, "toneMark": "rèn", "gloss": "responsibility; any", "audioKey": "root-ren-hsk4" }
+    ,{ "id": "char-zheng", "hanzi": "证", "pinyin": "zhèng", "toneNumber": 4, "toneMark": "zhèng", "gloss": "prove; certificate", "audioKey": "root-zheng" }
+    ,{ "id": "char-zhun", "hanzi": "准", "pinyin": "zhǔn", "toneNumber": 3, "toneMark": "zhǔn", "gloss": "accurate; allow", "audioKey": "root-zhun" }
+    ,{ "id": "char-da-big", "hanzi": "大", "pinyin": "dà", "toneNumber": 4, "toneMark": "dà", "gloss": "big; great", "audioKey": "root-da-big" }
+    ,{ "id": "char-chu", "hanzi": "出", "pinyin": "chū", "toneNumber": 1, "toneMark": "chū", "gloss": "go out; emerge", "audioKey": "root-chu" }
+    ,{ "id": "char-dai", "hanzi": "代", "pinyin": "dài", "toneNumber": 4, "toneMark": "dài", "gloss": "replace; generation", "audioKey": "root-dai" }
+    ,{ "id": "char-ye-hsk4", "hanzi": "业", "pinyin": "yè", "toneNumber": 4, "toneMark": "yè", "gloss": "work; profession", "audioKey": "root-ye-hsk4" }
+    ,{ "id": "char-liao", "hanzi": "料", "pinyin": "liào", "toneNumber": 4, "toneMark": "liào", "gloss": "material; ingredient", "audioKey": "root-liao" }
+    ,{ "id": "char-du-hsk4", "hanzi": "度", "pinyin": "dù", "toneNumber": 4, "toneMark": "dù", "gloss": "degree; manner", "audioKey": "root-du-hsk4" }
+    ,{ "id": "char-xin-hsk4", "hanzi": "信", "pinyin": "xìn", "toneNumber": 4, "toneMark": "xìn", "gloss": "trust; confidence; letter", "audioKey": "root-xin-hsk4" }
   ],
   "families": [
     {
@@ -670,6 +702,174 @@
       "featured": false,
       "contentNotes": "Dedicated HSK 3 family; its core HSK 3 members are verified in the HSK 2.0 exclusive Level 3 list, with Related extensions for a complete five-word map.",
       "sourceIds": ["hsk-3-official-syllabus", "hsk-3-exclusive-mirror"]
+    },
+    {
+      "id": "family-gan-hsk4",
+      "rootCharacterId": "char-gan",
+      "title": "感 family",
+      "shortDescription": "Feeling words for noticing, sensing, and responding.",
+      "meaningNote": "感 moves from a felt reaction to the emotions and thanks we express.",
+      "members": ["word-gandong", "word-ganjue", "word-ganxie", "word-ganren", "word-ganmao"],
+      "sortOrder": 51,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-da-hsk4",
+      "rootCharacterId": "char-da",
+      "title": "打 family",
+      "shortDescription": "Action words for getting things done with the hands, phone, and tools.",
+      "meaningNote": "打 covers a wide set of everyday actions, from dressing and printing to making a call.",
+      "members": ["word-daban", "word-darao", "word-dayin", "word-dazhe", "word-dazhen"],
+      "sortOrder": 52,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-bu-hsk4",
+      "rootCharacterId": "char-bu",
+      "title": "不 family",
+      "shortDescription": "Contrast and necessity words for shaping a sentence.",
+      "meaningNote": "不 changes the direction of an idea, from contrast to strong necessity.",
+      "members": ["word-budan", "word-budebu", "word-buguan", "word-buguo", "word-bujin"],
+      "sortOrder": 53,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-qing-hsk4",
+      "rootCharacterId": "char-qing",
+      "title": "情 family",
+      "shortDescription": "Emotion and situation words for talking about people and circumstances.",
+      "meaningNote": "情 links personal feelings with the wider situation around them.",
+      "members": ["word-aiqing", "word-ganqing-hsk4", "word-qingkuang", "word-xinqing", "word-tongqing"],
+      "sortOrder": 54,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-ren-hsk4",
+      "rootCharacterId": "char-ren-hsk4",
+      "title": "任 family",
+      "shortDescription": "Responsibility and open-choice words for decisions and tasks.",
+      "meaningNote": "任 connects taking responsibility with the idea of any possible choice.",
+      "members": ["word-renhe", "word-renwu-hsk4", "word-zeren", "word-renyi", "word-renxing"],
+      "sortOrder": 55,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-zheng-hsk4",
+      "rootCharacterId": "char-zheng",
+      "title": "证 family",
+      "shortDescription": "Proof and document words for confirming what is true.",
+      "meaningNote": "证 turns proof into guarantees, evidence, and the documents that carry it.",
+      "members": ["word-baozheng", "word-zhengming", "word-qianzheng", "word-zhengjian", "word-zhengshi"],
+      "sortOrder": 56,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-zhun-hsk4",
+      "rootCharacterId": "char-zhun",
+      "title": "准 family",
+      "shortDescription": "Accuracy and permission words for getting something right.",
+      "meaningNote": "准 links being on time and accurate with allowing something to happen.",
+      "members": ["word-zhunshi", "word-zhunque", "word-biaozhun", "word-zhunxu", "word-zhunbei"],
+      "sortOrder": 57,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-da-big-hsk4",
+      "rootCharacterId": "char-da-big",
+      "title": "大 family",
+      "shortDescription": "Big-place and big-idea words for formal everyday settings.",
+      "meaningNote": "大 scales from a doctor and an estimate to an embassy and a bold action.",
+      "members": ["word-dashiguan", "word-daifu", "word-dagai", "word-dayue", "word-dadan"],
+      "sortOrder": 58,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-chu-hsk4",
+      "rootCharacterId": "char-chu",
+      "title": "出 family",
+      "shortDescription": "Departure and life-event words for going out into the world.",
+      "meaningNote": "出 marks a movement outward, from a work trip to a person’s birth.",
+      "members": ["word-chuchai", "word-chufa", "word-chusheng", "word-chumen", "word-chuguo"],
+      "sortOrder": 59,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-dai-hsk4",
+      "rootCharacterId": "char-dai",
+      "title": "代 family",
+      "shortDescription": "Change and representation words across time and generations.",
+      "meaningNote": "代 connects replacing one thing with representing it in a modern age.",
+      "members": ["word-daiti", "word-daibiao", "word-xiandai", "word-shidai", "word-dangdai"],
+      "sortOrder": 60,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-ye-hsk4",
+      "rootCharacterId": "char-ye-hsk4",
+      "title": "业 family",
+      "shortDescription": "Study-to-work words for education, careers, and professional life.",
+      "meaningNote": "业 follows a path from graduating into a profession and a field of work.",
+      "members": ["word-biye", "word-zhiye", "word-zhuanye", "word-zuoye", "word-yewu"],
+      "sortOrder": 61,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-liao-hsk4",
+      "rootCharacterId": "char-liao",
+      "title": "料 family",
+      "shortDescription": "Material and ingredient words for things we use and consume.",
+      "meaningNote": "料 names the material behind a product, a drink, or the raw ingredients.",
+      "members": ["word-cailiao", "word-yinliao", "word-suliaodai", "word-ziliao", "word-yuanliao"],
+      "sortOrder": 62,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-du-hsk4",
+      "rootCharacterId": "char-du-hsk4",
+      "title": "度 family",
+      "shortDescription": "Degree and pace words for measuring situations and behavior.",
+      "meaningNote": "度 gives a sense of temperature, speed, attitude, and degree.",
+      "members": ["word-wendu", "word-taidu", "word-sudu", "word-chengdu", "word-jiaodu"],
+      "sortOrder": 63,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
+    },
+    {
+      "id": "family-xin-hsk4",
+      "rootCharacterId": "char-xin-hsk4",
+      "title": "信 family",
+      "shortDescription": "Trust and confidence words for relationships and communication.",
+      "meaningNote": "信 moves from trusting a person to having confidence and sharing information.",
+      "members": ["word-xinren", "word-xinxin", "word-xinyongka", "word-xinhao", "word-xinxi"],
+      "sortOrder": 64,
+      "featured": false,
+      "contentNotes": "Dedicated HSK 4 family; its core HSK 4 members are verified in the HSK 2.0 exclusive Level 4 list, with Related extensions for a complete five-word map.",
+      "sourceIds": ["hsk-4-official-syllabus", "hsk-4-exclusive-mirror"]
     }
   ],
   "words": [
@@ -960,6 +1160,90 @@
     { "id": "word-faxian", "hanzi": "发现", "pinyin": "fāxiàn", "toneNumbers": [1, 4], "gloss": "discover; find", "hskLevel": "HSK 3", "isExtension": false, "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-faxian", "examples": [{ "hanzi": "我发现他不在家。", "pinyin": "Wǒ fāxiàn tā bú zài jiā.", "gloss": "I discovered that he was not at home." }] },
     { "id": "word-xianzai", "hanzi": "现在", "pinyin": "xiànzài", "toneNumbers": [4, 4], "gloss": "now; at present", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural present-time extension for the 现 family; verify against the selected HSK source.", "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-xianzai", "examples": [{ "hanzi": "我现在有时间。", "pinyin": "Wǒ xiànzài yǒu shíjiān.", "gloss": "I have time now." }] },
     { "id": "word-xianshi", "hanzi": "现实", "pinyin": "xiànshí", "toneNumbers": [4, 2], "gloss": "reality; real", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural present-and-reality extension for the 现 family; verify against the selected HSK source.", "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-xianshi", "examples": [{ "hanzi": "现实和想象不一样。", "pinyin": "Xiànshí hé xiǎngxiàng bù yíyàng.", "gloss": "Reality and imagination are not the same." }] },
-    { "id": "word-xianjin", "hanzi": "现金", "pinyin": "xiànjīn", "toneNumbers": [4, 1], "gloss": "cash", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural money extension for the 现 family; verify against the selected HSK source.", "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-xianjin", "examples": [{ "hanzi": "这里可以用现金吗？", "pinyin": "Zhèlǐ kěyǐ yòng xiànjīn ma?", "gloss": "Can I use cash here?" }] }
+    { "id": "word-xianjin", "hanzi": "现金", "pinyin": "xiànjīn", "toneNumbers": [4, 1], "gloss": "cash", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural money extension for the 现 family; verify against the selected HSK source.", "familyId": "family-xian-hsk3", "rootCharacterIds": ["char-xian"], "audioKey": "word-xianjin", "examples": [{ "hanzi": "这里可以用现金吗？", "pinyin": "Zhèlǐ kěyǐ yòng xiànjīn ma?", "gloss": "Can I use cash here?" }] },
+
+    { "id": "word-gandong", "hanzi": "感动", "pinyin": "gǎndòng", "toneNumbers": [3, 4], "gloss": "be moved; touch", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-gan-hsk4", "rootCharacterIds": ["char-gan"], "audioKey": "word-gandong", "examples": [{ "hanzi": "这部电影让我很感动。", "pinyin": "Zhè bù diànyǐng ràng wǒ hěn gǎndòng.", "gloss": "This film moved me a lot." }] },
+    { "id": "word-ganjue", "hanzi": "感觉", "pinyin": "gǎnjué", "toneNumbers": [3, 2], "gloss": "feel; feeling", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-gan-hsk4", "rootCharacterIds": ["char-gan"], "audioKey": "word-ganjue", "examples": [{ "hanzi": "我感觉今天会下雨。", "pinyin": "Wǒ gǎnjué jīntiān huì xiàyǔ.", "gloss": "I feel it will rain today." }] },
+    { "id": "word-ganxie", "hanzi": "感谢", "pinyin": "gǎnxiè", "toneNumbers": [3, 4], "gloss": "thank; gratitude", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-gan-hsk4", "rootCharacterIds": ["char-gan"], "audioKey": "word-ganxie", "examples": [{ "hanzi": "感谢你的帮助。", "pinyin": "Gǎnxiè nǐ de bāngzhù.", "gloss": "Thank you for your help." }] },
+    { "id": "word-ganren", "hanzi": "感人", "pinyin": "gǎnrén", "toneNumbers": [3, 2], "gloss": "moving; touching", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural emotional extension for the 感 family; verify against the selected HSK source.", "familyId": "family-gan-hsk4", "rootCharacterIds": ["char-gan"], "audioKey": "word-ganren", "examples": [{ "hanzi": "这是一个很感人的故事。", "pinyin": "Zhè shì yí ge hěn gǎnrén de gùshi.", "gloss": "This is a very touching story." }] },
+    { "id": "word-ganmao", "hanzi": "感冒", "pinyin": "gǎnmào", "toneNumbers": [3, 4], "gloss": "catch a cold; cold", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural health extension for the 感 family; verify against the selected HSK source.", "familyId": "family-gan-hsk4", "rootCharacterIds": ["char-gan"], "audioKey": "word-ganmao", "examples": [{ "hanzi": "我好像感冒了。", "pinyin": "Wǒ hǎoxiàng gǎnmào le.", "gloss": "I think I have a cold." }] },
+
+    { "id": "word-daban", "hanzi": "打扮", "pinyin": "dǎban", "toneNumbers": [3, 5], "gloss": "dress up; dress", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-da-hsk4", "rootCharacterIds": ["char-da"], "audioKey": "word-daban", "examples": [{ "hanzi": "她今天打扮得很漂亮。", "pinyin": "Tā jīntiān dǎban de hěn piàoliang.", "gloss": "She dressed very nicely today." }] },
+    { "id": "word-darao", "hanzi": "打扰", "pinyin": "dǎrǎo", "toneNumbers": [3, 3], "gloss": "disturb; bother", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-da-hsk4", "rootCharacterIds": ["char-da"], "audioKey": "word-darao", "examples": [{ "hanzi": "不好意思，打扰一下。", "pinyin": "Bù hǎoyìsi, dǎrǎo yíxià.", "gloss": "Excuse me, may I bother you for a moment?" }] },
+    { "id": "word-dayin", "hanzi": "打印", "pinyin": "dǎyìn", "toneNumbers": [3, 4], "gloss": "print", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-da-hsk4", "rootCharacterIds": ["char-da"], "audioKey": "word-dayin", "examples": [{ "hanzi": "请帮我打印这份文件。", "pinyin": "Qǐng bāng wǒ dǎyìn zhè fèn wénjiàn.", "gloss": "Please help me print this document." }] },
+    { "id": "word-dazhe", "hanzi": "打折", "pinyin": "dǎzhé", "toneNumbers": [3, 2], "gloss": "be on sale; discount", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-da-hsk4", "rootCharacterIds": ["char-da"], "audioKey": "word-dazhe", "examples": [{ "hanzi": "这件衣服正在打折。", "pinyin": "Zhè jiàn yīfu zhèngzài dǎzhé.", "gloss": "This piece of clothing is on sale." }] },
+    { "id": "word-dazhen", "hanzi": "打针", "pinyin": "dǎzhēn", "toneNumbers": [3, 1], "gloss": "get an injection", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-da-hsk4", "rootCharacterIds": ["char-da"], "audioKey": "word-dazhen", "examples": [{ "hanzi": "孩子害怕打针。", "pinyin": "Háizi hàipà dǎzhēn.", "gloss": "The child is afraid of injections." }] },
+
+    { "id": "word-budan", "hanzi": "不但", "pinyin": "bùdàn", "toneNumbers": [4, 4], "gloss": "not only", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-bu-hsk4", "rootCharacterIds": ["char-bu"], "audioKey": "word-budan", "examples": [{ "hanzi": "他不但会说中文，还会写汉字。", "pinyin": "Tā bùdàn huì shuō Zhōngwén, hái huì xiě Hànzì.", "gloss": "He can not only speak Chinese, but also write characters." }] },
+    { "id": "word-budebu", "hanzi": "不得不", "pinyin": "bùdébù", "toneNumbers": [4, 2, 4], "gloss": "have to; cannot but", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-bu-hsk4", "rootCharacterIds": ["char-bu"], "audioKey": "word-budebu", "examples": [{ "hanzi": "下雨了，我们不得不坐地铁。", "pinyin": "Xiàyǔ le, wǒmen bùdébù zuò dìtiě.", "gloss": "It rained, so we had to take the subway." }] },
+    { "id": "word-buguan", "hanzi": "不管", "pinyin": "bùguǎn", "toneNumbers": [4, 3], "gloss": "no matter; regardless", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-bu-hsk4", "rootCharacterIds": ["char-bu"], "audioKey": "word-buguan", "examples": [{ "hanzi": "不管多忙，他都每天学习。", "pinyin": "Bùguǎn duō máng, tā dōu měitiān xuéxí.", "gloss": "No matter how busy he is, he studies every day." }] },
+    { "id": "word-buguo", "hanzi": "不过", "pinyin": "bùguò", "toneNumbers": [4, 4], "gloss": "however; but", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-bu-hsk4", "rootCharacterIds": ["char-bu"], "audioKey": "word-buguo", "examples": [{ "hanzi": "这家店很小，不过很舒服。", "pinyin": "Zhè jiā diàn hěn xiǎo, búguò hěn shūfu.", "gloss": "This shop is small, but comfortable." }] },
+    { "id": "word-bujin", "hanzi": "不仅", "pinyin": "bùjǐn", "toneNumbers": [4, 3], "gloss": "not only; not merely", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-bu-hsk4", "rootCharacterIds": ["char-bu"], "audioKey": "word-bujin", "examples": [{ "hanzi": "这里不仅风景漂亮，空气也很好。", "pinyin": "Zhèlǐ bùjǐn fēngjǐng piàoliang, kōngqì yě hěn hǎo.", "gloss": "The scenery here is not only beautiful; the air is good too." }] },
+
+    { "id": "word-aiqing", "hanzi": "爱情", "pinyin": "àiqíng", "toneNumbers": [4, 2], "gloss": "love; romance", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-qing-hsk4", "rootCharacterIds": ["char-qing"], "audioKey": "word-aiqing", "examples": [{ "hanzi": "他们相信爱情需要互相尊重。", "pinyin": "Tāmen xiāngxìn àiqíng xūyào hùxiāng zūnzhòng.", "gloss": "They believe love requires mutual respect." }] },
+    { "id": "word-ganqing-hsk4", "hanzi": "感情", "pinyin": "gǎnqíng", "toneNumbers": [3, 2], "gloss": "feeling; affection", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-qing-hsk4", "rootCharacterIds": ["char-qing"], "audioKey": "word-ganqing-hsk4", "examples": [{ "hanzi": "我们之间有很深的感情。", "pinyin": "Wǒmen zhījiān yǒu hěn shēn de gǎnqíng.", "gloss": "There is a deep affection between us." }] },
+    { "id": "word-qingkuang", "hanzi": "情况", "pinyin": "qíngkuàng", "toneNumbers": [2, 4], "gloss": "situation; circumstance", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-qing-hsk4", "rootCharacterIds": ["char-qing"], "audioKey": "word-qingkuang", "examples": [{ "hanzi": "请告诉我现在的情况。", "pinyin": "Qǐng gàosu wǒ xiànzài de qíngkuàng.", "gloss": "Please tell me the current situation." }] },
+    { "id": "word-xinqing", "hanzi": "心情", "pinyin": "xīnqíng", "toneNumbers": [1, 2], "gloss": "mood; state of mind", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-qing-hsk4", "rootCharacterIds": ["char-qing"], "audioKey": "word-xinqing", "examples": [{ "hanzi": "听完音乐以后，我的心情好多了。", "pinyin": "Tīng wán yīnyuè yǐhòu, wǒ de xīnqíng hǎo duō le.", "gloss": "After listening to music, I felt much better." }] },
+    { "id": "word-tongqing", "hanzi": "同情", "pinyin": "tóngqíng", "toneNumbers": [2, 2], "gloss": "sympathize; sympathy", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-qing-hsk4", "rootCharacterIds": ["char-qing"], "audioKey": "word-tongqing", "examples": [{ "hanzi": "我很同情他的经历。", "pinyin": "Wǒ hěn tóngqíng tā de jīnglì.", "gloss": "I feel sorry for what he went through." }] },
+
+    { "id": "word-renhe", "hanzi": "任何", "pinyin": "rènhé", "toneNumbers": [4, 2], "gloss": "any; whatever", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-ren-hsk4", "rootCharacterIds": ["char-ren-hsk4"], "audioKey": "word-renhe", "examples": [{ "hanzi": "你有任何问题都可以问我。", "pinyin": "Nǐ yǒu rènhé wèntí dōu kěyǐ wèn wǒ.", "gloss": "You can ask me about any problem." }] },
+    { "id": "word-renwu-hsk4", "hanzi": "任务", "pinyin": "rènwu", "toneNumbers": [4, 5], "gloss": "task; assignment", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-ren-hsk4", "rootCharacterIds": ["char-ren-hsk4"], "audioKey": "word-renwu-hsk4", "examples": [{ "hanzi": "今天的任务是完成这份报告。", "pinyin": "Jīntiān de rènwu shì wánchéng zhè fèn bàogào.", "gloss": "Today’s task is to finish this report." }] },
+    { "id": "word-zeren", "hanzi": "责任", "pinyin": "zérèn", "toneNumbers": [2, 4], "gloss": "responsibility; duty", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-ren-hsk4", "rootCharacterIds": ["char-ren-hsk4"], "audioKey": "word-zeren", "examples": [{ "hanzi": "每个人都要对自己的工作负责，这是我们的责任。", "pinyin": "Měi ge rén dōu yào duì zìjǐ de gōngzuò fùzé, zhè shì wǒmen de zérèn.", "gloss": "Everyone must take responsibility for their work; that is our duty." }] },
+    { "id": "word-renyi", "hanzi": "任意", "pinyin": "rènyì", "toneNumbers": [4, 4], "gloss": "arbitrary; any", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural choice-and-possibility extension for the 任 family; verify against the selected HSK source.", "familyId": "family-ren-hsk4", "rootCharacterIds": ["char-ren-hsk4"], "audioKey": "word-renyi", "examples": [{ "hanzi": "你可以任意选择一个颜色。", "pinyin": "Nǐ kěyǐ rènyì xuǎnzé yí ge yánsè.", "gloss": "You can choose any color." }] },
+    { "id": "word-renxing", "hanzi": "任性", "pinyin": "rènxìng", "toneNumbers": [4, 4], "gloss": "willful; headstrong", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural personality extension for the 任 family; verify against the selected HSK source.", "familyId": "family-ren-hsk4", "rootCharacterIds": ["char-ren-hsk4"], "audioKey": "word-renxing", "examples": [{ "hanzi": "孩子有时候会有点任性。", "pinyin": "Háizi yǒushíhou huì yǒudiǎn rènxìng.", "gloss": "Children can be a little headstrong sometimes." }] },
+
+    { "id": "word-baozheng", "hanzi": "保证", "pinyin": "bǎozhèng", "toneNumbers": [3, 4], "gloss": "guarantee; assure", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-zheng-hsk4", "rootCharacterIds": ["char-zheng"], "audioKey": "word-baozheng", "examples": [{ "hanzi": "我保证按时完成。", "pinyin": "Wǒ bǎozhèng ànshí wánchéng.", "gloss": "I guarantee I will finish on time." }] },
+    { "id": "word-zhengming", "hanzi": "证明", "pinyin": "zhèngmíng", "toneNumbers": [4, 2], "gloss": "prove; proof", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-zheng-hsk4", "rootCharacterIds": ["char-zheng"], "audioKey": "word-zhengming", "examples": [{ "hanzi": "这张票可以证明你来过这里。", "pinyin": "Zhè zhāng piào kěyǐ zhèngmíng nǐ lái guo zhèlǐ.", "gloss": "This ticket can prove that you came here." }] },
+    { "id": "word-qianzheng", "hanzi": "签证", "pinyin": "qiānzhèng", "toneNumbers": [1, 4], "gloss": "visa", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-zheng-hsk4", "rootCharacterIds": ["char-zheng"], "audioKey": "word-qianzheng", "examples": [{ "hanzi": "我正在申请去中国的签证。", "pinyin": "Wǒ zhèngzài shēnqǐng qù Zhōngguó de qiānzhèng.", "gloss": "I am applying for a visa to China." }] },
+    { "id": "word-zhengjian", "hanzi": "证件", "pinyin": "zhèngjiàn", "toneNumbers": [4, 4], "gloss": "identification document; certificate", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural document extension for the 证 family; verify against the selected HSK source.", "familyId": "family-zheng-hsk4", "rootCharacterIds": ["char-zheng"], "audioKey": "word-zhengjian", "examples": [{ "hanzi": "请出示您的证件。", "pinyin": "Qǐng chūshì nín de zhèngjiàn.", "gloss": "Please show your identification." }] },
+    { "id": "word-zhengshi", "hanzi": "证实", "pinyin": "zhèngshí", "toneNumbers": [4, 2], "gloss": "confirm; verify", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural verification extension for the 证 family; verify against the selected HSK source.", "familyId": "family-zheng-hsk4", "rootCharacterIds": ["char-zheng"], "audioKey": "word-zhengshi", "examples": [{ "hanzi": "消息证实以后，大家才放心。", "pinyin": "Xiāoxi zhèngshí yǐhòu, dàjiā cái fàngxīn.", "gloss": "Everyone felt relieved after the news was confirmed." }] },
+
+    { "id": "word-zhunshi", "hanzi": "准时", "pinyin": "zhǔnshí", "toneNumbers": [3, 2], "gloss": "on time; punctual", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-zhun-hsk4", "rootCharacterIds": ["char-zhun"], "audioKey": "word-zhunshi", "examples": [{ "hanzi": "请准时到达会议室。", "pinyin": "Qǐng zhǔnshí dàodá huìyìshì.", "gloss": "Please arrive at the meeting room on time." }] },
+    { "id": "word-zhunque", "hanzi": "准确", "pinyin": "zhǔnquè", "toneNumbers": [3, 4], "gloss": "accurate; exact", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-zhun-hsk4", "rootCharacterIds": ["char-zhun"], "audioKey": "word-zhunque", "examples": [{ "hanzi": "请给我一个准确的地址。", "pinyin": "Qǐng gěi wǒ yí ge zhǔnquè de dìzhǐ.", "gloss": "Please give me an exact address." }] },
+    { "id": "word-biaozhun", "hanzi": "标准", "pinyin": "biāozhǔn", "toneNumbers": [1, 3], "gloss": "standard; criterion", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-zhun-hsk4", "rootCharacterIds": ["char-zhun"], "audioKey": "word-biaozhun", "examples": [{ "hanzi": "这个产品符合安全标准。", "pinyin": "Zhège chǎnpǐn fúhé ānquán biāozhǔn.", "gloss": "This product meets safety standards." }] },
+    { "id": "word-zhunxu", "hanzi": "准许", "pinyin": "zhǔnxǔ", "toneNumbers": [3, 3], "gloss": "permit; allow", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural permission extension for the 准 family; verify against the selected HSK source.", "familyId": "family-zhun-hsk4", "rootCharacterIds": ["char-zhun"], "audioKey": "word-zhunxu", "examples": [{ "hanzi": "这里不准许吸烟。", "pinyin": "Zhèlǐ bù zhǔnxǔ xīyān.", "gloss": "Smoking is not permitted here." }] },
+    { "id": "word-zhunbei", "hanzi": "准备", "pinyin": "zhǔnbèi", "toneNumbers": [3, 4], "gloss": "prepare; preparation", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural readiness extension for the 准 family; verify against the selected HSK source.", "familyId": "family-zhun-hsk4", "rootCharacterIds": ["char-zhun"], "audioKey": "word-zhunbei", "examples": [{ "hanzi": "我已经准备好明天的考试。", "pinyin": "Wǒ yǐjīng zhǔnbèi hǎo míngtiān de kǎoshì.", "gloss": "I have prepared for tomorrow’s exam." }] },
+
+    { "id": "word-dashiguan", "hanzi": "大使馆", "pinyin": "dàshǐguǎn", "toneNumbers": [4, 3, 3], "gloss": "embassy", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-da-big-hsk4", "rootCharacterIds": ["char-da-big"], "audioKey": "word-dashiguan", "examples": [{ "hanzi": "大使馆离这里不远。", "pinyin": "Dàshǐguǎn lí zhèlǐ bù yuǎn.", "gloss": "The embassy is not far from here." }] },
+    { "id": "word-daifu", "hanzi": "大夫", "pinyin": "dàifu", "toneNumbers": [4, 5], "gloss": "doctor; physician", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-da-big-hsk4", "rootCharacterIds": ["char-da-big"], "audioKey": "word-daifu", "examples": [{ "hanzi": "这位大夫很有经验。", "pinyin": "Zhè wèi dàifu hěn yǒu jīngyàn.", "gloss": "This doctor has a lot of experience." }] },
+    { "id": "word-dagai", "hanzi": "大概", "pinyin": "dàgài", "toneNumbers": [4, 4], "gloss": "approximately; probably", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-da-big-hsk4", "rootCharacterIds": ["char-da-big"], "audioKey": "word-dagai", "examples": [{ "hanzi": "大概八点左右我们就到了。", "pinyin": "Dàgài bā diǎn zuǒyòu wǒmen jiù dào le.", "gloss": "We arrived at about eight." }] },
+    { "id": "word-dayue", "hanzi": "大约", "pinyin": "dàyuē", "toneNumbers": [4, 1], "gloss": "approximately; about", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-da-big-hsk4", "rootCharacterIds": ["char-da-big"], "audioKey": "word-dayue", "examples": [{ "hanzi": "从这里到车站大约要十分钟。", "pinyin": "Cóng zhèlǐ dào chēzhàn dàyuē yào shí fēnzhōng.", "gloss": "It takes about ten minutes from here to the station." }] },
+    { "id": "word-dadan", "hanzi": "大胆", "pinyin": "dàdǎn", "toneNumbers": [4, 3], "gloss": "bold; daring", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural courage extension for the 大 family; verify against the selected HSK source.", "familyId": "family-da-big-hsk4", "rootCharacterIds": ["char-da-big"], "audioKey": "word-dadan", "examples": [{ "hanzi": "请大胆说出你的想法。", "pinyin": "Qǐng dàdǎn shuō chū nǐ de xiǎngfǎ.", "gloss": "Please say your idea boldly." }] },
+
+    { "id": "word-chuchai", "hanzi": "出差", "pinyin": "chūchāi", "toneNumbers": [1, 1], "gloss": "go on a business trip", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-chu-hsk4", "rootCharacterIds": ["char-chu"], "audioKey": "word-chuchai", "examples": [{ "hanzi": "我下周要去上海出差。", "pinyin": "Wǒ xià zhōu yào qù Shànghǎi chūchāi.", "gloss": "I have to go on a business trip to Shanghai next week." }] },
+    { "id": "word-chufa", "hanzi": "出发", "pinyin": "chūfā", "toneNumbers": [1, 1], "gloss": "set out; depart", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-chu-hsk4", "rootCharacterIds": ["char-chu"], "audioKey": "word-chufa", "examples": [{ "hanzi": "我们八点从家里出发。", "pinyin": "Wǒmen bā diǎn cóng jiā lǐ chūfā.", "gloss": "We set out from home at eight." }] },
+    { "id": "word-chusheng", "hanzi": "出生", "pinyin": "chūshēng", "toneNumbers": [1, 1], "gloss": "be born; birth", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-chu-hsk4", "rootCharacterIds": ["char-chu"], "audioKey": "word-chusheng", "examples": [{ "hanzi": "我出生在一个小城市。", "pinyin": "Wǒ chūshēng zài yí ge xiǎo chéngshì.", "gloss": "I was born in a small city." }] },
+    { "id": "word-chumen", "hanzi": "出门", "pinyin": "chūmén", "toneNumbers": [1, 2], "gloss": "go out; leave home", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural everyday departure extension for the 出 family; verify against the selected HSK source.", "familyId": "family-chu-hsk4", "rootCharacterIds": ["char-chu"], "audioKey": "word-chumen", "examples": [{ "hanzi": "出门以前别忘了带钥匙。", "pinyin": "Chūmén yǐqián bié wàngle dài yàoshi.", "gloss": "Before going out, don’t forget your keys." }] },
+    { "id": "word-chuguo", "hanzi": "出国", "pinyin": "chūguó", "toneNumbers": [1, 2], "gloss": "go abroad", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural travel extension for the 出 family; verify against the selected HSK source.", "familyId": "family-chu-hsk4", "rootCharacterIds": ["char-chu"], "audioKey": "word-chuguo", "examples": [{ "hanzi": "她毕业以后想出国留学。", "pinyin": "Tā bìyè yǐhòu xiǎng chūguó liúxué.", "gloss": "After graduation she wants to study abroad." }] },
+
+    { "id": "word-daiti", "hanzi": "代替", "pinyin": "dàitì", "toneNumbers": [4, 4], "gloss": "replace; substitute", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-dai-hsk4", "rootCharacterIds": ["char-dai"], "audioKey": "word-daiti", "examples": [{ "hanzi": "我可以代替你参加会议。", "pinyin": "Wǒ kěyǐ dàitì nǐ cānjiā huìyì.", "gloss": "I can attend the meeting in your place." }] },
+    { "id": "word-daibiao", "hanzi": "代表", "pinyin": "dàibiǎo", "toneNumbers": [4, 3], "gloss": "represent; representative", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-dai-hsk4", "rootCharacterIds": ["char-dai"], "audioKey": "word-daibiao", "examples": [{ "hanzi": "她代表公司参加活动。", "pinyin": "Tā dàibiǎo gōngsī cānjiā huódòng.", "gloss": "She represents the company at the event." }] },
+    { "id": "word-xiandai", "hanzi": "现代", "pinyin": "xiàndài", "toneNumbers": [4, 4], "gloss": "modern; modern times", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-dai-hsk4", "rootCharacterIds": ["char-dai"], "audioKey": "word-xiandai", "examples": [{ "hanzi": "现代生活离不开网络。", "pinyin": "Xiàndài shēnghuó lí bù kāi wǎngluò.", "gloss": "Modern life cannot do without the internet." }] },
+    { "id": "word-shidai", "hanzi": "时代", "pinyin": "shídài", "toneNumbers": [2, 4], "gloss": "era; age", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural time-and-change extension for the 代 family; verify against the selected HSK source.", "familyId": "family-dai-hsk4", "rootCharacterIds": ["char-dai"], "audioKey": "word-shidai", "examples": [{ "hanzi": "这是一个变化很快的时代。", "pinyin": "Zhè shì yí ge biànhuà hěn kuài de shídài.", "gloss": "This is an era of rapid change." }] },
+    { "id": "word-dangdai", "hanzi": "当代", "pinyin": "dāngdài", "toneNumbers": [1, 4], "gloss": "contemporary; present-day", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural contemporary-life extension for the 代 family; verify against the selected HSK source.", "familyId": "family-dai-hsk4", "rootCharacterIds": ["char-dai"], "audioKey": "word-dangdai", "examples": [{ "hanzi": "这位是当代著名的作家。", "pinyin": "Zhè wèi shì dāngdài zhùmíng de zuòjiā.", "gloss": "This is a famous contemporary writer." }] },
+
+    { "id": "word-biye", "hanzi": "毕业", "pinyin": "bìyè", "toneNumbers": [4, 4], "gloss": "graduate; graduation", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-ye-hsk4", "rootCharacterIds": ["char-ye-hsk4"], "audioKey": "word-biye", "examples": [{ "hanzi": "我大学毕业以后开始工作。", "pinyin": "Wǒ dàxué bìyè yǐhòu kāishǐ gōngzuò.", "gloss": "I started working after graduating from university." }] },
+    { "id": "word-zhiye", "hanzi": "职业", "pinyin": "zhíyè", "toneNumbers": [2, 4], "gloss": "profession; occupation", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-ye-hsk4", "rootCharacterIds": ["char-ye-hsk4"], "audioKey": "word-zhiye", "examples": [{ "hanzi": "你将来的职业是什么？", "pinyin": "Nǐ jiānglái de zhíyè shì shénme.", "gloss": "What will your future profession be?" }] },
+    { "id": "word-zhuanye", "hanzi": "专业", "pinyin": "zhuānyè", "toneNumbers": [1, 4], "gloss": "major; specialty; professional", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-ye-hsk4", "rootCharacterIds": ["char-ye-hsk4"], "audioKey": "word-zhuanye", "examples": [{ "hanzi": "她的专业是教育。", "pinyin": "Tā de zhuānyè shì jiàoyù.", "gloss": "Her major is education." }] },
+    { "id": "word-zuoye", "hanzi": "作业", "pinyin": "zuòyè", "toneNumbers": [4, 4], "gloss": "homework; assignment", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural study-to-work extension for the 业 family; verify against the selected HSK source.", "familyId": "family-ye-hsk4", "rootCharacterIds": ["char-ye-hsk4"], "audioKey": "word-zuoye", "examples": [{ "hanzi": "我晚上要完成数学作业。", "pinyin": "Wǒ wǎnshang yào wánchéng shùxué zuòyè.", "gloss": "I have to finish my math homework tonight." }] },
+    { "id": "word-yewu", "hanzi": "业务", "pinyin": "yèwù", "toneNumbers": [4, 4], "gloss": "business; service; professional work", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural professional-life extension for the 业 family; verify against the selected HSK source.", "familyId": "family-ye-hsk4", "rootCharacterIds": ["char-ye-hsk4"], "audioKey": "word-yewu", "examples": [{ "hanzi": "这家公司有很多国际业务。", "pinyin": "Zhè jiā gōngsī yǒu hěn duō guójì yèwù.", "gloss": "This company has a lot of international business." }] },
+
+    { "id": "word-cailiao", "hanzi": "材料", "pinyin": "cáiliào", "toneNumbers": [2, 4], "gloss": "material; data", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-liao-hsk4", "rootCharacterIds": ["char-liao"], "audioKey": "word-cailiao", "examples": [{ "hanzi": "请准备好申请需要的材料。", "pinyin": "Qǐng zhǔnbèi hǎo shēnqǐng xūyào de cáiliào.", "gloss": "Please prepare the materials needed for the application." }] },
+    { "id": "word-yinliao", "hanzi": "饮料", "pinyin": "yǐnliào", "toneNumbers": [3, 4], "gloss": "beverage; drink", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-liao-hsk4", "rootCharacterIds": ["char-liao"], "audioKey": "word-yinliao", "examples": [{ "hanzi": "冰箱里有很多饮料。", "pinyin": "Bīngxiāng lǐ yǒu hěn duō yǐnliào.", "gloss": "There are many drinks in the refrigerator." }] },
+    { "id": "word-suliaodai", "hanzi": "塑料袋", "pinyin": "sùliàodài", "toneNumbers": [4, 4, 4], "gloss": "plastic bag", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-liao-hsk4", "rootCharacterIds": ["char-liao"], "audioKey": "word-suliaodai", "examples": [{ "hanzi": "买东西时请少用塑料袋。", "pinyin": "Mǎi dōngxi shí qǐng shǎo yòng sùliàodài.", "gloss": "Please use fewer plastic bags when shopping." }] },
+    { "id": "word-ziliao", "hanzi": "资料", "pinyin": "zīliào", "toneNumbers": [1, 4], "gloss": "materials; information", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural information extension for the 料 family; verify against the selected HSK source.", "familyId": "family-liao-hsk4", "rootCharacterIds": ["char-liao"], "audioKey": "word-ziliao", "examples": [{ "hanzi": "老师给了我们一些学习资料。", "pinyin": "Lǎoshī gěile wǒmen yìxiē xuéxí zīliào.", "gloss": "The teacher gave us some study materials." }] },
+    { "id": "word-yuanliao", "hanzi": "原料", "pinyin": "yuánliào", "toneNumbers": [2, 4], "gloss": "raw material; ingredient", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural ingredient extension for the 料 family; verify against the selected HSK source.", "familyId": "family-liao-hsk4", "rootCharacterIds": ["char-liao"], "audioKey": "word-yuanliao", "examples": [{ "hanzi": "这些食品使用天然原料。", "pinyin": "Zhèxiē shípǐn shǐyòng tiānrán yuánliào.", "gloss": "These foods use natural ingredients." }] },
+
+    { "id": "word-wendu", "hanzi": "温度", "pinyin": "wēndù", "toneNumbers": [1, 4], "gloss": "temperature", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-du-hsk4", "rootCharacterIds": ["char-du-hsk4"], "audioKey": "word-wendu", "examples": [{ "hanzi": "今天的温度很舒服。", "pinyin": "Jīntiān de wēndù hěn shūfu.", "gloss": "Today’s temperature is comfortable." }] },
+    { "id": "word-taidu", "hanzi": "态度", "pinyin": "tàidù", "toneNumbers": [4, 4], "gloss": "attitude; manner", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-du-hsk4", "rootCharacterIds": ["char-du-hsk4"], "audioKey": "word-taidu", "examples": [{ "hanzi": "他的工作态度很认真。", "pinyin": "Tā de gōngzuò tàidù hěn rènzhēn.", "gloss": "His attitude toward work is serious." }] },
+    { "id": "word-sudu", "hanzi": "速度", "pinyin": "sùdù", "toneNumbers": [4, 4], "gloss": "speed", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-du-hsk4", "rootCharacterIds": ["char-du-hsk4"], "audioKey": "word-sudu", "examples": [{ "hanzi": "请把车的速度放慢一点。", "pinyin": "Qǐng bǎ chē de sùdù fàng màn yìdiǎn.", "gloss": "Please slow the car down a little." }] },
+    { "id": "word-chengdu", "hanzi": "程度", "pinyin": "chéngdù", "toneNumbers": [2, 4], "gloss": "degree; extent", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural measurement extension for the 度 family; verify against the selected HSK source.", "familyId": "family-du-hsk4", "rootCharacterIds": ["char-du-hsk4"], "audioKey": "word-chengdu", "examples": [{ "hanzi": "问题的严重程度还不清楚。", "pinyin": "Wèntí de yánzhòng chéngdù hái bù qīngchu.", "gloss": "The seriousness of the problem is not clear yet." }] },
+    { "id": "word-jiaodu", "hanzi": "角度", "pinyin": "jiǎodù", "toneNumbers": [3, 4], "gloss": "angle; perspective", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural perspective extension for the 度 family; verify against the selected HSK source.", "familyId": "family-du-hsk4", "rootCharacterIds": ["char-du-hsk4"], "audioKey": "word-jiaodu", "examples": [{ "hanzi": "我们可以从另一个角度考虑。", "pinyin": "Wǒmen kěyǐ cóng lìng yí ge jiǎodù kǎolǜ.", "gloss": "We can consider it from another perspective." }] },
+
+    { "id": "word-xinren", "hanzi": "信任", "pinyin": "xìnrèn", "toneNumbers": [4, 4], "gloss": "trust; trust in", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-xin-hsk4", "rootCharacterIds": ["char-xin-hsk4"], "audioKey": "word-xinren", "examples": [{ "hanzi": "朋友之间需要互相信任。", "pinyin": "Péngyou zhījiān xūyào hùxiāng xìnrèn.", "gloss": "Friends need to trust each other." }] },
+    { "id": "word-xinxin", "hanzi": "信心", "pinyin": "xìnxīn", "toneNumbers": [4, 1], "gloss": "confidence; faith", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-xin-hsk4", "rootCharacterIds": ["char-xin-hsk4"], "audioKey": "word-xinxin", "examples": [{ "hanzi": "我对通过考试有信心。", "pinyin": "Wǒ duì tōngguò kǎoshì yǒu xìnxīn.", "gloss": "I am confident I can pass the exam." }] },
+    { "id": "word-xinyongka", "hanzi": "信用卡", "pinyin": "xìnyòngkǎ", "toneNumbers": [4, 4, 3], "gloss": "credit card", "hskLevel": "HSK 4", "isExtension": false, "familyId": "family-xin-hsk4", "rootCharacterIds": ["char-xin-hsk4"], "audioKey": "word-xinyongka", "examples": [{ "hanzi": "我可以用信用卡付款吗？", "pinyin": "Wǒ kěyǐ yòng xìnyòngkǎ fùkuǎn ma.", "gloss": "Can I pay by credit card?" }] },
+    { "id": "word-xinhao", "hanzi": "信号", "pinyin": "xìnhào", "toneNumbers": [4, 4], "gloss": "signal; sign", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural communication extension for the 信 family; verify against the selected HSK source.", "familyId": "family-xin-hsk4", "rootCharacterIds": ["char-xin-hsk4"], "audioKey": "word-xinhao", "examples": [{ "hanzi": "这里的手机信号不太好。", "pinyin": "Zhèlǐ de shǒujī xìnhào bú tài hǎo.", "gloss": "The phone signal here is not very good." }] },
+    { "id": "word-xinxi", "hanzi": "信息", "pinyin": "xìnxī", "toneNumbers": [4, 1], "gloss": "information; message", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural information extension for the 信 family; verify against the selected HSK source.", "familyId": "family-xin-hsk4", "rootCharacterIds": ["char-xin-hsk4"], "audioKey": "word-xinxi", "examples": [{ "hanzi": "请把最新信息发给我。", "pinyin": "Qǐng bǎ zuìxīn xìnxī fā gěi wǒ.", "gloss": "Please send me the latest information." }] }
   ]
 }

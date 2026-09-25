@@ -75,7 +75,7 @@ export default function App() {
   const { route, navigate } = useRoute()
   const audio = useAudio()
   const library = useLibraryState()
-  const [libraryFilter, setLibraryFilter] = useState<'all' | 'hsk' | 'hsk2' | 'hsk3' | 'saved' | 'recent'>('all')
+  const [libraryFilter, setLibraryFilter] = useState<'all' | 'hsk' | 'hsk2' | 'hsk3' | 'hsk4' | 'saved' | 'recent'>('all')
   const currentPath = `${window.location.pathname}${window.location.search}`
   const backgroundRoute = route.kind === 'word' ? parseRouteFromPath(window.history.state?.from ?? '/families') : route
   const families = useMemo(() => [...content.families].sort((a, b) => a.sortOrder - b.sortOrder), [])
