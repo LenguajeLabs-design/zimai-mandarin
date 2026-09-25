@@ -29,9 +29,9 @@ In the repository settings, set `Pages -> Build and deployment -> Source` to `Gi
 
 ## Content note
 
-Content lives in [`src/content/content.json`](src/content/content.json), separate from the map components. The HSK source metadata is intentionally a placeholder and every `Related` word has an explicit extension reason. Before release, replace the placeholder source with a licensed, versioned vocabulary list and reconcile every label.
+Content lives in [`src/content/content.json`](src/content/content.json), separate from the map components. Words can now carry future HSK 1–9 labels, example sentences, and natural/slow audio asset slots. The HSK source metadata is intentionally a placeholder and every `Related` word has an explicit extension reason. Before release, replace the placeholder source with a licensed, versioned vocabulary list and reconcile every label.
 
-User state is stored separately from immutable content in versioned local storage (`zimai-library-v1`). Audio uses the browser's Mandarin speech-synthesis fallback in this prototype; reviewed local recordings can be added behind the same `useAudio` interface later.
+User state is stored separately from immutable content in versioned local storage (`zimai-library-v1`). Audio uses the browser's Mandarin speech-synthesis fallback in this prototype; the content model now has a place for reviewed natural recordings to be added behind the same `useAudio` interface later.
 
 ## Change tracking and backups
 

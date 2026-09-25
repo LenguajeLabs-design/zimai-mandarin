@@ -1,4 +1,16 @@
-export type ContentLabel = 'HSK 1' | 'Related'
+export type HskLevel = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+export type ContentLabel = `HSK ${HskLevel}` | 'Related'
+
+export interface ExampleSentence {
+  hanzi: string
+  pinyin: string
+  gloss: string
+}
+
+export interface AudioAssets {
+  natural?: string
+  slow?: string
+}
 
 export interface Source {
   id: string
@@ -18,6 +30,7 @@ export interface Character {
   toneMark: string
   gloss: string
   audioKey: string
+  audio?: AudioAssets
   notes?: string
 }
 
@@ -34,6 +47,8 @@ export interface Word {
   familyId: string
   rootCharacterIds: string[]
   audioKey: string
+  audio?: AudioAssets
+  examples?: ExampleSentence[]
 }
 
 export interface Family {

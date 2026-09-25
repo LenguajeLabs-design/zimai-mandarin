@@ -29,6 +29,7 @@ export function validateContent(data: ContentData): string[] {
     if (!familyIds.has(word.familyId)) errors.push(`Missing family for ${word.id}`)
     if (!word.rootCharacterIds.every((id) => characterIds.has(id))) errors.push(`Missing root reference for ${word.id}`)
     if (word.isExtension && !word.extensionReason) errors.push(`Related word without extensionReason: ${word.id}`)
+    if (word.hskLevel === 'HSK 1' && !word.examples?.length) errors.push(`HSK 1 word without an example sentence: ${word.id}`)
   })
   return errors
 }
