@@ -9,6 +9,8 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Expanded the library from four to eight word-family maps: 好, 家, 小, and 水 join 学, 电, 人, and 看.
 - Expanded the library from eight to sixteen maps with beginner-friendly anchors: 吃, 去, 上, 下, 开, 来, 说, and 见.
 - Added forty provisional Related words across the new families, each with a first example sentence for context practice.
+- Expanded the library from sixteen to twenty-five maps with daily-life anchors: 喝, 买, 做, 有, 在, 住, 要, 给, and 会.
+- Added forty-five provisional Related words across the new families, each with a first example sentence for context practice.
 - Added a local-first review schedule with “Needs another look” and “I know it” actions.
 - Persisted review intervals, streaks, due dates, and learned-word state in versioned local storage.
 - Added example-sentence metadata and audio asset slots to the content model.
@@ -22,7 +24,8 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Removed the visible “family” descriptor from individual card headings; the card remains accessible as “学 family” to assistive technology.
 - Replaced ambiguous audio half-circle marks with clear circular play and stop icons.
 - Wired audio playback to prefer `audio.natural` recordings and gracefully fall back to Mandarin speech synthesis.
-- Updated the README to describe the current sixteen-family build and backup workflow.
+- Replaced the speech-synthesis fallback with recording-only playback; missing native assets now show a clear pending state.
+- Updated the README to describe the current twenty-five-family build and backup workflow.
 - Added an “In context” sentence layer to the word quick view.
 
 ### Verification
@@ -35,4 +38,4 @@ This file records meaningful product and implementation changes to Zìmài. Date
 
 The new family vocabulary is intentionally marked `Related` until the source list and HSK mappings are formally verified. The current source metadata remains a prototype placeholder.
 
-HSK 1 entries now require at least one example sentence during content validation. The new words remain intentionally marked `Related` until the source list and HSK mappings are formally verified. Native recordings are not bundled yet; the playback pipeline is ready to use them as soon as reviewed assets are supplied.
+HSK 1 entries now require at least one example sentence during content validation. The new words remain intentionally marked `Related` until the source list and HSK mappings are formally verified. Native recordings are not bundled yet; the recording-only pipeline is ready to use them as soon as reviewed assets are supplied.

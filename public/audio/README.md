@@ -1,6 +1,6 @@
 # Zìmài audio assets
 
-Reviewed natural recordings can be added here as MP3 or OGG files. The filename should match the word or character `audioKey`, for example:
+Reviewed native recordings can be added here as MP3 or OGG files. The filename should match the word or character `audioKey`, for example:
 
 ```text
 word-xuesheng.mp3
@@ -13,4 +13,13 @@ Then add the public path to the matching content item:
 "audio": { "natural": "/zimai-mandarin/audio/word-xuesheng.mp3" }
 ```
 
-The app will prefer that recording and fall back to Mandarin speech synthesis if the asset is unavailable or fails to play. Recordings should be reviewed by a native Mandarin speaker before being marked as ready.
+The app is recording-only. If the asset is missing, its control is labeled `Recording pending`; if it fails to play, the app reports the asset problem and does not substitute browser speech synthesis.
+
+Before adding a path to content, each file should be:
+
+1. Recorded by a native Mandarin speaker at a natural, conversational pace.
+2. Checked against the displayed Hanzi and pinyin by a second reviewer.
+3. Trimmed to clean room tone with no identifying or copyrighted background audio.
+4. Exported as a small, web-friendly MP3 or OGG and tested from the GitHub Pages base path.
+
+This repository currently contains the intake workflow but no binary recordings yet. Do not mark an item ready until its file has been reviewed and committed alongside the content update.

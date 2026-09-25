@@ -25,7 +25,16 @@
     { "id": "char-kai", "hanzi": "开", "pinyin": "kāi", "toneNumber": 1, "toneMark": "kāi", "gloss": "open; start", "audioKey": "root-kai" },
     { "id": "char-lai", "hanzi": "来", "pinyin": "lái", "toneNumber": 2, "toneMark": "lái", "gloss": "come", "audioKey": "root-lai" },
     { "id": "char-shuo", "hanzi": "说", "pinyin": "shuō", "toneNumber": 1, "toneMark": "shuō", "gloss": "speak; say", "audioKey": "root-shuo" },
-    { "id": "char-jian", "hanzi": "见", "pinyin": "jiàn", "toneNumber": 4, "toneMark": "jiàn", "gloss": "see; meet", "audioKey": "root-jian" }
+    { "id": "char-jian", "hanzi": "见", "pinyin": "jiàn", "toneNumber": 4, "toneMark": "jiàn", "gloss": "see; meet", "audioKey": "root-jian" },
+    { "id": "char-he", "hanzi": "喝", "pinyin": "hē", "toneNumber": 1, "toneMark": "hē", "gloss": "drink", "audioKey": "root-he" },
+    { "id": "char-mai", "hanzi": "买", "pinyin": "mǎi", "toneNumber": 3, "toneMark": "mǎi", "gloss": "buy", "audioKey": "root-mai" },
+    { "id": "char-zuo", "hanzi": "做", "pinyin": "zuò", "toneNumber": 4, "toneMark": "zuò", "gloss": "do; make", "audioKey": "root-zuo" },
+    { "id": "char-you", "hanzi": "有", "pinyin": "yǒu", "toneNumber": 3, "toneMark": "yǒu", "gloss": "have; there is", "audioKey": "root-you" },
+    { "id": "char-zai", "hanzi": "在", "pinyin": "zài", "toneNumber": 4, "toneMark": "zài", "gloss": "be at; in", "audioKey": "root-zai" },
+    { "id": "char-zhu", "hanzi": "住", "pinyin": "zhù", "toneNumber": 4, "toneMark": "zhù", "gloss": "live; stay", "audioKey": "root-zhu" },
+    { "id": "char-yao", "hanzi": "要", "pinyin": "yào", "toneNumber": 4, "toneMark": "yào", "gloss": "want; need", "audioKey": "root-yao" },
+    { "id": "char-gei", "hanzi": "给", "pinyin": "gěi", "toneNumber": 3, "toneMark": "gěi", "gloss": "give; to", "audioKey": "root-gei" },
+    { "id": "char-hui", "hanzi": "会", "pinyin": "huì", "toneNumber": 4, "toneMark": "huì", "gloss": "can; know how to", "audioKey": "root-hui" }
   ],
   "families": [
     {
@@ -203,6 +212,105 @@
       "sortOrder": 16,
       "featured": true,
       "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-he",
+      "rootCharacterId": "char-he",
+      "title": "喝 family",
+      "shortDescription": "Everyday drink words, from water to coffee.",
+      "meaningNote": "喝 begins with the simple action of drinking and opens into drinks, taste, and shared routines.",
+      "members": ["word-hecha", "word-heshui", "word-hejiu", "word-haohe", "word-kafei"],
+      "sortOrder": 17,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-mai",
+      "rootCharacterId": "char-mai",
+      "title": "买 family",
+      "shortDescription": "Useful words for buying things and paying for daily life.",
+      "meaningNote": "买 points to choosing and getting something, from food and books to tickets and a final bill.",
+      "members": ["word-maidongxi", "word-maicai", "word-maipiao", "word-maishu", "word-maidan"],
+      "sortOrder": 18,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-zuo",
+      "rootCharacterId": "char-zuo",
+      "title": "做 family",
+      "shortDescription": "Action words for making, doing, and getting things done.",
+      "meaningNote": "做 turns an intention into an action: making food, doing work, or completing something well.",
+      "members": ["word-zuofan", "word-zuoshi", "word-zuomeng", "word-zuofa", "word-zuohao"],
+      "sortOrder": 19,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-you",
+      "rootCharacterId": "char-you",
+      "title": "有 family",
+      "shortDescription": "Simple words for having, noticing, and describing what exists.",
+      "meaningNote": "有 starts with having and naturally expands into presence, usefulness, and what is still there.",
+      "members": ["word-youren", "word-youdian", "word-youyong", "word-haiyou", "word-meiyou"],
+      "sortOrder": 20,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-zai",
+      "rootCharacterId": "char-zai",
+      "title": "在 family",
+      "shortDescription": "Location words for being here, there, or at home.",
+      "meaningNote": "在 anchors a place in the sentence, making a person, object, or moment feel present and specific.",
+      "members": ["word-xianzai", "word-zaijia", "word-zainar", "word-buzai", "word-zai-zher"],
+      "sortOrder": 21,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-zhu",
+      "rootCharacterId": "char-zhu",
+      "title": "住 family",
+      "shortDescription": "Home and residence words for saying where life happens.",
+      "meaningNote": "住 is about staying in a place, then expands into homes, addresses, and the people who live there.",
+      "members": ["word-zhuzai", "word-zhuxiao", "word-zhuzhi", "word-zhufang", "word-zhuhu"],
+      "sortOrder": 22,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-yao",
+      "rootCharacterId": "char-yao",
+      "title": "要 family",
+      "shortDescription": "Words for wanting, needing, and making a small request.",
+      "meaningNote": "要 expresses a want or need, then shifts naturally into choices, requests, and what matters most.",
+      "members": ["word-buyao", "word-haiyao", "word-yaoma", "word-yaoburan", "word-yaoshi"],
+      "sortOrder": 23,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-gei",
+      "rootCharacterId": "char-gei",
+      "title": "给 family",
+      "shortDescription": "Giving and receiving words for everyday exchanges.",
+      "meaningNote": "给 connects a giver, a receiver, and a thing being passed along in one compact, useful pattern.",
+      "members": ["word-geiwo", "word-geini", "word-songgei", "word-jiaogei", "word-geiqian"],
+      "sortOrder": 24,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
+    },
+    {
+      "id": "family-hui",
+      "rootCharacterId": "char-hui",
+      "title": "会 family",
+      "shortDescription": "Ability words for knowing how and asking what someone can do.",
+      "meaningNote": "会 describes a learned ability and opens into speaking, writing, making, and checking what is possible.",
+      "members": ["word-huishuo", "word-huixie", "word-huizuo", "word-huibuhui", "word-huiyi"],
+      "sortOrder": 25,
+      "featured": true,
+      "sourceIds": ["hsk-1-selected-placeholder"]
     }
   ],
   "words": [
@@ -300,6 +408,60 @@
     { "id": "word-jianmian", "hanzi": "见面", "pinyin": "jiànmiàn", "toneNumbers": [4, 4], "gloss": "meet; see each other", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful meeting extension for the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-jianmian", "examples": [{ "hanzi": "我们明天见面。", "pinyin": "Wǒmen míngtiān jiànmiàn.", "gloss": "We will meet tomorrow." }] },
     { "id": "word-jiandao", "hanzi": "见到", "pinyin": "jiàndào", "toneNumbers": [4, 4], "gloss": "see; meet", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful result phrase for the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-jiandao", "examples": [{ "hanzi": "很高兴见到你。", "pinyin": "Hěn gāoxìng jiàndào nǐ.", "gloss": "Nice to meet you." }] },
     { "id": "word-yijian", "hanzi": "意见", "pinyin": "yìjiàn", "toneNumbers": [4, 4], "gloss": "opinion; suggestion", "hskLevel": "Related", "isExtension": true, "extensionReason": "Abstract extension for the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-yijian", "examples": [{ "hanzi": "你有什么意见？", "pinyin": "Nǐ yǒu shénme yìjiàn?", "gloss": "What opinion do you have?" }] },
-    { "id": "word-jianguo", "hanzi": "见过", "pinyin": "jiànguò", "toneNumbers": [4, 4], "gloss": "have seen; have met", "hskLevel": "Related", "isExtension": true, "extensionReason": "Experience phrase for the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-jianguo", "examples": [{ "hanzi": "我见过他。", "pinyin": "Wǒ jiànguò tā.", "gloss": "I have met him." }] }
+    { "id": "word-jianguo", "hanzi": "见过", "pinyin": "jiànguò", "toneNumbers": [4, 4], "gloss": "have seen; have met", "hskLevel": "Related", "isExtension": true, "extensionReason": "Experience phrase for the 见 family; verify against the selected HSK source.", "familyId": "family-jian", "rootCharacterIds": ["char-jian"], "audioKey": "word-jianguo", "examples": [{ "hanzi": "我见过他。", "pinyin": "Wǒ jiànguò tā.", "gloss": "I have met him." }] },
+
+    { "id": "word-hecha", "hanzi": "喝茶", "pinyin": "hēchá", "toneNumbers": [1, 2], "gloss": "drink tea", "hskLevel": "Related", "isExtension": true, "extensionReason": "Common drink phrase for the 喝 family; verify against the selected HSK source.", "familyId": "family-he", "rootCharacterIds": ["char-he"], "audioKey": "word-hecha", "examples": [{ "hanzi": "我喜欢喝茶。", "pinyin": "Wǒ xǐhuān hē chá.", "gloss": "I like drinking tea." }] },
+    { "id": "word-heshui", "hanzi": "喝水", "pinyin": "hēshuǐ", "toneNumbers": [1, 3], "gloss": "drink water", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core daily-life phrase for the 喝 family; verify against the selected HSK source.", "familyId": "family-he", "rootCharacterIds": ["char-he"], "audioKey": "word-heshui", "examples": [{ "hanzi": "天气热，多喝水。", "pinyin": "Tiānqì rè, duō hē shuǐ.", "gloss": "It is hot; drink more water." }] },
+    { "id": "word-hejiu", "hanzi": "喝酒", "pinyin": "hējiǔ", "toneNumbers": [1, 3], "gloss": "drink alcohol", "hskLevel": "Related", "isExtension": true, "extensionReason": "Common social phrase for the 喝 family; verify against the selected HSK source.", "familyId": "family-he", "rootCharacterIds": ["char-he"], "audioKey": "word-hejiu", "examples": [{ "hanzi": "他不喝酒。", "pinyin": "Tā bù hē jiǔ.", "gloss": "He does not drink alcohol." }] },
+    { "id": "word-haohe", "hanzi": "好喝", "pinyin": "hǎohē", "toneNumbers": [3, 1], "gloss": "tasty to drink", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful taste expression for the 喝 family; verify against the selected HSK source.", "familyId": "family-he", "rootCharacterIds": ["char-he"], "audioKey": "word-haohe", "examples": [{ "hanzi": "这个茶很好喝。", "pinyin": "Zhège chá hěn hǎohē.", "gloss": "This tea tastes good." }] },
+    { "id": "word-kafei", "hanzi": "咖啡", "pinyin": "kāfēi", "toneNumbers": [1, 1], "gloss": "coffee", "hskLevel": "Related", "isExtension": true, "extensionReason": "Everyday drink noun for the 喝 family; verify against the selected HSK source.", "familyId": "family-he", "rootCharacterIds": ["char-he"], "audioKey": "word-kafei", "examples": [{ "hanzi": "早上我喝咖啡。", "pinyin": "Zǎoshang wǒ hē kāfēi.", "gloss": "I drink coffee in the morning." }] },
+
+    { "id": "word-maidongxi", "hanzi": "买东西", "pinyin": "mǎi dōngxi", "toneNumbers": [3, 1, 5], "gloss": "shop; buy things", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core shopping phrase for the 买 family; verify against the selected HSK source.", "familyId": "family-mai", "rootCharacterIds": ["char-mai"], "audioKey": "word-maidongxi", "examples": [{ "hanzi": "我去商店买东西。", "pinyin": "Wǒ qù shāngdiàn mǎi dōngxi.", "gloss": "I am going to the shop to buy things." }] },
+    { "id": "word-maicai", "hanzi": "买菜", "pinyin": "mǎicài", "toneNumbers": [3, 4], "gloss": "buy vegetables; shop for food", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful food-shopping phrase for the 买 family; verify against the selected HSK source.", "familyId": "family-mai", "rootCharacterIds": ["char-mai"], "audioKey": "word-maicai", "examples": [{ "hanzi": "妈妈去市场买菜。", "pinyin": "Māma qù shìchǎng mǎi cài.", "gloss": "Mom goes to the market to buy vegetables." }] },
+    { "id": "word-maipiao", "hanzi": "买票", "pinyin": "mǎipiào", "toneNumbers": [3, 4], "gloss": "buy a ticket", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful travel phrase for the 买 family; verify against the selected HSK source.", "familyId": "family-mai", "rootCharacterIds": ["char-mai"], "audioKey": "word-maipiao", "examples": [{ "hanzi": "我们先买票。", "pinyin": "Wǒmen xiān mǎi piào.", "gloss": "We will buy tickets first." }] },
+    { "id": "word-maishu", "hanzi": "买书", "pinyin": "mǎishū", "toneNumbers": [3, 1], "gloss": "buy books", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful study phrase for the 买 family; verify against the selected HSK source.", "familyId": "family-mai", "rootCharacterIds": ["char-mai"], "audioKey": "word-maishu", "examples": [{ "hanzi": "她喜欢买书。", "pinyin": "Tā xǐhuān mǎi shū.", "gloss": "She likes buying books." }] },
+    { "id": "word-maidan", "hanzi": "买单", "pinyin": "mǎidān", "toneNumbers": [3, 1], "gloss": "pay the bill", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful restaurant phrase for the 买 family; verify against the selected HSK source.", "familyId": "family-mai", "rootCharacterIds": ["char-mai"], "audioKey": "word-maidan", "examples": [{ "hanzi": "服务员，请买单。", "pinyin": "Fúwùyuán, qǐng mǎidān.", "gloss": "Waiter, please bring the bill." }] },
+
+    { "id": "word-zuofan", "hanzi": "做饭", "pinyin": "zuòfàn", "toneNumbers": [4, 4], "gloss": "cook; make a meal", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core home phrase for the 做 family; verify against the selected HSK source.", "familyId": "family-zuo", "rootCharacterIds": ["char-zuo"], "audioKey": "word-zuofan", "examples": [{ "hanzi": "爸爸在做饭。", "pinyin": "Bàba zài zuò fàn.", "gloss": "Dad is cooking." }] },
+    { "id": "word-zuoshi", "hanzi": "做事", "pinyin": "zuòshì", "toneNumbers": [4, 4], "gloss": "do things; work", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful action phrase for the 做 family; verify against the selected HSK source.", "familyId": "family-zuo", "rootCharacterIds": ["char-zuo"], "audioKey": "word-zuoshi", "examples": [{ "hanzi": "认真做事很重要。", "pinyin": "Rènzhēn zuò shì hěn zhòngyào.", "gloss": "Doing things carefully is important." }] },
+    { "id": "word-zuomeng", "hanzi": "做梦", "pinyin": "zuòmèng", "toneNumbers": [4, 4], "gloss": "dream; have a dream", "hskLevel": "Related", "isExtension": true, "extensionReason": "Common experience phrase for the 做 family; verify against the selected HSK source.", "familyId": "family-zuo", "rootCharacterIds": ["char-zuo"], "audioKey": "word-zuomeng", "examples": [{ "hanzi": "我昨天晚上做梦了。", "pinyin": "Wǒ zuótiān wǎnshang zuòmèng le.", "gloss": "I had a dream last night." }] },
+    { "id": "word-zuofa", "hanzi": "做法", "pinyin": "zuòfǎ", "toneNumbers": [4, 3], "gloss": "method; way of doing", "hskLevel": "Related", "isExtension": true, "extensionReason": "Meaning extension for the 做 family; verify against the selected HSK source.", "familyId": "family-zuo", "rootCharacterIds": ["char-zuo"], "audioKey": "word-zuofa", "examples": [{ "hanzi": "这个做法很简单。", "pinyin": "Zhège zuòfǎ hěn jiǎndān.", "gloss": "This method is simple." }] },
+    { "id": "word-zuohao", "hanzi": "做好", "pinyin": "zuòhǎo", "toneNumbers": [4, 3], "gloss": "finish well; do well", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful result phrase for the 做 family; verify against the selected HSK source.", "familyId": "family-zuo", "rootCharacterIds": ["char-zuo"], "audioKey": "word-zuohao", "examples": [{ "hanzi": "我会把这件事做好。", "pinyin": "Wǒ huì bǎ zhè jiàn shì zuòhǎo.", "gloss": "I will do this well." }] },
+
+    { "id": "word-youren", "hanzi": "有人", "pinyin": "yǒurén", "toneNumbers": [3, 2], "gloss": "someone; there are people", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful presence phrase for the 有 family; verify against the selected HSK source.", "familyId": "family-you", "rootCharacterIds": ["char-you"], "audioKey": "word-youren", "examples": [{ "hanzi": "门外有人。", "pinyin": "Mén wài yǒu rén.", "gloss": "There is someone outside the door." }] },
+    { "id": "word-youdian", "hanzi": "有点", "pinyin": "yǒudiǎn", "toneNumbers": [3, 3], "gloss": "a little; somewhat", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful degree phrase for the 有 family; verify against the selected HSK source.", "familyId": "family-you", "rootCharacterIds": ["char-you"], "audioKey": "word-youdian", "examples": [{ "hanzi": "今天有点冷。", "pinyin": "Jīntiān yǒudiǎn lěng.", "gloss": "It is a little cold today." }] },
+    { "id": "word-youyong", "hanzi": "有用", "pinyin": "yǒuyòng", "toneNumbers": [3, 4], "gloss": "useful", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful description for the 有 family; verify against the selected HSK source.", "familyId": "family-you", "rootCharacterIds": ["char-you"], "audioKey": "word-youyong", "examples": [{ "hanzi": "这个词很有用。", "pinyin": "Zhège cí hěn yǒuyòng.", "gloss": "This word is very useful." }] },
+    { "id": "word-haiyou", "hanzi": "还有", "pinyin": "háiyǒu", "toneNumbers": [2, 3], "gloss": "also have; there is still", "hskLevel": "Related", "isExtension": true, "extensionReason": "High-value continuation phrase for the 有 family; verify against the selected HSK source.", "familyId": "family-you", "rootCharacterIds": ["char-you"], "audioKey": "word-haiyou", "examples": [{ "hanzi": "还有一个问题。", "pinyin": "Hái yǒu yí ge wèntí.", "gloss": "There is one more question." }] },
+    { "id": "word-meiyou", "hanzi": "没有", "pinyin": "méiyǒu", "toneNumbers": [2, 3], "gloss": "do not have; there is not", "hskLevel": "Related", "isExtension": true, "extensionReason": "Essential negative phrase for the 有 family; verify against the selected HSK source.", "familyId": "family-you", "rootCharacterIds": ["char-you"], "audioKey": "word-meiyou", "examples": [{ "hanzi": "我没有时间。", "pinyin": "Wǒ méiyǒu shíjiān.", "gloss": "I do not have time." }] },
+
+    { "id": "word-xianzai", "hanzi": "现在", "pinyin": "xiànzài", "toneNumbers": [4, 4], "gloss": "now; at present", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core time-and-place phrase for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-xianzai", "examples": [{ "hanzi": "我现在很忙。", "pinyin": "Wǒ xiànzài hěn máng.", "gloss": "I am busy right now." }] },
+    { "id": "word-zaijia", "hanzi": "在家", "pinyin": "zàijiā", "toneNumbers": [4, 1], "gloss": "at home", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful location phrase for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-zaijia", "examples": [{ "hanzi": "今天我在家学习。", "pinyin": "Jīntiān wǒ zài jiā xuéxí.", "gloss": "Today I am studying at home." }] },
+    { "id": "word-zainar", "hanzi": "在哪儿", "pinyin": "zài nǎr", "toneNumbers": [4, 3, 2], "gloss": "where is; where are", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful location question for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-zainar", "examples": [{ "hanzi": "我的书在哪儿？", "pinyin": "Wǒ de shū zài nǎr?", "gloss": "Where is my book?" }] },
+    { "id": "word-buzai", "hanzi": "不在", "pinyin": "bùzài", "toneNumbers": [4, 4], "gloss": "not be at; not be present", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful negative location phrase for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-buzai", "examples": [{ "hanzi": "老师不在教室。", "pinyin": "Lǎoshī bú zài jiàoshì.", "gloss": "The teacher is not in the classroom." }] },
+    { "id": "word-zai-zher", "hanzi": "在这儿", "pinyin": "zài zhèr", "toneNumbers": [4, 4, 2], "gloss": "here; be here", "hskLevel": "Related", "isExtension": true, "extensionReason": "Concrete pointing phrase for the 在 family; verify against the selected HSK source.", "familyId": "family-zai", "rootCharacterIds": ["char-zai"], "audioKey": "word-zai-zher", "examples": [{ "hanzi": "我在这儿等你。", "pinyin": "Wǒ zài zhèr děng nǐ.", "gloss": "I am waiting for you here." }] },
+
+    { "id": "word-zhuzai", "hanzi": "住在", "pinyin": "zhùzài", "toneNumbers": [4, 4], "gloss": "live in; reside in", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core residence phrase for the 住 family; verify against the selected HSK source.", "familyId": "family-zhu", "rootCharacterIds": ["char-zhu"], "audioKey": "word-zhuzai", "examples": [{ "hanzi": "我住在北京。", "pinyin": "Wǒ zhù zài Běijīng.", "gloss": "I live in Beijing." }] },
+    { "id": "word-zhuxiao", "hanzi": "住校", "pinyin": "zhùxiào", "toneNumbers": [4, 4], "gloss": "live at school; board at school", "hskLevel": "Related", "isExtension": true, "extensionReason": "Education-and-home extension for the 住 family; verify against the selected HSK source.", "familyId": "family-zhu", "rootCharacterIds": ["char-zhu"], "audioKey": "word-zhuxiao", "examples": [{ "hanzi": "他在大学住校。", "pinyin": "Tā zài dàxué zhùxiào.", "gloss": "He lives on campus at university." }] },
+    { "id": "word-zhuzhi", "hanzi": "住址", "pinyin": "zhùzhǐ", "toneNumbers": [4, 3], "gloss": "address; residence address", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful personal-information word for the 住 family; verify against the selected HSK source.", "familyId": "family-zhu", "rootCharacterIds": ["char-zhu"], "audioKey": "word-zhuzhi", "examples": [{ "hanzi": "请写下你的住址。", "pinyin": "Qǐng xiěxià nǐ de zhùzhǐ.", "gloss": "Please write down your address." }] },
+    { "id": "word-zhufang", "hanzi": "住房", "pinyin": "zhùfáng", "toneNumbers": [4, 2], "gloss": "housing; dwelling", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful home-and-city extension for the 住 family; verify against the selected HSK source.", "familyId": "family-zhu", "rootCharacterIds": ["char-zhu"], "audioKey": "word-zhufang", "examples": [{ "hanzi": "这里的住房很贵。", "pinyin": "Zhèlǐ de zhùfáng hěn guì.", "gloss": "Housing here is expensive." }] },
+    { "id": "word-zhuhu", "hanzi": "住户", "pinyin": "zhùhù", "toneNumbers": [4, 4], "gloss": "household; resident", "hskLevel": "Related", "isExtension": true, "extensionReason": "Community-and-home extension for the 住 family; verify against the selected HSK source.", "familyId": "family-zhu", "rootCharacterIds": ["char-zhu"], "audioKey": "word-zhuhu", "examples": [{ "hanzi": "每个住户都有一把钥匙。", "pinyin": "Měi ge zhùhù dōu yǒu yì bǎ yàoshi.", "gloss": "Each household has a key." }] },
+
+    { "id": "word-buyao", "hanzi": "不要", "pinyin": "búyào", "toneNumbers": [4, 4], "gloss": "do not want; don't", "hskLevel": "Related", "isExtension": true, "extensionReason": "Essential request phrase for the 要 family; verify against the selected HSK source.", "familyId": "family-yao", "rootCharacterIds": ["char-yao"], "audioKey": "word-buyao", "examples": [{ "hanzi": "我不要咖啡，谢谢。", "pinyin": "Wǒ bú yào kāfēi, xièxie.", "gloss": "I do not want coffee, thank you." }] },
+    { "id": "word-haiyao", "hanzi": "还要", "pinyin": "háiyào", "toneNumbers": [2, 4], "gloss": "also want; still need", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful continuation phrase for the 要 family; verify against the selected HSK source.", "familyId": "family-yao", "rootCharacterIds": ["char-yao"], "audioKey": "word-haiyao", "examples": [{ "hanzi": "你还要别的吗？", "pinyin": "Nǐ hái yào biéde ma?", "gloss": "Do you want anything else?" }] },
+    { "id": "word-yaoma", "hanzi": "要吗", "pinyin": "yào ma", "toneNumbers": [4, 5], "gloss": "do you want it?", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural choice question for the 要 family; verify against the selected HSK source.", "familyId": "family-yao", "rootCharacterIds": ["char-yao"], "audioKey": "word-yaoma", "examples": [{ "hanzi": "你要茶吗？", "pinyin": "Nǐ yào chá ma?", "gloss": "Do you want tea?" }] },
+    { "id": "word-yaoburan", "hanzi": "要不然", "pinyin": "yàobùrán", "toneNumbers": [4, 4, 2], "gloss": "otherwise; or else", "hskLevel": "Related", "isExtension": true, "extensionReason": "Conversation connector for the 要 family; verify against the selected HSK source.", "familyId": "family-yao", "rootCharacterIds": ["char-yao"], "audioKey": "word-yaoburan", "examples": [{ "hanzi": "快一点，要不然要迟到了。", "pinyin": "Kuài yìdiǎn, yàobùrán yào chídào le.", "gloss": "Hurry, otherwise we will be late." }] },
+    { "id": "word-yaoshi", "hanzi": "要是", "pinyin": "yàoshi", "toneNumbers": [4, 5], "gloss": "if; supposing that", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful conditional connector for the 要 family; verify against the selected HSK source.", "familyId": "family-yao", "rootCharacterIds": ["char-yao"], "audioKey": "word-yaoshi", "examples": [{ "hanzi": "要是下雨，我们就不去了。", "pinyin": "Yàoshi xiàyǔ, wǒmen jiù bú qù le.", "gloss": "If it rains, we will not go." }] },
+
+    { "id": "word-geiwo", "hanzi": "给我", "pinyin": "gěi wǒ", "toneNumbers": [3, 3], "gloss": "give me", "hskLevel": "Related", "isExtension": true, "extensionReason": "Core exchange phrase for the 给 family; verify against the selected HSK source.", "familyId": "family-gei", "rootCharacterIds": ["char-gei"], "audioKey": "word-geiwo", "examples": [{ "hanzi": "请给我一杯水。", "pinyin": "Qǐng gěi wǒ yì bēi shuǐ.", "gloss": "Please give me a cup of water." }] },
+    { "id": "word-geini", "hanzi": "给你", "pinyin": "gěi nǐ", "toneNumbers": [3, 3], "gloss": "give you; here you are", "hskLevel": "Related", "isExtension": true, "extensionReason": "Natural handoff phrase for the 给 family; verify against the selected HSK source.", "familyId": "family-gei", "rootCharacterIds": ["char-gei"], "audioKey": "word-geini", "examples": [{ "hanzi": "这个给你。", "pinyin": "Zhège gěi nǐ.", "gloss": "This is for you." }] },
+    { "id": "word-songgei", "hanzi": "送给", "pinyin": "sònggěi", "toneNumbers": [4, 3], "gloss": "give as a gift; present to", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful gift-giving phrase for the 给 family; verify against the selected HSK source.", "familyId": "family-gei", "rootCharacterIds": ["char-gei"], "audioKey": "word-songgei", "examples": [{ "hanzi": "这是送给你的礼物。", "pinyin": "Zhè shì sònggěi nǐ de lǐwù.", "gloss": "This is a gift for you." }] },
+    { "id": "word-jiaogei", "hanzi": "交给", "pinyin": "jiāogěi", "toneNumbers": [1, 3], "gloss": "hand over to; give to", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful handoff phrase for the 给 family; verify against the selected HSK source.", "familyId": "family-gei", "rootCharacterIds": ["char-gei"], "audioKey": "word-jiaogei", "examples": [{ "hanzi": "请把作业交给老师。", "pinyin": "Qǐng bǎ zuòyè jiāogěi lǎoshī.", "gloss": "Please hand the homework to the teacher." }] },
+    { "id": "word-geiqian", "hanzi": "给钱", "pinyin": "gěiqián", "toneNumbers": [3, 2], "gloss": "give money; pay", "hskLevel": "Related", "isExtension": true, "extensionReason": "Everyday payment phrase for the 给 family; verify against the selected HSK source.", "familyId": "family-gei", "rootCharacterIds": ["char-gei"], "audioKey": "word-geiqian", "examples": [{ "hanzi": "我来给钱。", "pinyin": "Wǒ lái gěi qián.", "gloss": "I will pay." }] },
+
+    { "id": "word-huishuo", "hanzi": "会说", "pinyin": "huìshuō", "toneNumbers": [4, 1], "gloss": "can speak; know how to say", "hskLevel": "Related", "isExtension": true, "extensionReason": "High-value ability phrase for the 会 family; verify against the selected HSK source.", "familyId": "family-hui", "rootCharacterIds": ["char-hui"], "audioKey": "word-huishuo", "examples": [{ "hanzi": "他会说中文。", "pinyin": "Tā huì shuō Zhōngwén.", "gloss": "He can speak Chinese." }] },
+    { "id": "word-huixie", "hanzi": "会写", "pinyin": "huìxiě", "toneNumbers": [4, 3], "gloss": "can write; know how to write", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful study ability phrase for the 会 family; verify against the selected HSK source.", "familyId": "family-hui", "rootCharacterIds": ["char-hui"], "audioKey": "word-huixie", "examples": [{ "hanzi": "我会写这个字。", "pinyin": "Wǒ huì xiě zhège zì.", "gloss": "I can write this character." }] },
+    { "id": "word-huizuo", "hanzi": "会做", "pinyin": "huìzuò", "toneNumbers": [4, 4], "gloss": "can do; know how to make", "hskLevel": "Related", "isExtension": true, "extensionReason": "Useful action ability phrase for the 会 family; verify against the selected HSK source.", "familyId": "family-hui", "rootCharacterIds": ["char-hui"], "audioKey": "word-huizuo", "examples": [{ "hanzi": "你会做中国菜吗？", "pinyin": "Nǐ huì zuò Zhōngguó cài ma?", "gloss": "Can you cook Chinese food?" }] },
+    { "id": "word-huibuhui", "hanzi": "会不会", "pinyin": "huì bu huì", "toneNumbers": [4, 5, 4], "gloss": "can or cannot; do you know how?", "hskLevel": "Related", "isExtension": true, "extensionReason": "Essential ability question for the 会 family; verify against the selected HSK source.", "familyId": "family-hui", "rootCharacterIds": ["char-hui"], "audioKey": "word-huibuhui", "examples": [{ "hanzi": "你会不会游泳？", "pinyin": "Nǐ huì bu huì yóuyǒng?", "gloss": "Can you swim?" }] },
+    { "id": "word-huiyi", "hanzi": "会议", "pinyin": "huìyì", "toneNumbers": [4, 4], "gloss": "meeting; conference", "hskLevel": "Related", "isExtension": true, "extensionReason": "Everyday work extension for the 会 family; verify against the selected HSK source.", "familyId": "family-hui", "rootCharacterIds": ["char-hui"], "audioKey": "word-huiyi", "examples": [{ "hanzi": "下午有一个会议。", "pinyin": "Xiàwǔ yǒu yí ge huìyì.", "gloss": "There is a meeting this afternoon." }] }
   ]
 }
