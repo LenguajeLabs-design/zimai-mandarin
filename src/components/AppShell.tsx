@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import type { Theme } from '../hooks/useTheme'
 
-export type NavDestination = 'families' | 'practice' | 'review' | 'saved' | 'search' | 'guide' | 'about'
+export type NavDestination = 'families' | 'review' | 'saved' | 'search' | 'guide' | 'about'
 
 interface AppShellProps {
   current: NavDestination
@@ -14,7 +14,6 @@ interface AppShellProps {
 
 const navItems: Array<{ id: NavDestination; label: string; icon: string }> = [
   { id: 'families', label: 'Families', icon: '⌂' },
-  { id: 'practice', label: 'Practice', icon: '✦' },
   { id: 'review', label: 'Review', icon: '↻' },
   { id: 'saved', label: 'Saved', icon: '♡' },
   { id: 'search', label: 'Search', icon: '⌕' },

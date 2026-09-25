@@ -1,6 +1,6 @@
 # 字脉 / Zìmài
 
-Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with twenty-five HSK 1 prototype maps, thirteen dedicated HSK 2 maps, twelve dedicated HSK 3 maps, fourteen dedicated HSK 4 maps, six HSK 5 maps, and seven HSK 6 maps. It also includes the first HSK 2–3 Practice lesson: a daily-life conversation, listening-recall shell, sentence builder, and grammar note built around 在.
+Zìmài is an iPad-first visual browser for Mandarin word families. The current vertical slice is a local-first React + TypeScript + Vite app with twenty-five HSK 1 prototype maps, thirteen dedicated HSK 2 maps, twelve dedicated HSK 3 maps, fourteen dedicated HSK 4 maps, six HSK 5 maps, and seven HSK 6 maps.
 
 The product direction is to grow from a calm HSK 1 foundation toward HSK 6 through connected word families, natural audio, example sentences, and spaced review. New vocabulary remains explicitly marked as `Related` until its source and HSK level are verified.
 
@@ -37,7 +37,7 @@ Content lives in [`src/content/content.json`](src/content/content.json), separat
 
 User state is stored separately from immutable content in versioned local storage (`zimai-library-v1`). Reviewed native audio remains the preferred path: a reviewed asset plays when `audio.natural` is present. Until recordings are added, items expose a clearly labeled Mandarin device-voice preview so the map remains hearable without presenting synthetic speech as native audio. Recording placement and review guidance live in [`public/audio/README.md`](public/audio/README.md).
 
-The first HSK 2–3 practice slice lives in [`src/content/practice.json`](src/content/practice.json) and is intentionally small. It provides the interaction model for daily-life conversations, listening recall, sentence building, and basic grammar before more scenes and reviewed native recordings are added.
+The former standalone HSK 2–3 practice slice remains in [`src/content/practice.json`](src/content/practice.json) as a prototype for a future family-linked practice flow. It is not exposed as a separate destination until practice is grounded in the family maps.
 
 The first HSK 2 content set now includes twenty-eight verified HSK 2 core words across thirteen dedicated five-word families. Each map also includes Related extensions where the HSK 2 list does not provide five natural compounds; those supporting words remain visibly separate from the verified HSK 2 core. The official HSK 2 syllabus is recorded in the content source metadata; exact exclusive-word membership is cross-checked against the reproducible HSK 2.0 mirror documented there. The official workbook reference remains available for a later licensing and reconciliation pass.
 

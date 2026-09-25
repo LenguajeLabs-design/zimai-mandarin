@@ -23,3 +23,7 @@ Before adding a path to content, each file should be:
 4. Exported as a small, web-friendly MP3 or OGG and tested from the GitHub Pages base path.
 
 This repository currently contains the intake workflow but no binary recordings yet. Do not mark an item ready until its file has been reviewed and committed alongside the content update.
+
+## Improving the temporary device preview
+
+The browser preview is intentionally a fallback, not a native recording. Browsers can expose the operating system's installed speech voices, and the app waits for that voice list before choosing the strongest Mandarin match. On macOS, try Accessibility → Read & Speak → Speak selection → Voice → Manage Voices and install an enhanced Mandarin voice if one is available. The exact names and quality vary by operating system, browser, and device.

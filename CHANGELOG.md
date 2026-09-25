@@ -48,6 +48,8 @@ This file records meaningful product and implementation changes to Zìmài. Date
 - Added HSK 5 and HSK 6 verified library filters and source-backed validation for both levels.
 - Added a semantic “Midnight Porcelain” dark palette: blue-black surfaces, softened indigo interaction states, muted teal extensions, and warm coral feedback.
 - Replaced hard-coded card, overlay, navigation, and practice-state colors with theme-aware design tokens.
+- Improved the temporary voice fallback by waiting for asynchronously loaded browser voices and selecting the strongest available Mandarin match.
+- Removed the standalone Practice destination from navigation and routing; its prototype content is retained for a future family-linked practice flow.
 
 ### Verification
 

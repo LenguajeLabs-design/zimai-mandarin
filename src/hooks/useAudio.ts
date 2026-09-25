@@ -1,10 +1,41 @@
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
+
+function voiceScore(voice: SpeechSynthesisVoice) {
+  const language = voice.lang.replace('_', '-').toLowerCase()
+  const identity = `${language} ${voice.name}`.toLowerCase()
+  if (!/^(cmn|zh)(-|$)/.test(language)) return -1
+  if (/yue|cantonese|zh-(hk|mo)(-|$)/.test(identity)) return -1
+
+  let score = 0
+  if (/^(cmn|zh)-(cn|hans)(-|$)/.test(language)) score += 100
+  else if (/^cmn(-|$)/.test(language)) score += 85
+  else if (/^zh-(tw|hant)(-|$)/.test(language)) score += 35
+  else score += 20
+  if (/mandarin|putonghua|普通话/.test(identity)) score += 20
+  if (/enhanced|premium|natural|neural|siri/.test(identity)) score += 5
+  if (voice.localService) score += 4
+  if (voice.default) score += 1
+  return score
+}
+
+export function selectMandarinVoice(voices: SpeechSynthesisVoice[]) {
+  return [...voices].sort((a, b) => voiceScore(b) - voiceScore(a))[0]
+}
 
 export function useAudio() {
   const [playingKey, setPlayingKey] = useState<string | null>(null)
   const [audioMessage, setAudioMessage] = useState<string | null>(null)
+  const [systemVoices, setSystemVoices] = useState<SpeechSynthesisVoice[]>([])
   const nativeAudioRef = useRef<HTMLAudioElement | null>(null)
   const speechUtteranceRef = useRef<SpeechSynthesisUtterance | null>(null)
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
+    const updateVoices = () => setSystemVoices(window.speechSynthesis.getVoices())
+    updateVoices()
+    window.speechSynthesis.addEventListener('voiceschanged', updateVoices)
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', updateVoices)
+  }, [])
 
   const play = useCallback((key: string, text: string, audioUrl?: string) => {
     setAudioMessage(null)
@@ -22,10 +53,11 @@ export function useAudio() {
       }
 
       const speech = new SpeechSynthesisUtterance(text)
-      const mandarinVoice = window.speechSynthesis.getVoices().find((voice) => /^(zh|cmn)(-|_)/i.test(voice.lang) || /mandarin|chinese/i.test(voice.name))
+      const voices = systemVoices.length > 0 ? systemVoices : window.speechSynthesis.getVoices()
+      const mandarinVoice = selectMandarinVoice(voices)
       if (mandarinVoice) speech.voice = mandarinVoice
       speech.lang = mandarinVoice?.lang ?? 'zh-CN'
-      speech.rate = 0.86
+      speech.rate = 0.9
       speech.pitch = 1
       speech.onstart = () => setPlayingKey(key)
       speech.onend = () => {
@@ -59,7 +91,7 @@ export function useAudio() {
     }
     nativeAudio.onerror = handleFailure
     void nativeAudio.play().catch(handleFailure)
-  }, [])
+  }, [systemVoices])
 
   const stop = useCallback(() => {
     nativeAudioRef.current?.pause()
