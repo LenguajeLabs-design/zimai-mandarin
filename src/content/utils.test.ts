@@ -21,6 +21,13 @@ describe('content utilities', () => {
     expect(wordMatchesQuery(phone, 'telephone')).toBe(true)
   })
 
+  it('attaches build-time OpenAI audio to the pilot content', () => {
+    const student = data.words.find((word) => word.id === 'word-xuesheng')!
+    const root = data.characters.find((character) => character.id === 'char-xue')!
+    expect(student.audio?.natural).toBe('/zimai-mandarin/audio/openai/word-xuesheng.mp3')
+    expect(root.audio?.natural).toBe('/zimai-mandarin/audio/openai/root-xue.mp3')
+  })
+
   it('keeps family member order from the content file', () => {
     const family = data.families[0]
     const familyMapWords = familyWords(family, data.words)

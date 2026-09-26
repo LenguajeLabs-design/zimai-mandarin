@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "test": "vitest run",
-    "check": "tsc -b --pretty false"
+    "check": "tsc -b --pretty false",
+    "audio:generate": "vite-node scripts/generate-openai-audio.ts",
+    "audio:generate:all": "vite-node scripts/generate-openai-audio.ts --all"
   },
   "dependencies": {
     "hanzi-writer": "^3.7.3",

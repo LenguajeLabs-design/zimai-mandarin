@@ -82,7 +82,7 @@ export function useAudio() {
       if (nativeAudioRef.current !== nativeAudio) return
         nativeAudioRef.current = null
         setPlayingKey(null)
-        setAudioMessage('This reviewed recording could not play. Please check the audio asset.')
+        setAudioMessage('This audio asset could not play. Please check the connection or audio file.')
     }
     nativeAudio.onplay = () => setPlayingKey(key)
     nativeAudio.onended = () => {
