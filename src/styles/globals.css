@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 
 html { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", sans-serif; font-synthesis: none; transition: background-color 180ms ease, color 180ms ease; }
-body { margin: 0; min-width: 320px; background: var(--bg); }
+body { margin: 0; min-width: 320px; background: var(--bg); line-height: 1.4; }
 button, input { font: inherit; }
 button { color: inherit; cursor: pointer; }
 button:focus-visible, input:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 3px; }
@@ -50,7 +50,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent-soft
 
 .filter-row { align-items: center; border-bottom: 1px solid var(--line); display: flex; gap: 8px; margin-bottom: 28px; overflow-x: auto; padding-bottom: 13px; scrollbar-width: none; }
 .filter-row::-webkit-scrollbar { display: none; }
-.filter-button { background: transparent; border: 0; border-radius: var(--radius-pill); color: var(--text-secondary); font-size: 0.79rem; min-height: 36px; padding: 0 14px; white-space: nowrap; }
+.filter-button { background: transparent; border: 0; border-radius: var(--radius-pill); color: var(--text-secondary); font-size: 0.79rem; min-height: 44px; padding: 0 14px; white-space: nowrap; }
 .filter-button:hover { background: var(--surface-muted); color: var(--text); }
 .filter-button.is-active { background: var(--text); color: var(--surface); }
 .family-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -59,11 +59,11 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent-soft
 .family-card h2 { align-items: baseline; display: flex; font-family: Georgia, "Times New Roman", serif; font-size: 1.75rem; font-weight: 400; letter-spacing: -0.045em; margin: 0; }
 .family-card__title-character { color: var(--accent); font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif; font-size: 1.08em; }
 .family-card__description { color: var(--text-secondary); font-size: 0.78rem; line-height: 1.45; margin: 7px 0 0; max-width: 280px; }
-.icon-button { align-items: center; background: transparent; border: 1px solid var(--line); border-radius: 50%; color: var(--text-secondary); display: inline-flex; flex: 0 0 auto; font-size: 1.1rem; height: 40px; justify-content: center; padding: 0; transition: border-color 160ms ease, background 160ms ease, color 160ms ease; width: 40px; }
+.icon-button { align-items: center; background: transparent; border: 1px solid var(--line); border-radius: 50%; color: var(--text-secondary); display: inline-flex; flex: 0 0 auto; font-size: 1.1rem; height: 44px; justify-content: center; padding: 0; transition: border-color 160ms ease, background 160ms ease, color 160ms ease; width: 44px; }
 .icon-button:hover, .icon-button.is-selected { background: var(--accent-soft); border-color: transparent; color: var(--accent-deep); }
 .family-card__footer { align-items: center; border-top: 1px solid var(--line); display: flex; justify-content: space-between; margin-top: auto; padding-top: 15px; }
 .family-card__meta { color: var(--text-tertiary); font-size: 0.72rem; }
-.text-button { background: transparent; border: 0; color: var(--accent-deep); font-size: 0.78rem; font-weight: 700; padding: 8px 0; }
+.text-button { background: transparent; border: 0; color: var(--accent-deep); font-size: 0.78rem; font-weight: 700; min-height: 44px; padding: 8px 0; }
 .text-button:hover { color: var(--accent); }
 
 .family-map { display: grid; gap: 24px; grid-template-columns: minmax(145px, 0.35fr) minmax(0, 0.65fr); padding: 30px 24px 36px 4px; }
@@ -94,7 +94,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent-soft
 .word-node--compact .word-node__hanzi { display: block; font-size: 1.16rem; white-space: nowrap; }
 .word-node__compact-status { display: block; margin-top: 3px; }
 .word-node--compact .word-node__pinyin { font-size: 0.62rem; }
-.word-node--compact .word-node__gloss { font-size: 0.65rem; }
+.word-node--compact .word-node__gloss { display: -webkit-box; font-size: 0.68rem; line-height: 1.25; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; white-space: normal; }
 .status-badge { border-radius: 5px; display: inline-block; flex: 0 0 auto; font-size: 0.61rem; font-weight: 700; letter-spacing: 0.02em; line-height: 1; padding: 5px 6px; white-space: nowrap; }
 .status-badge--hsk { background: var(--accent-soft); color: var(--accent-deep); }
 .status-badge--related { background: var(--extension-soft); color: var(--extension); }
@@ -105,7 +105,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent-soft
 .audio-button:hover, .audio-button.is-playing { background: var(--accent-soft); border-color: transparent; color: var(--accent-deep); }
 .audio-button:disabled { color: var(--text-tertiary); cursor: not-allowed; opacity: 0.78; }
 .audio-button:disabled:hover { background: transparent; border-color: var(--line); color: var(--text-tertiary); }
-.audio-button--compact { background: var(--surface); border: 1px solid var(--line); border-radius: 50%; font-size: 0.83rem; height: 34px; justify-content: center; min-height: 34px; padding: 0; width: 34px; }
+.audio-button--compact { background: var(--surface); border: 1px solid var(--line); border-radius: 50%; font-size: 0.83rem; height: 44px; justify-content: center; min-height: 44px; padding: 0; width: 44px; }
 .audio-button--compact:hover { background: var(--accent-soft); border-color: var(--accent-soft); }
 .audio-button--compact:disabled { background: var(--surface-muted); }
 
@@ -142,7 +142,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent-soft
 .detail-word-row__pinyin { color: var(--text-secondary); font-size: 0.8rem; margin-right: 12px; }
 .detail-word-row__gloss { color: var(--text-secondary); font-size: 0.8rem; }
 .detail-word-row__actions { align-items: center; display: flex; gap: 15px; }
-.learn-button { background: transparent; border: 0; color: var(--text-secondary); font-size: 0.74rem; min-height: 36px; padding: 0 4px; }
+.learn-button { background: transparent; border: 0; color: var(--text-secondary); font-size: 0.74rem; min-height: 44px; padding: 0 4px; }
 .learn-button:hover, .learn-button.is-learned { color: var(--success); font-weight: 700; }
 .detail-pagination { display: flex; justify-content: space-between; margin-top: 42px; }
 
