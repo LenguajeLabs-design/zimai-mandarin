@@ -1,4 +1,4 @@
-import content from './content.json'
+import { content } from './contentData'
 import type { ContentData } from './types'
 
 export function validateContent(data: ContentData): string[] {
@@ -51,4 +51,4 @@ export function validateContent(data: ContentData): string[] {
   return errors
 }
 
-export const contentValidationErrors = validateContent(content as ContentData)
+export const contentValidationErrors = validateContent(content)

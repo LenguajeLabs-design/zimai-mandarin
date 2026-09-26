@@ -4,7 +4,7 @@ import type { ExplanationLanguage } from '../hooks/useExplanationLanguage'
 export const previewCopy = {
   en: {
     previewLabel: 'Language preview · explanation layer',
-    status: 'Korean pilot translations are available for the first three word maps.',
+    status: 'Korean explanations are available for the first three maps and the new expansion set.',
     languageLabel: 'Explanation language',
     english: 'English',
     korean: '한국어',
@@ -46,7 +46,7 @@ export const previewCopy = {
   },
   ko: {
     previewLabel: '언어 미리보기 · 설명 레이어',
-    status: '처음 세 개의 단어 지도에 한국어 번역이 적용되어 있습니다.',
+    status: '처음 세 개의 지도와 새로 추가한 확장 지도에 한국어 설명이 적용되어 있습니다.',
     languageLabel: '설명 언어',
     english: 'English',
     korean: '한국어',
@@ -257,11 +257,11 @@ export function localizedFamilyTitle(family: Family, language: ExplanationLangua
 }
 
 export function localizedFamilyDescription(family: Family, language: ExplanationLanguage): string {
-  return language === 'ko' ? familyTranslations[family.id]?.shortDescription ?? family.shortDescription : family.shortDescription
+  return language === 'ko' ? familyTranslations[family.id]?.shortDescription ?? family.koreanShortDescription ?? family.shortDescription : family.shortDescription
 }
 
 export function localizedFamilyNote(family: Family, language: ExplanationLanguage): string {
-  return language === 'ko' ? familyTranslations[family.id]?.meaningNote ?? family.meaningNote : family.meaningNote
+  return language === 'ko' ? familyTranslations[family.id]?.meaningNote ?? family.koreanMeaningNote ?? family.meaningNote : family.meaningNote
 }
 
 export function localizedRootGloss(rootId: string, fallback: string, language: ExplanationLanguage): string {
@@ -269,13 +269,13 @@ export function localizedRootGloss(rootId: string, fallback: string, language: E
 }
 
 export function localizedWordGloss(word: Word, language: ExplanationLanguage): string {
-  return language === 'ko' ? wordTranslations[word.id]?.gloss ?? word.gloss : word.gloss
+  return language === 'ko' ? wordTranslations[word.id]?.gloss ?? word.koreanGloss ?? word.gloss : word.gloss
 }
 
 export function localizedExampleGloss(word: Word, fallback: string, language: ExplanationLanguage): string {
-  return language === 'ko' ? wordTranslations[word.id]?.example ?? fallback : fallback
+  return language === 'ko' ? wordTranslations[word.id]?.example ?? word.koreanExample ?? fallback : fallback
 }
 
 export function localizedExtensionReason(word: Word, language: ExplanationLanguage): string | undefined {
-  return language === 'ko' ? wordTranslations[word.id]?.extensionReason ?? word.extensionReason : word.extensionReason
+  return language === 'ko' ? wordTranslations[word.id]?.extensionReason ?? word.koreanExtensionReason ?? word.extensionReason : word.extensionReason
 }

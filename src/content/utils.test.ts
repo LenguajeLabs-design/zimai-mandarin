@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import content from './content.json'
+import { content } from './contentData'
 import practice from './practice.json'
 import { familyWords, highlightedCharacters, normalizePinyin, wordMatchesQuery } from './utils'
 import type { ContentData } from './types'
@@ -49,7 +49,7 @@ describe('content utilities', () => {
     expect(readLibraryState(storage)).toEqual(initialLibraryState)
   })
 
-  it('keeps the prototype content internally consistent', () => {
+  it('keeps the content set internally consistent', () => {
     expect(contentValidationErrors).toEqual([])
     expect(data.words.every((word) => word.examples.length > 0)).toBe(true)
     expect(data.families.every((family) => family.members.length >= 5)).toBe(true)
@@ -58,8 +58,8 @@ describe('content utilities', () => {
   it('keeps dedicated HSK 2 families source-backed', () => {
     const hsk2Families = data.families.filter((family) => family.sourceIds.includes('hsk-2-official-syllabus'))
     const hsk2Words = hsk2Families.flatMap((family) => familyWords(family, data.words)).filter((word) => word.hskLevel === 'HSK 2')
-    expect(hsk2Families).toHaveLength(13)
-    expect(hsk2Words).toHaveLength(28)
+    expect(hsk2Families).toHaveLength(18)
+    expect(hsk2Words).toHaveLength(37)
     expect(hsk2Words.every((word) => word.hskLevel === 'HSK 2' && !word.isExtension)).toBe(true)
     expect(hsk2Families.every((family) => familyWords(family, data.words).length >= 5)).toBe(true)
   })
@@ -67,8 +67,8 @@ describe('content utilities', () => {
   it('keeps dedicated HSK 3 families source-backed', () => {
     const hsk3Families = data.families.filter((family) => family.sourceIds.includes('hsk-3-official-syllabus'))
     const hsk3Words = hsk3Families.flatMap((family) => familyWords(family, data.words)).filter((word) => word.hskLevel === 'HSK 3')
-    expect(hsk3Families).toHaveLength(12)
-    expect(hsk3Words).toHaveLength(33)
+    expect(hsk3Families).toHaveLength(17)
+    expect(hsk3Words).toHaveLength(43)
     expect(hsk3Words.every((word) => word.hskLevel === 'HSK 3' && !word.isExtension)).toBe(true)
     expect(hsk3Families.every((family) => familyWords(family, data.words).length >= 5)).toBe(true)
   })
@@ -76,8 +76,8 @@ describe('content utilities', () => {
   it('keeps dedicated HSK 4 families source-backed', () => {
     const hsk4Families = data.families.filter((family) => family.sourceIds.includes('hsk-4-official-syllabus'))
     const hsk4Words = hsk4Families.flatMap((family) => familyWords(family, data.words)).filter((word) => word.hskLevel === 'HSK 4')
-    expect(hsk4Families).toHaveLength(14)
-    expect(hsk4Words).toHaveLength(49)
+    expect(hsk4Families).toHaveLength(19)
+    expect(hsk4Words).toHaveLength(63)
     expect(hsk4Words.every((word) => word.hskLevel === 'HSK 4' && !word.isExtension)).toBe(true)
     expect(hsk4Families.every((family) => familyWords(family, data.words).length >= 5)).toBe(true)
   })
@@ -85,8 +85,8 @@ describe('content utilities', () => {
   it('keeps dedicated HSK 5 families source-backed', () => {
     const hsk5Families = data.families.filter((family) => family.sourceIds.includes('hsk-5-official-syllabus'))
     const hsk5Words = hsk5Families.flatMap((family) => familyWords(family, data.words)).filter((word) => word.hskLevel === 'HSK 5')
-    expect(hsk5Families).toHaveLength(6)
-    expect(hsk5Words).toHaveLength(22)
+    expect(hsk5Families).toHaveLength(14)
+    expect(hsk5Words).toHaveLength(48)
     expect(hsk5Words.every((word) => word.hskLevel === 'HSK 5' && !word.isExtension)).toBe(true)
     expect(hsk5Families.every((family) => familyWords(family, data.words).length >= 5)).toBe(true)
   })
@@ -94,8 +94,8 @@ describe('content utilities', () => {
   it('keeps dedicated HSK 6 families source-backed', () => {
     const hsk6Families = data.families.filter((family) => family.sourceIds.includes('hsk-6-official-syllabus'))
     const hsk6Words = hsk6Families.flatMap((family) => familyWords(family, data.words)).filter((word) => word.hskLevel === 'HSK 6')
-    expect(hsk6Families).toHaveLength(7)
-    expect(hsk6Words).toHaveLength(28)
+    expect(hsk6Families).toHaveLength(15)
+    expect(hsk6Words).toHaveLength(39)
     expect(hsk6Words.every((word) => word.hskLevel === 'HSK 6' && !word.isExtension)).toBe(true)
     expect(hsk6Families.every((family) => familyWords(family, data.words).length >= 5)).toBe(true)
   })

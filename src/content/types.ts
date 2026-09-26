@@ -49,6 +49,9 @@ export interface Word {
   audioKey: string
   audio?: AudioAssets
   examples: ExampleSentence[]
+  koreanGloss?: string
+  koreanExample?: string
+  koreanExtensionReason?: string
 }
 
 export interface Family {
@@ -62,6 +65,8 @@ export interface Family {
   featured: boolean
   contentNotes?: string
   sourceIds: string[]
+  koreanShortDescription?: string
+  koreanMeaningNote?: string
 }
 
 export interface ContentData {

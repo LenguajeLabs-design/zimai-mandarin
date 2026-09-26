@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
-import rawContent from './content/content.json'
 import type { ContentData, Family } from './content/types'
+import { content } from './content/contentData'
 import { familyWords } from './content/utils'
 import { AppShell, type NavDestination } from './components/AppShell'
 import { QuickView } from './components/QuickView'
@@ -17,7 +17,7 @@ import { GuidePage } from './pages/GuidePage'
 import { AboutPage } from './pages/AboutPage'
 import { LayoutPreviewPage } from './pages/LayoutPreviewPage'
 
-const content = rawContent as ContentData
+const typedContent = content as ContentData
 
 type Route = { kind: 'library' | 'saved' | 'search' | 'review' | 'guide' | 'about' | 'preview' | 'detail' | 'word'; familyId?: string; wordId?: string; query?: string }
 
@@ -79,14 +79,14 @@ export default function App() {
   const [libraryFilter, setLibraryFilter] = useState<'all' | 'hsk' | 'hsk2' | 'hsk3' | 'hsk4' | 'hsk5' | 'hsk6' | 'saved' | 'recent'>('all')
   const currentPath = `${window.location.pathname}${window.location.search}`
   const backgroundRoute = route.kind === 'word' ? parseRouteFromPath(window.history.state?.from ?? '/families') : route
-  const families = useMemo(() => [...content.families].sort((a, b) => a.sortOrder - b.sortOrder), [])
-  const getRoot = useCallback((family: Family) => content.characters.find((character) => character.id === family.rootCharacterId)!, [])
-  const getWords = useCallback((family: Family) => familyWords(family, content.words), [])
+  const families = useMemo(() => [...typedContent.families].sort((a, b) => a.sortOrder - b.sortOrder), [])
+  const getRoot = useCallback((family: Family) => typedContent.characters.find((character) => character.id === family.rootCharacterId)!, [])
+  const getWords = useCallback((family: Family) => familyWords(family, typedContent.words), [])
   const openFamily = useCallback((id: string) => navigate(`/families/${id}`), [navigate])
   const openWord = useCallback((id: string) => navigate(`/words/${id}`, currentPath), [currentPath, navigate])
   const goToDestination = useCallback((destination: NavDestination) => navigate(destination === 'families' ? '/families' : `/${destination}`), [navigate])
   const detailFamily = backgroundRoute.familyId ? families.find((family) => family.id === backgroundRoute.familyId) : undefined
-  const quickWord = route.wordId ? content.words.find((word) => word.id === route.wordId) : undefined
+  const quickWord = route.wordId ? typedContent.words.find((word) => word.id === route.wordId) : undefined
   const quickFamily = quickWord ? families.find((family) => family.id === quickWord.familyId) : undefined
   const quickRoot = quickFamily ? getRoot(quickFamily) : undefined
   const detailIndex = detailFamily ? families.findIndex((family) => family.id === detailFamily.id) : -1
@@ -101,16 +101,16 @@ export default function App() {
   } else if (backgroundRoute.kind === 'saved') {
     page = <SavedPage families={families} getRoot={getRoot} getWords={getWords} savedFamilies={library.state.savedFamilies} savedWords={library.state.savedWords} recentFamilies={library.state.recentFamilies} onOpenFamily={(id) => id ? openFamily(id) : goToDestination('families')} onToggleSaved={library.toggleSavedFamily} onOpenWord={openWord} audio={audio} />
   } else if (backgroundRoute.kind === 'review') {
-    page = <ReviewPage families={families} words={content.words} getRoot={getRoot} savedWords={library.state.savedWords} recentFamilies={library.state.recentFamilies} learnedWords={library.state.learnedWords} reviewProgress={library.state.reviewProgress} onOpenFamily={openFamily} onOpenWord={openWord} onToggleLearned={library.toggleLearnedWord} onReview={library.recordReview} audio={audio} />
+    page = <ReviewPage families={families} words={typedContent.words} getRoot={getRoot} savedWords={library.state.savedWords} recentFamilies={library.state.recentFamilies} learnedWords={library.state.learnedWords} reviewProgress={library.state.reviewProgress} onOpenFamily={openFamily} onOpenWord={openWord} onToggleLearned={library.toggleLearnedWord} onReview={library.recordReview} audio={audio} />
   } else if (backgroundRoute.kind === 'guide') {
     const guideFamily = families[0]
     page = <GuidePage family={guideFamily} root={getRoot(guideFamily)} words={getWords(guideFamily)} onOpenFamily={openFamily} onOpenWord={openWord} onOpenAbout={() => goToDestination('about')} audio={audio} />
   } else if (backgroundRoute.kind === 'about') {
-    page = <AboutPage source={content.sources[0]} onBrowse={() => goToDestination('families')} onGuide={() => goToDestination('guide')} />
+    page = <AboutPage source={typedContent.sources[0]} onBrowse={() => goToDestination('families')} onGuide={() => goToDestination('guide')} />
   } else if (backgroundRoute.kind === 'preview') {
     page = <LayoutPreviewPage families={families} getRoot={getRoot} getWords={getWords} audio={audio} />
   } else if (backgroundRoute.kind === 'search') {
-    page = <SearchPage query={backgroundRoute.query ?? ''} onQueryChange={onSearchQueryChange} families={families} getRoot={getRoot} words={content.words} onOpenWord={openWord} onOpenFamily={openFamily} audio={audio} onBrowse={() => goToDestination('families')} />
+    page = <SearchPage query={backgroundRoute.query ?? ''} onQueryChange={onSearchQueryChange} families={families} getRoot={getRoot} words={typedContent.words} onOpenWord={openWord} onOpenFamily={openFamily} audio={audio} onBrowse={() => goToDestination('families')} />
   } else {
     page = <FamilyLibraryPage families={families} getRoot={getRoot} getWords={getWords} savedFamilies={library.state.savedFamilies} learnedWords={library.state.learnedWords} filter={libraryFilter} onFilter={setLibraryFilter} recentFamilies={library.state.recentFamilies} onOpenFamily={openFamily} onToggleSaved={library.toggleSavedFamily} onOpenWord={openWord} audio={audio} />
   }
