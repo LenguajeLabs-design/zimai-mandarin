@@ -15,6 +15,7 @@ interface FamilyLibraryPageProps {
   onFilter: (filter: 'all' | 'hsk' | 'hsk2' | 'hsk3' | 'hsk4' | 'hsk5' | 'hsk6' | 'saved' | 'recent') => void
   recentFamilies: string[]
   onOpenFamily: (id: string) => void
+  onOpenReview: () => void
   onToggleSaved: (id: string) => void
   onOpenWord: (id: string) => void
   audio: { playingKey: string | null; onPlay: (key: string, text: string) => void; onStop: () => void }
@@ -22,7 +23,7 @@ interface FamilyLibraryPageProps {
 
 const filterIds: FamilyLibraryPageProps['filter'][] = ['all', 'hsk', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6', 'saved', 'recent']
 
-export function FamilyLibraryPage({ families, getRoot, getWords, savedFamilies, learnedWords, filter, onFilter, recentFamilies, onOpenFamily, onToggleSaved, onOpenWord, audio }: FamilyLibraryPageProps) {
+export function FamilyLibraryPage({ families, getRoot, getWords, savedFamilies, learnedWords, filter, onFilter, recentFamilies, onOpenFamily, onOpenReview, onToggleSaved, onOpenWord, audio }: FamilyLibraryPageProps) {
   const { language } = useExplanationLanguage()
   const copy = siteCopy[language].library
   const visibleFamilies = families.filter((family) => {
@@ -40,7 +41,7 @@ export function FamilyLibraryPage({ families, getRoot, getWords, savedFamilies, 
   const featuredFamily = visibleFamilies[0]
   const featuredRoot = featuredFamily ? getRoot(featuredFamily) : undefined
   const featuredWords = featuredFamily ? getWords(featuredFamily) : []
-  const recentFamily = families.find((family) => family.id === recentFamilies[0]) ?? featuredFamily
+  const recentFamily = families.find((family) => family.id === recentFamilies[0])
   const savedFamilyItems = families.filter((family) => savedFamilies.includes(family.id)).slice(0, 3)
   const recentWords = recentFamily ? getWords(recentFamily) : []
   const recentLearnedCount = recentWords.filter((word) => learnedWords.includes(word.id)).length
@@ -67,9 +68,9 @@ export function FamilyLibraryPage({ families, getRoot, getWords, savedFamilies, 
             <button className="button button--primary" type="button" onClick={() => onOpenFamily(featuredFamily.id)}>{copy.openMap} <span aria-hidden="true">→</span></button>
           </section>
           <aside className="layout-preview__sidebar" aria-label={copy.sidebarLabel}>
-            <section className="layout-preview__continue"><p className="eyebrow">{recentFamily ? copy.continueLearning : copy.startLearning}</p>{recentFamily ? <><div className="layout-preview__continue-heading"><span lang="zh-CN">{getRoot(recentFamily).hanzi}</span><div><h2>{localizedFamilyTitle(recentFamily, language)}</h2><p>{localizedFamilyDescription(recentFamily, language)}</p></div></div><div className="layout-preview__progress"><span style={{ width: `${recentProgress}%` }} /></div><div className="layout-preview__continue-footer"><span>{recentLearnedCount}/{recentWords.length} {copy.learned}</span><button className="text-button" type="button" onClick={() => onOpenFamily(recentFamily.id)}>{copy.continue} →</button></div></> : <p className="layout-preview__empty-copy">{copy.emptyDescription}</p>}</section>
+            <section className="layout-preview__continue"><p className="eyebrow">{recentFamily ? copy.continueLearning : copy.startLearning}</p>{recentFamily ? <><div className="layout-preview__continue-heading"><span lang="zh-CN">{getRoot(recentFamily).hanzi}</span><div><h2>{localizedFamilyTitle(recentFamily, language)}</h2><p>{localizedFamilyDescription(recentFamily, language)}</p></div></div><div className="layout-preview__progress"><span style={{ width: `${recentProgress}%` }} /></div><div className="layout-preview__continue-footer"><span>{recentLearnedCount}/{recentWords.length} {copy.learned}</span><button className="text-button" type="button" onClick={() => onOpenFamily(recentFamily.id)}>{copy.continue} →</button></div></> : featuredFamily ? <><h2 className="layout-preview__start-title">{copy.startTitle}</h2><p className="layout-preview__empty-copy">{copy.startDescription}</p><div className="layout-preview__continue-heading"><span lang="zh-CN">{getRoot(featuredFamily).hanzi}</span><div><h2>{localizedFamilyTitle(featuredFamily, language)}</h2><p>{localizedFamilyDescription(featuredFamily, language)}</p></div></div><button className="button button--primary" type="button" onClick={() => onOpenFamily(featuredFamily.id)}>{copy.startWithFeatured} <span aria-hidden="true">→</span></button></> : <p className="layout-preview__empty-copy">{copy.emptyDescription}</p>}</section>
             <section className="layout-preview__small-card"><div className="layout-preview__small-card-heading"><div><p className="eyebrow">{copy.yourShelf}</p><h2>{copy.savedMaps}</h2></div><span aria-hidden="true">↗</span></div>{savedFamilyItems.length > 0 ? <div className="layout-preview__saved-roots">{savedFamilyItems.map((family) => <button key={family.id} type="button" onClick={() => onOpenFamily(family.id)} aria-label={`${copy.openMap}: ${localizedFamilyTitle(family, language)}`}><span lang="zh-CN">{getRoot(family).hanzi}</span><small>{getRoot(family).pinyin}</small></button>)}</div> : <p className="layout-preview__empty-copy">{copy.savePrompt}</p>}</section>
-            <section className="layout-preview__small-card layout-preview__review-card"><div className="layout-preview__review-mark" aria-hidden="true">↻</div><div><p className="eyebrow">{copy.reviewGently}</p><h2>{copy.keepThread}</h2><p>{copy.returnToWords}</p></div><button className="text-button" type="button" onClick={() => onOpenFamily(recentFamily?.id ?? featuredFamily.id)}>{copy.returnToMap} →</button></section>
+            <section className="layout-preview__small-card layout-preview__review-card"><div className="layout-preview__review-mark" aria-hidden="true">↻</div><div><p className="eyebrow">{copy.reviewGently}</p><h2>{copy.keepThread}</h2><p>{copy.returnToWords}</p></div><button className="text-button" type="button" onClick={onOpenReview}>{copy.returnToMap} →</button></section>
           </aside>
         </div>
         <section className="layout-preview__family-strip" aria-labelledby="collection-heading"><div className="layout-preview__section-topline"><div><p className="eyebrow">{copy.explore}</p><h2 id="collection-heading">{copy.moreWays}</h2></div><span className="layout-preview__muted-count">{visibleFamilies.length} {copy.mapCount}</span></div><div className="family-grid" aria-label={copy.mapCount}>{visibleFamilies.slice(1).map((family) => <FamilyCard key={family.id} family={family} root={getRoot(family)} words={getWords(family)} saved={savedFamilies.includes(family.id)} onOpen={() => onOpenFamily(family.id)} onToggleSaved={() => onToggleSaved(family.id)} onOpenWord={onOpenWord} audio={audio} />)}</div></section>

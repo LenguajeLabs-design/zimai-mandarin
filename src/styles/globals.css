@@ -219,6 +219,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent-soft
 
 .review-summary { align-items: baseline; border-top: 1px solid var(--line-strong); color: var(--text-secondary); display: flex; font-size: 0.72rem; gap: 12px; line-height: 1.25; padding-top: 11px; text-align: right; }
 .review-summary__number { color: var(--accent); font-family: Georgia, serif; font-size: 2.5rem; line-height: 0.9; }
+.review-summary small { color: var(--text-tertiary); display: block; font-size: 0.62rem; margin-top: 5px; }
 .review-layout { align-items: start; display: grid; gap: 22px; grid-template-columns: minmax(0, 1.18fr) minmax(290px, 0.82fr); }
 .review-card { background: var(--surface); border: 1px solid var(--card-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); padding: 30px 32px 26px; }
 .review-card__topline { align-items: center; display: flex; justify-content: space-between; }
@@ -512,6 +513,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--accent-soft
 .layout-preview__continue-heading > span { color: var(--accent); font-family: "Noto Sans SC", sans-serif; font-size: 3.6rem; line-height: 0.8; }
 .layout-preview__continue-heading h2 { font-size: 1.3rem; }
 .layout-preview__continue-heading p { color: var(--text-secondary); font-size: 0.72rem; margin: 5px 0 0; }
+.layout-preview__start-title { font-size: 1.55rem; margin-top: 20px; }
 .layout-preview__progress { background: var(--surface-muted); border-radius: var(--radius-pill); height: 7px; overflow: hidden; }
 .layout-preview__progress span { background: var(--accent); border-radius: inherit; display: block; height: 100%; }
 .layout-preview__continue-footer { align-items: center; color: var(--text-tertiary); display: flex; font-size: 0.7rem; justify-content: space-between; margin-top: 12px; }

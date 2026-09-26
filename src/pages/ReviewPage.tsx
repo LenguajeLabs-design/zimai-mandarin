@@ -66,7 +66,7 @@ export function ReviewPage({ families, words, getRoot, savedWords, recentFamilie
     <div className="page page--review">
       <header className="page-header page-header--compact review-header">
         <div><p className="eyebrow">{copy.eyebrow}</p><h1>{copy.titleFirst}<br /><em>{copy.titleSecond}</em></h1><p className="page-header__lede">{copy.description}</p></div>
-        <div className="review-summary"><span className="review-summary__number">{dueCount}</span><span>{copy.ready}</span></div>
+        <div className="review-summary"><span className="review-summary__number">{dueCount}</span><span>{copy.ready}<small>{learnedCount}/{reviewWords.length} {copy.learnedSet}</small></span></div>
       </header>
       <div className="review-layout">
         <section className="review-card" aria-labelledby="review-word-heading">
