@@ -2,6 +2,21 @@
 
 This file records meaningful product and implementation changes to Zìmài. Dates use YYYY-MM-DD.
 
+## 2026-09-26
+
+### Added
+
+- Added an HSK vocabulary reference destination with all currently loaded HSK 1–6 words, searchable by word, pinyin, English, or Korean explanation.
+- Added level filters and a dedicated “Words to explore” view for HSK entries that are not yet attached to a family map.
+- Added HSK shortcuts to the desktop rail and mobile navigation.
+- Imported the 5,001-word HSK 1–6 reference lists from HSK东西 as a separate, attributed non-commercial data layer; mapped entries retain their family-map links while unmatched entries remain standalone.
+
+### Verification
+
+- `npm run check` passes.
+- `npm test -- --run` passes.
+- `npm run build` passes.
+
 ## 2026-09-25
 
 ### Added

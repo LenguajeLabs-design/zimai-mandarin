@@ -47,6 +47,8 @@ The first HSK 4 content set now includes forty-nine verified HSK 4 core words ac
 
 The first HSK 5 slice includes twenty-two verified HSK 5 core words across six dedicated five-word families. The first HSK 6 slice includes twenty-eight verified HSK 6 core words across seven dedicated five-word families. Both slices include context sentences and clearly marked Related extensions; their official syllabi and reproducible HSK 2.0 mirrors are recorded in the content source metadata. These are starting points for the broader HSK 5/6 reading, listening, speaking, and summarization curriculum, not complete level inventories.
 
+The HSK reference browser also includes 5,001 words from the HSK东西 2012 HSK 1–6 definition lists. These are kept separate from the curated family-map content so words without a family connection can be surfaced as `Words to explore`. The source permits non-commercial use with attribution; commercial use requires permission. Re-run `npm run content:import:hsk` to refresh the generated reference data after reviewing source terms.
+
 ## Change tracking and backups
 
 The GitHub repository is the source-of-truth backup for the project:

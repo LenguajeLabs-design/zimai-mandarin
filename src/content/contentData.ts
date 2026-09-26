@@ -1,7 +1,8 @@
 import baseContent from './content.json'
 import { contentExpansion } from './contentExpansion'
 import { generatedAudioPaths } from './generatedAudio'
-import type { AudioAssets, ContentData } from './types'
+import hskVocabularyJson from './hskVocabulary.json'
+import type { AudioAssets, ContentData, HskVocabularyData, HskVocabularyEntry } from './types'
 
 const base = baseContent as ContentData
 
@@ -21,3 +22,7 @@ export const content: ContentData = {
   families: [...base.families, ...contentExpansion.families],
   words: [...base.words, ...contentExpansion.words].map(attachGeneratedAudio),
 }
+
+const hskVocabularyData = hskVocabularyJson as HskVocabularyData
+export const hskVocabularySource = hskVocabularyData.source
+export const hskVocabulary: HskVocabularyEntry[] = hskVocabularyData.levels.flatMap((level) => level.words)

@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
 import type { ContentData, Family } from './content/types'
-import { content } from './content/contentData'
+import type { HskLevel } from './content/types'
+import { content, hskVocabulary, hskVocabularySource } from './content/contentData'
 import { familyWords } from './content/utils'
-import { AppShell, type NavDestination } from './components/AppShell'
+import { AppShell, type HskFilter, type NavDestination } from './components/AppShell'
 import { QuickView } from './components/QuickView'
 import { useAudio } from './hooks/useAudio'
 import { useLibraryState } from './hooks/useLibraryState'
@@ -16,10 +17,11 @@ import { ReviewPage } from './pages/ReviewPage'
 import { GuidePage } from './pages/GuidePage'
 import { AboutPage } from './pages/AboutPage'
 import { LayoutPreviewPage } from './pages/LayoutPreviewPage'
+import { HskVocabularyPage } from './pages/HskVocabularyPage'
 
 const typedContent = content as ContentData
 
-type Route = { kind: 'library' | 'saved' | 'search' | 'review' | 'guide' | 'about' | 'preview' | 'detail' | 'word'; familyId?: string; wordId?: string; query?: string }
+type Route = { kind: 'library' | 'saved' | 'search' | 'review' | 'guide' | 'about' | 'preview' | 'hsk' | 'detail' | 'word'; familyId?: string; wordId?: string; query?: string; hskLevel?: HskLevel; hskFilter?: HskFilter }
 
 const appBasePath = import.meta.env.BASE_URL.replace(/\/$/, '')
 
@@ -44,6 +46,12 @@ function parseRouteFromPath(pathWithSearch: string): Route {
   if (path === '/guide') return { kind: 'guide' }
   if (path === '/about') return { kind: 'about' }
   if (path === '/preview') return { kind: 'preview' }
+  if (path === '/hsk') {
+    const params = new URLSearchParams(search ?? '')
+    const rawLevel = Number(params.get('level'))
+    const hskLevel = Number.isInteger(rawLevel) && rawLevel >= 1 && rawLevel <= 9 ? rawLevel as HskLevel : undefined
+    return { kind: 'hsk', hskLevel, hskFilter: params.get('view') === 'explore' ? 'explore' : 'all' }
+  }
   if (path === '/search') return { kind: 'search', query: new URLSearchParams(search ?? '').get('q') ?? '' }
   return { kind: 'library' }
 }
@@ -68,6 +76,7 @@ function baseDestination(route: Route): NavDestination {
   if (route.kind === 'guide') return 'guide'
   if (route.kind === 'about') return 'about'
   if (route.kind === 'search') return 'search'
+  if (route.kind === 'hsk') return 'hsk'
   return 'families'
 }
 
@@ -109,11 +118,22 @@ export default function App() {
     page = <AboutPage source={typedContent.sources[0]} onBrowse={() => goToDestination('families')} onGuide={() => goToDestination('guide')} />
   } else if (backgroundRoute.kind === 'preview') {
     page = <LayoutPreviewPage families={families} getRoot={getRoot} getWords={getWords} audio={audio} />
+  } else if (backgroundRoute.kind === 'hsk') {
+    page = <HskVocabularyPage words={typedContent.words} hskVocabulary={hskVocabulary} hskSourceUrl={hskVocabularySource.url} families={families} getRoot={getRoot} initialLevel={backgroundRoute.hskLevel} initialFilter={backgroundRoute.hskFilter ?? 'all'} onOpenWord={openWord} audio={audio} />
   } else if (backgroundRoute.kind === 'search') {
     page = <SearchPage query={backgroundRoute.query ?? ''} onQueryChange={onSearchQueryChange} families={families} getRoot={getRoot} words={typedContent.words} onOpenWord={openWord} onOpenFamily={openFamily} audio={audio} onBrowse={() => goToDestination('families')} />
   } else {
     page = <FamilyLibraryPage families={families} getRoot={getRoot} getWords={getWords} savedFamilies={library.state.savedFamilies} learnedWords={library.state.learnedWords} filter={libraryFilter} onFilter={setLibraryFilter} recentFamilies={library.state.recentFamilies} onOpenFamily={openFamily} onOpenReview={() => goToDestination('review')} onToggleSaved={library.toggleSavedFamily} onOpenWord={openWord} audio={audio} />
   }
 
-  return <AppShell current={baseDestination(backgroundRoute)} onNavigate={goToDestination} savedCount={library.state.savedFamilies.length} theme={theme.theme} onToggleTheme={theme.toggleTheme}>{page}{quickWord && quickFamily && quickRoot && <QuickView word={quickWord} family={quickFamily} root={quickRoot} saved={library.state.savedWords.includes(quickWord.id)} learned={library.state.learnedWords.includes(quickWord.id)} onClose={closeQuickView} onToggleSaved={() => library.toggleSavedWord(quickWord.id)} onToggleLearned={() => library.toggleLearnedWord(quickWord.id)} audio={audio} />}</AppShell>
+  return <AppShell current={baseDestination(backgroundRoute)} onNavigate={(destination, options) => {
+    if (destination === 'hsk') {
+      const params = new URLSearchParams()
+      if (options?.hskLevel) params.set('level', String(options.hskLevel))
+      if (options?.hskFilter === 'explore') params.set('view', 'explore')
+      navigate(`/hsk${params.toString() ? `?${params.toString()}` : ''}`)
+      return
+    }
+    goToDestination(destination)
+  }} savedCount={library.state.savedFamilies.length} theme={theme.theme} onToggleTheme={theme.toggleTheme}>{page}{quickWord && quickFamily && quickRoot && <QuickView word={quickWord} family={quickFamily} root={quickRoot} saved={library.state.savedWords.includes(quickWord.id)} learned={library.state.learnedWords.includes(quickWord.id)} onClose={closeQuickView} onToggleSaved={() => library.toggleSavedWord(quickWord.id)} onToggleLearned={() => library.toggleLearnedWord(quickWord.id)} audio={audio} />}</AppShell>
 }

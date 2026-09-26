@@ -75,3 +75,29 @@ export interface ContentData {
   families: Family[]
   words: Word[]
 }
+
+export interface HskVocabularyEntry {
+  id: string
+  hanzi: string
+  traditional: string
+  pinyinNumbered: string
+  pinyin: string
+  gloss: string
+  hskLevel: HskLevel
+}
+
+export interface HskVocabularyLevel {
+  level: HskLevel
+  words: HskVocabularyEntry[]
+}
+
+export interface HskVocabularyData {
+  source: {
+    name: string
+    attribution: string
+    url: string
+    license: string
+    retrievedAt: string
+  }
+  levels: HskVocabularyLevel[]
+}

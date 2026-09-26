@@ -1,13 +1,20 @@
 import type { ReactNode } from 'react'
 import type { Theme } from '../hooks/useTheme'
+import type { HskLevel } from '../content/types'
 import { useExplanationLanguage } from '../hooks/useExplanationLanguage'
 import { siteCopy } from '../content/previewTranslations'
 
-export type NavDestination = 'families' | 'review' | 'saved' | 'search' | 'guide' | 'about'
+export type NavDestination = 'families' | 'review' | 'saved' | 'search' | 'hsk' | 'guide' | 'about'
+export type HskFilter = 'all' | 'explore'
+
+export interface NavigationOptions {
+  hskLevel?: HskLevel
+  hskFilter?: HskFilter
+}
 
 interface AppShellProps {
   current: NavDestination
-  onNavigate: (destination: NavDestination) => void
+  onNavigate: (destination: NavDestination, options?: NavigationOptions) => void
   children: ReactNode
   savedCount: number
   theme: Theme
@@ -19,7 +26,10 @@ const navItems: Array<{ id: NavDestination; icon: string }> = [
   { id: 'review', icon: '↻' },
   { id: 'saved', icon: '♡' },
   { id: 'search', icon: '⌕' },
+  { id: 'hsk', icon: '▦' },
 ]
+
+const hskLevels: HskLevel[] = [1, 2, 3, 4, 5, 6]
 
 export function AppShell({ current, onNavigate, children, savedCount, theme, onToggleTheme }: AppShellProps) {
   const { language, setLanguage } = useExplanationLanguage()
@@ -53,6 +63,19 @@ export function AppShell({ current, onNavigate, children, savedCount, theme, onT
         </nav>
         {themeToggle()}
         {languageToggle()}
+        <section className="hsk-shelf" aria-label={copy.hskReference}>
+          <div className="hsk-shelf__header">
+            <p className="eyebrow">{copy.hskReference}</p>
+            <button className="hsk-shelf__all" type="button" onClick={() => onNavigate('hsk')}>{copy.hskBrowseAll} <span aria-hidden="true">↗</span></button>
+          </div>
+          <button className="hsk-shelf__explore" type="button" onClick={() => onNavigate('hsk', { hskFilter: 'explore' })}>
+            <span className="hsk-shelf__explore-mark" aria-hidden="true">→</span>
+            <span><strong>{copy.hskExplore}</strong><small>{copy.hskExploreDescription}</small></span>
+          </button>
+          <div className="hsk-shelf__levels" aria-label={copy.hskReference}>
+            {hskLevels.map((level) => <button key={level} type="button" onClick={() => onNavigate('hsk', { hskLevel: level })}>HSK {level}</button>)}
+          </div>
+        </section>
         <div className="rail-footer">
           <span className="rail-footer__chinese">字脉</span>
           <span>{copy.tagline}</span>

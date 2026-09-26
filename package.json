@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "test": "vitest run",
     "check": "tsc -b --pretty false",
+    "content:import:hsk": "node scripts/import-hsk-vocabulary.mjs",
     "audio:generate": "vite-node scripts/generate-openai-audio.ts",
     "audio:generate:all": "vite-node scripts/generate-openai-audio.ts --all"
   },
